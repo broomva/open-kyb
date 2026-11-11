@@ -1,0 +1,343 @@
+{
+  "version": "policy-edits-v2",
+  "base": "examples/policy/compliance_rules.md (2026.11-r1)",
+  "edits": [
+    {
+      "id": "pep-window-3y-to-1y",
+      "edits": [
+        {
+          "old": "within the last **3 years**",
+          "new": "within the last **1 years**"
+        },
+        {
+          "old": "more than 3 years ago",
+          "new": "more than 1 years ago"
+        }
+      ],
+      "cases": [
+        {
+          "case": "golden-C",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "risk_score": 90,
+            "includes": [
+              "PEP-02"
+            ],
+            "not_fired": [
+              "PEP-01"
+            ]
+          }
+        }
+      ],
+      "why": "C's PEP left office 2024-08-14: inside 3 years, outside 1",
+      "guard": false,
+      "params": {
+        "pep_lookback_years": 1
+      }
+    },
+    {
+      "id": "pep-window-inconsistent",
+      "edits": [
+        {
+          "old": "within the last **3 years**",
+          "new": "within the last **5 years**"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "unknown": [
+              "PEP-01"
+            ]
+          }
+        }
+      ],
+      "why": "the two statements of the window disagree: a visible guard, never a silent pick",
+      "guard": true
+    },
+    {
+      "id": "add-prohibited-country",
+      "edits": [
+        {
+          "old": "`BY`, or the",
+          "new": "`BY`, `CL`, or the"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "REJECTED",
+            "includes": [
+              "JUR-01"
+            ]
+          }
+        }
+      ],
+      "why": "CO added to JUR-01: clean A is now rejected",
+      "guard": false
+    },
+    {
+      "id": "add-high-risk-country",
+      "edits": [
+        {
+          "old": "`SC`, or free zones",
+          "new": "`SC`, `CL`, or free zones"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "APPROVED",
+            "risk_score": 20,
+            "fired": [
+              "JUR-02"
+            ]
+          }
+        }
+      ],
+      "why": "CO added to JUR-02: +20, still <= 25",
+      "guard": false
+    },
+    {
+      "id": "name-threshold-0.95",
+      "edits": [
+        {
+          "old": "score ≥ 0.88",
+          "new": "score ≥ 0.95"
+        }
+      ],
+      "cases": [
+        {
+          "case": "golden-C",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "not_fired": [
+              "SCR-02"
+            ]
+          }
+        }
+      ],
+      "why": "C's JW falls below the new threshold",
+      "guard": false,
+      "params": {
+        "name_similarity_threshold": 0.95
+      }
+    },
+    {
+      "id": "approve-threshold-15",
+      "edits": [
+        {
+          "old": "`risk_score ≤ 25`",
+          "new": "`risk_score ≤ 15`"
+        },
+        {
+          "old": "`risk_score ≥ 26`",
+          "new": "`risk_score ≥ 16`"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "APPROVED",
+            "risk_score": 0
+          }
+        },
+        {
+          "case": "syn-a-high-risk-25",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "risk_score": 20,
+            "fired": [
+              "JUR-02"
+            ]
+          }
+        }
+      ],
+      "why": "20 was approvable under <= 25, not under <= 15",
+      "guard": false
+    },
+    {
+      "id": "approve-band-gap",
+      "edits": [
+        {
+          "old": "`risk_score ≤ 25`",
+          "new": "`risk_score ≤ 15`"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW"
+          }
+        }
+      ],
+      "why": "the bands now leave 16-25 undefined: a guard, never a default",
+      "guard": true
+    },
+    {
+      "id": "severity-r5-reject",
+      "edits": [
+        {
+          "old": "## 7. Documentary Integrity & Discrepancies — **REVIEW +20**",
+          "new": "## 7. Documentary Integrity & Discrepancies — **REJECT**"
+        }
+      ],
+      "cases": [
+        {
+          "case": "golden-B",
+          "expected": {
+            "status": "REJECTED",
+            "risk_score": 15
+          }
+        },
+        {
+          "case": "golden-A",
+          "expected": {
+            "status": "APPROVED",
+            "risk_score": 0
+          }
+        }
+      ],
+      "why": "DOC-01 becomes a REJECT: B (3 conflicts) is rejected, A has none",
+      "guard": false
+    },
+    {
+      "id": "cosmetic-reword",
+      "edits": [
+        {
+          "old": "**2 or more indicators → REVIEW.**",
+          "new": "Two or more indicators -> **REVIEW**."
+        },
+        {
+          "old": "## 4. Beneficial Ownership",
+          "new": "##   4.  Beneficial Ownership"
+        }
+      ],
+      "cases": [
+        {
+          "case": "golden-A",
+          "expected": {
+            "same_as_base": true
+          }
+        },
+        {
+          "case": "golden-B",
+          "expected": {
+            "same_as_base": true
+          }
+        },
+        {
+          "case": "golden-C",
+          "expected": {
+            "same_as_base": true
+          }
+        }
+      ],
+      "why": "a wording change that means the same: identical results, a new content hash",
+      "guard": false
+    },
+    {
+      "id": "reworded-r7-sole",
+      "edits": [
+        {
+          "old": "the packet names no individual who actually runs the company",
+          "new": "the packet names no individual who actually runs or controls the company"
+        }
+      ],
+      "cases": [
+        {
+          "case": "golden-C",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "unknown": [
+              "GOV-01",
+              "GOV-02"
+            ]
+          }
+        }
+      ],
+      "why": "a reworded rule the engine cannot map: GOV-01/GOV-02 read unknown, and verbatim text reaches the model",
+      "guard": true
+    },
+    {
+      "id": "unrepresentable-r2-scope",
+      "edits": [
+        {
+          "old": "or a UBO resident in:",
+          "new": "or a UBO or director resident in:"
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW",
+            "unknown": [
+              "JUR-01"
+            ]
+          }
+        }
+      ],
+      "why": "a scope the engine cannot represent: clean A (APPROVED) becomes MANUAL_REVIEW, never a silent default",
+      "guard": true
+    },
+    {
+      "id": "new-industry-term",
+      "edits": [
+        {
+          "old": "administration.",
+          "new": "administration, crowdfunding platforms."
+        }
+      ],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW"
+          }
+        }
+      ],
+      "why": "an industry term with no lexicon entry: guarded",
+      "guard": true
+    },
+    {
+      "id": "new-rule-section",
+      "edits": [],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW"
+          }
+        }
+      ],
+      "why": "an unrecognised section: POLICY-GUARD",
+      "guard": true,
+      "append": "\n## 14. Adverse media — **REVIEW**\nAny hit.\n"
+    },
+    {
+      "id": "remove-r10",
+      "edits": [],
+      "cases": [
+        {
+          "case": "syn-a-clean",
+          "expected": {
+            "status": "MANUAL_REVIEW"
+          }
+        }
+      ],
+      "why": "the industry section is deleted: unrepresentable, never treated as 'no industry rule'",
+      "guard": true,
+      "remove_section": [
+        "## 10. Sector",
+        "## 11."
+      ]
+    }
+  ]
+}

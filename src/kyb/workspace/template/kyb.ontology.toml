@@ -1,0 +1,61 @@
+# open-kyb KYB ontology: the schema every workspace is built from (spec, spec).
+# Types and links are what claims can populate; actions are the only way anything is written.
+# Hooks (spec), sandbox mounts (spec/spec) and the MCP/CLI/API surfaces derive from `actions`.
+# Validated at load by the pydantic `Ontology` model in `kyb.ontology` (spec); TOML, read by tomllib.
+version = "0.1.0"
+tiers = ["untrusted", "claimed", "verified", "corroborated", "derived", "judged", "decided"]
+agent_writable = ["cases/<case>/scratch/**", "cases/<case>/notes/**", "cases/<case>/proposals/**"]
+
+[objects]
+Company     = { key = ["jurisdiction", "registry_id"], props = ["legal_name", "incorporated_on", "activities", "addresses"] }
+Person      = { key = ["name_norm", "dob"], props = ["nationality", "ids", "roles"], pii = true }
+LegalEntity = { key = ["jurisdiction", "name_norm"], kinds = ["corporation", "foundation", "trust"] }
+Address     = { key = ["norm"], props = ["raw_forms", "role"] }
+Document    = { key = ["sha256"], props = ["doc_type", "issuer", "issued_on", "stated_validity", "role"] }
+
+[links]
+owns          = { from = ["Person", "LegalEntity"], to = ["Company", "LegalEntity"], props = ["pct", "as_of"] }
+directs       = { from = ["Person", "LegalEntity"], to = "Company", props = ["role", "nominee"] }
+registered_at = { from = "Company", to = "Address" }
+operates_at   = { from = "Company", to = "Address" }
+evidenced_by  = { from = "*", to = "Claim" }
+
+# invoker = actor role; transport = how it is reached. The MCP, CLI and API surfaces are generated from this block.
+[actions]
+ingest_packet      = { invoker = ["pipeline", "officer", "agent"], transport = ["cli", "mcp", "api"], writes = ["bronze/packets/**"] }
+pages              = { invoker = ["pipeline", "agent"], transport = ["cli", "mcp"], writes = ["silver/pages/**"] }
+layout_pages       = { invoker = ["pipeline", "agent"], transport = ["cli", "mcp"], writes = ["silver/layout/**"], model = "witness", claim_blind = true }
+read_document      = { invoker = ["agent"], transport = ["cli", "mcp"], writes = ["silver/claims/**"], reader = "harness", per = "document", tier_out = "claimed" }
+render_crop        = { invoker = ["agent"], transport = ["mcp", "cli"], writes = ["silver/crops/**"] }
+verify_quotes      = { invoker = ["pipeline", "agent"], transport = ["cli", "mcp"], writes = ["silver/witness/**", "silver/verified_claims/**", "silver/integrity/**"], model = "witness", per = "document" }
+derive_facts       = { invoker = ["pipeline"], writes = ["gold/facts/**"] }
+screen             = { invoker = ["pipeline"], writes = ["gold/screening/**"] }
+load_policy        = { invoker = ["pipeline"], writes = ["gold/policy/**"] }
+eval_predicates    = { invoker = ["pipeline"], writes = ["gold/predicates/**"] }
+propose_predicates = { invoker = ["agent"], transport = ["cli", "mcp"], writes = ["gold/predicates/**"], reader = "harness" }
+run_judges         = { invoker = ["pipeline"], writes = ["gold/judgements/**"] }
+emit_decision      = { invoker = ["pipeline"], writes = ["ledger/decisions/**"] }
+record_answer      = { invoker = ["officer", "agent"], transport = ["mcp", "cli", "api"], writes = ["ledger/qa/**"], checks = ["citations", "values", "snippets", "decisions"] }
+propose            = { invoker = ["agent", "officer"], transport = ["cli", "mcp", "api"], reads = ["cases/*/proposals/*.json", "cases/*/notes/*.md"], writes = ["gold/proposals/**"], tier_out = "claimed", cap = "MANUAL_REVIEW" }
+record_override    = { invoker = ["officer"], transport = ["cli", "mcp", "api"], auth = "officer_token", writes = ["ledger/corrections/**"] }
+sign_decision      = { invoker = ["officer"], transport = ["cli", "mcp", "api"], auth = "officer_token", writes = ["ledger/signatures/**"] }
+verify             = { invoker = ["officer", "auditor", "ci"], transport = ["cli", "api"], writes = ["ledger/verifications/**"] }
+project_kg         = { invoker = ["pipeline"], writes = ["kg/**", "**/current"], deterministic = true }
+plan_loop          = { invoker = ["agent"], transport = ["cli", "mcp"], writes = ["ledger/loops/**"], tier_out = "derived" }
+start_loop_repair  = { invoker = ["agent"], transport = ["cli", "mcp"], writes = ["ledger/loops/**"], tier_out = "derived" }
+propose_policy     = { invoker = ["agent", "officer"], transport = ["cli", "mcp"], writes = ["ledger/policy/proposals/**", "ledger/policy/texts/**"], tier_out = "claimed" }
+apply_policy       = { invoker = ["officer"], transport = ["cli", "mcp"], writes = ["policy/compliance_rules.md", "ledger/policy/texts/**"] }   # the human's native confirmation (hook "ask"), never the agent's
+
+[reads]   # read-only tools; no writes
+inspect_loop         = { invoker = ["agent", "officer"], transport = ["mcp", "cli"] }
+read_plan            = { invoker = ["agent"], transport = ["mcp", "cli"] }
+review_status        = { invoker = ["agent", "officer"], transport = ["mcp", "cli"] }
+predicate_work_order = { invoker = ["agent"], transport = ["mcp", "cli"] }
+ask                  = { invoker = ["agent", "officer"], transport = ["mcp", "cli", "api"] }   # verified evidence bundle
+review_queue         = { invoker = ["officer", "agent"], transport = ["mcp", "cli", "api"] }   # unsigned recommendations, MANUAL_REVIEW first
+list_entities        = { invoker = ["agent", "officer"], transport = ["mcp", "api"] }
+get_facts            = { invoker = ["agent", "officer"], transport = ["mcp", "api"] }
+get_decision         = { invoker = ["agent", "officer", "auditor"], transport = ["mcp", "api", "cli"] }
+explain_violation    = { invoker = ["agent", "officer"], transport = ["mcp", "api"] }
+search_documents     = { invoker = ["agent", "officer"], transport = ["mcp", "api"] }
+audit_verify         = { invoker = ["agent", "officer", "auditor"], transport = ["mcp", "cli", "api"] }

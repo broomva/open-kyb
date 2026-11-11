@@ -1,0 +1,13 @@
+{
+  "document_id": "es-iberia-software/04_libro_registro_socios.pdf",
+  "page": 1,
+  "text_layer": "IBERIA SOFTWARE S.L. - NIF B-88412091\nLIBRO DE REGISTRO DE SOCIOS - PARTICIPACIONES SOCIALES\nFecha actualización: 2026-06-10\nSocio | Participaciones | % | Observaciones\nLucas Navarro Solís 2.300 46% Adquisición autorizada por acta de constitución.\nHugo Martínez Sanz 2.700 54% Adquisición autorizada por acta de constitución.\nTotal: 5.000 participaciones sociales ordinarias (100%).\n\n\f",
+  "words": 52,
+  "render": {
+    "png": "p1.png",
+    "dpi": 300,
+    "sha256": "sha256:9454a60fadbf211955ea4655c146c62946d3d8b83bfb7cc30a036b1f24ec0e5c"
+  },
+  "source_sha256": "sha256:9454a60fadbf211955ea4655c146c62946d3d8b83bfb7cc30a036b1f24ec0e5c",
+  "reader": "text layer present: the model reads it and the pixels"
+}

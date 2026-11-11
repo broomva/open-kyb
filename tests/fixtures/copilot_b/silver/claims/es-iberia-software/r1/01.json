@@ -1,0 +1,217 @@
+{
+  "produced_by": "system-test-copilot_b",
+  "claims": [
+    {
+      "claim_id": "c-B01-01",
+      "type": "date",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "fecha_de_expedicion",
+      "value": "2026-10-15",
+      "excerpt": "Fecha de emisión: 2026-10-15",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-02",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "legal_name",
+      "value": "IBERIA SOFTWARE S.L.",
+      "excerpt": "Denominación social: IBERIA SOFTWARE S.L.",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-03",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "reg_no",
+      "value": "B-88412091",
+      "excerpt": "NIF: B-88412091",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-03_nif",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "nif",
+      "value": "B-88412091",
+      "excerpt": "NIF: B-88412091",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-04",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "jurisdiction",
+      "value": "ES",
+      "excerpt": "REGISTRO DE SOCIEDADES DE MADRID",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-05",
+      "type": "address",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "domicilio_social",
+      "value": "Paseo de la Castellana 95, Madrid",
+      "excerpt": "Domicilio social: Paseo de la Castellana 95, Madrid",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-07",
+      "type": "date",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "fecha_de_constitucion",
+      "value": "2020-04-12",
+      "excerpt": "Constitución: Escritura pública autorizada el 2020-04-12",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-12",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "stated_validity",
+      "value": "ACTIVA",
+      "excerpt": "Estado de la matrícula: ACTIVA",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-06",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "actividad_principal",
+      "value": "Desarrollo de aplicaciones y consultoría tecnológica",
+      "excerpt": "Objeto social: Desarrollo de aplicaciones y consultoría tecnológica.",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-08",
+      "type": "identifier",
+      "subject": "HUGO MARTÍNEZ SANZ",
+      "attribute": "role",
+      "value": "Administrador único",
+      "excerpt": "Administrador único: HUGO MARTÍNEZ SANZ - NIF 44.190.822-D",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B01-10",
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 100,
+        "shares": 50000
+      },
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "$defs": {
+    "Action": {
+      "additionalProperties": false,
+      "properties": {
+        "auth": {
+          "anyOf": [
+            {
+              "const": "officer_token",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Auth"
+        },
+        "cap": {
+          "anyOf": [
+            {
+              "const": "MANUAL_REVIEW",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cap"
+        },
+        "checks": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Checks",
+          "type": "array"
+        },
+        "claim_blind": {
+          "default": false,
+          "title": "Claim Blind",
+          "type": "boolean"
+        },
+        "deterministic": {
+          "default": false,
+          "title": "Deterministic",
+          "type": "boolean"
+        },
+        "invoker": {
+          "items": {
+            "enum": [
+              "pipeline",
+              "officer",
+              "agent",
+              "auditor",
+              "ci"
+            ],
+            "type": "string"
+          },
+          "title": "Invoker",
+          "type": "array"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "const": "witness",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model"
+        },
+        "per": {
+          "anyOf": [
+            {
+              "const": "document",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Per"
+        },
+        "reader": {
+          "anyOf": [
+            {
+              "const": "harness",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reader"
+        },
+        "reads": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Reads",
+          "type": "array"
+        },
+        "tier_out": {
+          "anyOf": [
+            {
+              "enum": [
+                "untrusted",
+                "claimed",
+                "verified",
+                "corroborated",
+                "derived",
+                "judged",
+                "decided"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tier Out"
+        },
+        "transport": {
+          "default": [],
+          "items": {
+            "enum": [
+              "cli",
+              "mcp",
+              "api"
+            ],
+            "type": "string"
+          },
+          "title": "Transport",
+          "type": "array"
+        },
+        "writes": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Writes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "invoker",
+        "writes"
+      ],
+      "title": "Action",
+      "type": "object"
+    },
+    "LinkType": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "title": "From"
+        },
+        "props": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Props",
+          "type": "array"
+        },
+        "to": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "title": "To"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "LinkType",
+      "type": "object"
+    },
+    "ObjectType": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Key",
+          "type": "array"
+        },
+        "kinds": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Kinds",
+          "type": "array"
+        },
+        "pii": {
+          "default": false,
+          "title": "Pii",
+          "type": "boolean"
+        },
+        "props": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Props",
+          "type": "array"
+        }
+      },
+      "required": [
+        "key"
+      ],
+      "title": "ObjectType",
+      "type": "object"
+    },
+    "ReadTool": {
+      "additionalProperties": false,
+      "properties": {
+        "invoker": {
+          "items": {
+            "enum": [
+              "pipeline",
+              "officer",
+              "agent",
+              "auditor",
+              "ci"
+            ],
+            "type": "string"
+          },
+          "title": "Invoker",
+          "type": "array"
+        },
+        "transport": {
+          "items": {
+            "enum": [
+              "cli",
+              "mcp",
+              "api"
+            ],
+            "type": "string"
+          },
+          "title": "Transport",
+          "type": "array"
+        }
+      },
+      "required": [
+        "invoker",
+        "transport"
+      ],
+      "title": "ReadTool",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "actions": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Action"
+      },
+      "title": "Actions",
+      "type": "object"
+    },
+    "agent_writable": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Agent Writable",
+      "type": "array"
+    },
+    "links": {
+      "additionalProperties": {
+        "$ref": "#/$defs/LinkType"
+      },
+      "title": "Links",
+      "type": "object"
+    },
+    "objects": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ObjectType"
+      },
+      "title": "Objects",
+      "type": "object"
+    },
+    "reads": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ReadTool"
+      },
+      "title": "Reads",
+      "type": "object"
+    },
+    "tiers": {
+      "items": {
+        "enum": [
+          "untrusted",
+          "claimed",
+          "verified",
+          "corroborated",
+          "derived",
+          "judged",
+          "decided"
+        ],
+        "type": "string"
+      },
+      "title": "Tiers",
+      "type": "array"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "actions",
+    "agent_writable",
+    "reads",
+    "version",
+    "tiers",
+    "objects",
+    "links"
+  ],
+  "title": "Ontology",
+  "type": "object"
+}

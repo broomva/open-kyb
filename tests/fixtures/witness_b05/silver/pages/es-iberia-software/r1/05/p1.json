@@ -1,0 +1,13 @@
+{
+  "document_id": "es-iberia-software/05_acta_junta_SCAN.pdf",
+  "page": 1,
+  "text_layer": "\f",
+  "words": 0,
+  "render": {
+    "png": "p1.png",
+    "dpi": 300,
+    "sha256": "sha256:262e6dafd08467cbde206e324617494fc8021d887674eaf5a7efe7bd04cb58fb"
+  },
+  "source_sha256": "sha256:262e6dafd08467cbde206e324617494fc8021d887674eaf5a7efe7bd04cb58fb",
+  "reader": "text layer present: the model reads it and the pixels"
+}

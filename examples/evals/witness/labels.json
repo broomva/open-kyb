@@ -1,0 +1,1007 @@
+{
+ "version": "witness-labels-v1",
+ "checked": "each crop was rendered at 300 dpi from the packet PDF and read by hand against the page image (L6, 2026-10-25); png_sha256 pins the bytes",
+ "semantics": {
+  "transcribed": "must occur in the transcription (norm containment)",
+  "struck": "must be among the struck values",
+  "handwritten": "must occur in the annotations",
+  "absent": "must not occur anywhere in the response (an invented or another party's value)",
+  "positive": "a probe the production comparator must verify",
+  "negative": "a probe that must never verify (a false accept)",
+  "oracle": "what a perfect witness-v3 response for this crop is: the label in response form, used to validate the eval itself (it must pass; every injected fault must fail)"
+ },
+ "crops": [
+  {
+   "id": "b05-share",
+   "packet": "es-iberia-software",
+   "document": "05_acta_junta_SCAN.pdf",
+   "page": 1,
+   "bbox": [
+    240,
+    680,
+    2320,
+    870
+   ],
+   "category": "amendment",
+   "note": "scan: Lucas Navarro Solís row with strike-through and 'Página 24 — ver nota' handwritten above it",
+   "expect": {
+    "transcribed": [
+     "Lucas Navarro Solís",
+     "2.300",
+     "46%"
+    ],
+    "struck": [
+     "Página 18"
+    ],
+    "handwritten": [
+     "Página 24"
+    ],
+    "absent": [
+     "Página 99",
+     "68%"
+    ]
+   },
+   "probes": [
+    {
+     "id": "b05-share+struck18",
+     "polarity": "positive",
+     "claim": {
+      "type": "identifier",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "folio_mercantil",
+      "value": "Página 18",
+      "excerpt": "Lucas Navarro Solís",
+      "flags": [
+       "struck-through"
+      ]
+     }
+    },
+    {
+     "id": "b05-share+hand24",
+     "polarity": "positive",
+     "claim": {
+      "type": "identifier",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "folio_mercantil",
+      "value": "Página 24",
+      "excerpt": "Lucas Navarro Solís",
+      "flags": [
+       "handwriting"
+      ]
+     }
+    },
+    {
+     "id": "b05-share-18current",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "folio_mercantil",
+      "value": "Página 18",
+      "excerpt": "Lucas Navarro Solís",
+      "flags": []
+     }
+    },
+    {
+     "id": "b05-share-ortega24",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "folio_mercantil",
+      "value": "Página 24",
+      "excerpt": "Lucas Navarro Solís",
+      "flags": []
+     }
+    },
+    {
+     "id": "b05-share-altiplano18",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Inversiones Altiplano, S.A.",
+      "attribute": "folio_mercantil",
+      "value": "Página 18",
+      "excerpt": "Lucas Navarro Solís",
+      "flags": [
+       "struck-through"
+      ]
+     }
+    }
+   ],
+   "oracle": {
+    "crop_id": "b05-share",
+    "transcription": "Lucas Navarro Solís 2.300 46% Página 18 - Página 24 - ver nota *",
+    "readable": true,
+    "reread": {
+     "subject": "Lucas Navarro Solís",
+     "value": "Página 24",
+     "annotations": [
+      "handwritten: Página 24 - ver nota *"
+     ],
+     "struck": [
+      "Página 18"
+     ]
+    }
+   },
+   "png_sha256": "sha256:fd3b0bed42e389de47fe927f89d06f7bfbe57fb1b1e3c2f5317cb8c4fd7f2454"
+  },
+  {
+   "id": "b05-note",
+   "packet": "es-iberia-software",
+   "document": "05_acta_junta_SCAN.pdf",
+   "page": 1,
+   "bbox": [
+    300,
+    750,
+    2300,
+    785
+   ],
+   "category": "marginal",
+   "note": "scan footnote: Cotejado con el original el 28/10/2026 - Registrador: E. Cifuentes",
+   "expect": {
+    "transcribed": [
+     "E. Cifuentes",
+     "28/10/2026"
+    ],
+    "struck": [],
+    "handwritten": [
+     "E. Cifuentes"
+    ],
+    "absent": [
+     "Anselmo"
+    ]
+   },
+   "probes": [
+    {
+     "id": "b05-note+pending",
+     "polarity": "positive",
+     "claim": {
+      "type": "role",
+      "subject": "E. Cifuentes",
+      "attribute": "role",
+      "value": "Registrador",
+      "excerpt": "Registrador: E. Cifuentes",
+      "page": 1
+     }
+    },
+    {
+     "id": "b05-note-99",
+     "polarity": "negative",
+     "claim": {
+      "type": "role",
+      "subject": "E. Cifuentes",
+      "attribute": "role",
+      "value": "Secretario",
+      "excerpt": "Registrador: E. Cifuentes",
+      "flags": []
+     }
+    },
+    {
+     "id": "b05-note-ortega",
+     "polarity": "negative",
+     "claim": {
+      "type": "role",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "role",
+      "value": "Registrador",
+      "excerpt": "Registrador: E. Cifuentes",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "* Cotejado con el original el 28/10/2026 - Registrador: E. Cifuentes",
+    "reread": {
+     "subject": "E. Cifuentes",
+     "value": "Registrador",
+     "annotations": [
+      "E. Cifuentes"
+     ],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:650badd9d7a872750098478e5d94cd9d7ca831e2672a94e8b8c9ba4e134b82b8"
+  },
+  {
+   "id": "b04-navarro",
+   "packet": "es-iberia-software",
+   "document": "04_libro_registro_socios.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    400,
+    1600,
+    450
+   ],
+   "category": "register_row",
+   "note": "row for Lucas Navarro Solís in partners registry",
+   "expect": {
+    "transcribed": [
+     "Lucas Navarro Solís",
+     "46%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Valeria"
+    ]
+   },
+   "probes": [
+    {
+     "id": "b04-navarro+46",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 46
+      },
+      "excerpt": "Lucas Navarro Solís 2.300 46%",
+      "page": 1
+     }
+    },
+    {
+     "id": "b04-navarro-25",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 54
+      },
+      "excerpt": "Lucas Navarro Solís",
+      "flags": []
+     }
+    },
+    {
+     "id": "b04-navarro-ortega46",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 46
+      },
+      "excerpt": "46%",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Lucas Navarro Solís 2.300 46% Adquisición autorizada por acta de constitución.",
+    "reread": {
+     "subject": "Lucas Navarro Solís",
+     "value": "46%",
+     "annotations": [
+      "Página 24"
+     ],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:9191a6ce175b266d7b5e7b107522afc9a82cce7650349aba4c335e78a46181a6"
+  },
+  {
+   "id": "b04-ortega",
+   "packet": "es-iberia-software",
+   "document": "04_libro_registro_socios.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    450,
+    1600,
+    500
+   ],
+   "category": "register_row",
+   "note": "row for Hugo Martínez Sanz in partners registry",
+   "expect": {
+    "transcribed": [
+     "Hugo Martínez Sanz",
+     "54%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Lucas"
+    ]
+   },
+   "probes": [
+    {
+     "id": "b04-ortega+25",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 54
+      },
+      "excerpt": "Hugo Martínez Sanz 2.700 54%",
+      "page": 1
+     }
+    },
+    {
+     "id": "b04-ortega-40",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 46
+      },
+      "excerpt": "Hugo Martínez Sanz",
+      "flags": []
+     }
+    },
+    {
+     "id": "b04-ortega-navarro25",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 54
+      },
+      "excerpt": "54%",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Hugo Martínez Sanz 2.700 54% Adquisición autorizada por acta de constitución.",
+    "reread": {
+     "subject": "Hugo Martínez Sanz",
+     "value": "54%",
+     "annotations": [
+      "Página 24"
+     ],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:e4a6425b2d845d1c5b0a5af3038727585add517ca6782531a55958986c266b3a"
+  },
+  {
+   "id": "b04-altiplano",
+   "packet": "es-iberia-software",
+   "document": "04_libro_registro_socios.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    500,
+    1600,
+    550
+   ],
+   "category": "register_row",
+   "note": "total row in partners registry",
+   "expect": {
+    "transcribed": [
+     "Total",
+     "100%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Lucas"
+    ]
+   },
+   "probes": [
+    {
+     "id": "b04-altiplano+100",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Total",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 100
+      },
+      "excerpt": "Total: 5.000 participaciones sociales ordinarias (100%)."
+     }
+    },
+    {
+     "id": "b04-altiplano-50",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Total",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 50
+      },
+      "excerpt": "Total",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Total: 5.000 participaciones sociales ordinarias (100%).",
+    "reread": {
+     "subject": "Total",
+     "value": "100%",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:461c4f5e87076911e2e4e7bf104c4dc3133fd21533d5d962f37f29cb24a6f214"
+  },
+  {
+   "id": "a03-herrera",
+   "packet": "cl-andes-agro",
+   "document": "03_registro_de_accionistas.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    400,
+    1600,
+    450
+   ],
+   "category": "register_row",
+   "note": "Andres Delgado Vega row in registry of shareholders",
+   "expect": {
+    "transcribed": [
+     "Andrés Delgado Vega",
+     "60,00%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Eduardo"
+    ]
+   },
+   "probes": [
+    {
+     "id": "a03-herrera+64",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Andrés Delgado Vega",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 60
+      },
+      "excerpt": "Andrés Delgado Vega RUT 15.841.903-k 60.000 60,00%",
+      "page": 1
+     }
+    },
+    {
+     "id": "a03-herrera-36",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Andrés Delgado Vega",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 40
+      },
+      "excerpt": "Andrés Delgado Vega",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Andrés Delgado Vega RUT 15.841.903-k 60.000 60,00% 2021-03-14",
+    "reread": {
+     "subject": "Andrés Delgado Vega",
+     "value": "60%",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:99267edec8192b1a9ab5f20aa72424defb7b9d8e1d3d9544fe8af24e03669088"
+  },
+  {
+   "id": "a03-gaviria",
+   "packet": "cl-andes-agro",
+   "document": "03_registro_de_accionistas.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    450,
+    1600,
+    500
+   ],
+   "category": "register_row",
+   "note": "Eduardo Cifuentes row in registry of shareholders",
+   "expect": {
+    "transcribed": [
+     "Eduardo Cifuentes",
+     "40,00%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Andrés"
+    ]
+   },
+   "probes": [
+    {
+     "id": "a03-gaviria+36",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Eduardo Cifuentes",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 40
+      },
+      "excerpt": "Eduardo Cifuentes RUT 14.194.332-9 40.000 40,00%"
+     }
+    },
+    {
+     "id": "a03-gaviria-64",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Eduardo Cifuentes",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 60
+      },
+      "excerpt": "Eduardo Cifuentes",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Eduardo Cifuentes RUT 14.194.332-9 40.000 40,00% 2021-03-14",
+    "reread": {
+     "subject": "Eduardo Cifuentes",
+     "value": "40%",
+     "annotations": [
+      "1980-02-19"
+     ],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:ac73aa7c54718f49884f5eaab60211fc1482409b4f7f8524c361e8b9935a3e49"
+  },
+  {
+   "id": "a02-rows",
+   "packet": "cl-andes-agro",
+   "document": "02_declaracion_jurada_ubo.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    400,
+    1600,
+    500
+   ],
+   "category": "identifiers",
+   "note": "Andres and Eduardo rows in UBO declaration",
+   "expect": {
+    "transcribed": [
+     "Andrés Delgado Vega",
+     "Eduardo Cifuentes"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Valeria"
+    ]
+   },
+   "probes": [
+    {
+     "id": "a02-rows+herrera-dob",
+     "polarity": "positive",
+     "claim": {
+      "type": "date",
+      "subject": "Andrés Delgado Vega",
+      "attribute": "date_of_birth",
+      "value": "1982-11-03",
+      "excerpt": "Andrés Delgado Vega · Chileno · DOB 1982-11-03",
+      "page": 1
+     }
+    },
+    {
+     "id": "a02-rows-herrera-gaviriadob",
+     "polarity": "negative",
+     "claim": {
+      "type": "date",
+      "subject": "Andrés Delgado Vega",
+      "attribute": "date_of_birth",
+      "value": "1980-02-19",
+      "excerpt": "1980-02-19",
+      "flags": []
+     }
+    },
+    {
+     "id": "a02-rows-gaviria-herreraid",
+     "polarity": "negative",
+     "claim": {
+      "type": "date",
+      "subject": "Eduardo Cifuentes",
+      "attribute": "date_of_birth",
+      "value": "1982-11-03",
+      "excerpt": "1982-11-03",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "1. Andrés Delgado Vega · Chileno · DOB 1982-11-03 · 60%\n2. Eduardo Cifuentes · Chileno · DOB 1980-02-19 · 40%",
+    "reread": {
+     "subject": "Andrés Delgado Vega",
+     "value": "1982-11-03",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:4d0b8aeb5a6e744f6712a337ad8acc863a2e2ba0c46c09e35caecf798ce1d9f3"
+  },
+  {
+   "id": "c01-regno",
+   "packet": "sg-strait-capital",
+   "document": "01_acra_bizfile_extract.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    300,
+    1600,
+    350
+   ],
+   "category": "sanctions_identifier",
+   "note": "UEN row in BizFile registry",
+   "expect": {
+    "transcribed": [
+     "202419082K"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "B-8841"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c01-regno+3184920",
+     "polarity": "positive",
+     "claim": {
+      "type": "identifier",
+      "subject": "Strait Capital Pte. Ltd.",
+      "attribute": "uen",
+      "value": "202419082K",
+      "excerpt": "Unique Entity Number (UEN): 202419082K",
+      "page": 1
+     }
+    },
+    {
+     "id": "c01-regno-dmcc",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Strait Capital Pte. Ltd.",
+      "attribute": "uen",
+      "value": "DMCC-417733",
+      "excerpt": "202419082K",
+      "flags": []
+     }
+    },
+    {
+     "id": "c01-regno-swapped",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Strait Capital Pte. Ltd.",
+      "attribute": "uen",
+      "value": "202419028K",
+      "excerpt": "202419082K",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Unique Entity Number (UEN): 202419082K",
+    "reread": {
+     "subject": "Strait Capital Pte. Ltd.",
+     "value": "202419082K",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:85a0db5a077ec04cd36d7f313f75ac045c20474421d510667d46c186ac81fe5d"
+  },
+  {
+   "id": "c02-director",
+   "packet": "sg-strait-capital",
+   "document": "01_acra_bizfile_extract.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    500,
+    1600,
+    600
+   ],
+   "category": "register_row",
+   "note": "Directors list in BizFile registry",
+   "expect": {
+    "transcribed": [
+     "Li Wei",
+     "Tan Boon Hean"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Anselmo"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c02-director+nominee",
+     "polarity": "positive",
+     "claim": {
+      "type": "role",
+      "subject": "Li Wei",
+      "attribute": "role",
+      "value": "Director",
+      "excerpt": "Li Wei | Passport E4419082 | Singaporean",
+      "page": 1
+     }
+    },
+    {
+     "id": "c02-director-paredes",
+     "polarity": "negative",
+     "claim": {
+      "type": "role",
+      "subject": "Sebastián Paredes Vega",
+      "attribute": "role",
+      "value": "Director",
+      "excerpt": "Li Wei",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Li Wei | Passport E4419082 | Singaporean | 2024-04-12\nTan Boon Hean | Passport E3190445 | Singaporean | 2024-04-12",
+    "reread": {
+     "subject": "Li Wei",
+     "value": "Director",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:d8ac784024ef3c6d1f4f95e5ad79b8c9fd1d84a8e87743894f9587f3604b3afc"
+  },
+  {
+   "id": "c02-member",
+   "packet": "sg-strait-capital",
+   "document": "01_acra_bizfile_extract.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    450,
+    1600,
+    500
+   ],
+   "category": "register_row",
+   "note": "Shareholders list in BizFile registry",
+   "expect": {
+    "transcribed": [
+     "Sovereign Trust",
+     "100%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Apex"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c02-member+100",
+     "polarity": "positive",
+     "claim": {
+      "type": "owns",
+      "subject": "Sovereign Trust",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 100
+      },
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS) | 100.000 | 100%",
+      "page": 1
+     }
+    },
+    {
+     "id": "c02-member-apex100",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Li Wei",
+      "attribute": "shareholding",
+      "value": {
+       "pct": 100
+      },
+      "excerpt": "100%",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS) | 100.000 | 100%",
+    "reread": {
+     "subject": "Sovereign Trust",
+     "value": "100%",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:ad757256dc8fbc4c30eea69d30664c3c6542174a7091ddbe7521f83013339a1b"
+  },
+  {
+   "id": "c03-ubo-row",
+   "packet": "sg-strait-capital",
+   "document": "03_declaration_of_ubo.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    400,
+    1600,
+    500
+   ],
+   "category": "pep_identifier",
+   "note": "Li Wei row in UBO declaration",
+   "expect": {
+    "transcribed": [
+     "Li Wei",
+     "1978-05-20"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Valeria"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c03-ubo-row+dob",
+     "polarity": "positive",
+     "claim": {
+      "type": "date",
+      "subject": "Li Wei",
+      "attribute": "date_of_birth",
+      "value": "1978-05-20",
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20",
+      "page": 1
+     }
+    },
+    {
+     "id": "c03-ubo-row-pep0103dob",
+     "polarity": "negative",
+     "claim": {
+      "type": "date",
+      "subject": "Li Wei",
+      "attribute": "date_of_birth",
+      "value": "1958-10-26",
+      "excerpt": "1978-05-20",
+      "flags": []
+     }
+    },
+    {
+     "id": "c03-ubo-row-dobswap",
+     "polarity": "negative",
+     "claim": {
+      "type": "date",
+      "subject": "Li Wei",
+      "attribute": "date_of_birth",
+      "value": "1978-02-05",
+      "excerpt": "1978-05-20",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082 | 100% control",
+    "reread": {
+     "subject": "Li Wei",
+     "value": "1978-05-20",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:f0b183d62c05f113ab791fbb544c648aebc515ffa13848a767cf697d35c692c6"
+  },
+  {
+   "id": "c03-office",
+   "packet": "sg-strait-capital",
+   "document": "03_declaration_of_ubo.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    500,
+    1600,
+    600
+   ],
+   "category": "pep_identifier",
+   "note": "Staffing and portal row in UBO declaration",
+   "expect": {
+    "transcribed": [
+     "straitcapital.sg"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "2015"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c03-office-2015",
+     "polarity": "negative",
+     "claim": {
+      "type": "identifier",
+      "subject": "Strait Capital Pte. Ltd.",
+      "attribute": "website",
+      "value": "https://apex.sg",
+      "excerpt": "straitcapital.sg",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Staffing & Web Presence: 12 marine consultants in Singapore; portal https://straitcapital.sg",
+    "reread": {
+     "subject": "Strait Capital Pte. Ltd.",
+     "value": "https://straitcapital.sg",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:0e0f357c5d98dc9467104e6cc3ca2aed69b8e7eaf6c67720f50451ce7bb6bc84"
+  },
+  {
+   "id": "c04-founder",
+   "packet": "sg-strait-capital",
+   "document": "04_trust_deed_extract.pdf",
+   "page": 1,
+   "bbox": [
+    100,
+    400,
+    1600,
+    500
+   ],
+   "category": "pep_identifier",
+   "note": "Settlor and Beneficiary rows in trust deed",
+   "expect": {
+    "transcribed": [
+     "Li Wei",
+     "100%"
+    ],
+    "struck": [],
+    "handwritten": [],
+    "absent": [
+     "Apex"
+    ]
+   },
+   "probes": [
+    {
+     "id": "c04-founder-passport-swap",
+     "polarity": "negative",
+     "claim": {
+      "type": "owns",
+      "subject": "Li Wei",
+      "attribute": "beneficiary_pct",
+      "value": {
+       "pct": 50
+      },
+      "excerpt": "100%",
+      "flags": []
+     }
+    }
+   ],
+   "oracle": {
+    "transcription": "Settlor: Li Wei\nSole Beneficiary (100%): Li Wei (Singaporean, DOB 1978-05-20).",
+    "reread": {
+     "subject": "Li Wei",
+     "value": "100%",
+     "annotations": [],
+     "struck": []
+    }
+   },
+   "png_sha256": "sha256:2114af861b8b8a25d811299cb0b955518be5ebe2f3c40c93ac8c54ea4d059fd9"
+  }
+ ]
+}

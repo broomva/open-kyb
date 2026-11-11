@@ -1,0 +1,152 @@
+{
+ "version": "support-v1",
+ "note": "support pairs",
+ "pairs": [
+  {
+   "id": "sup-npd-c-true",
+   "predicate": "natural_person_directs_business",
+   "value": true,
+   "evidence": [
+    "Sovereign Trust ... Li Wei ... 100% control",
+    "Li Wei | Passport E4419082"
+   ],
+   "label": "supported",
+   "why": "Li Wei controls Sovereign Trust and directs the company"
+  },
+  {
+   "id": "sup-npd-c-nominee-only",
+   "predicate": "natural_person_directs_business",
+   "value": true,
+   "evidence": [
+    "Tan Boon Hean | Passport E3190445"
+   ],
+   "label": "unsupported",
+   "why": "a nominee director alone does not show a natural person directing"
+  },
+  {
+   "id": "sup-npd-false-with-controller",
+   "predicate": "natural_person_directs_business",
+   "value": false,
+   "evidence": [
+    "Sovereign Trust ... Li Wei ... 100% control"
+   ],
+   "label": "unsupported",
+   "why": "'no natural person directs' contradicts control"
+  },
+  {
+   "id": "sup-poa-b-rfc",
+   "predicate": "doc_is_proof_of_address",
+   "value": true,
+   "evidence": [
+    "Calle de Alcalá 140, Madrid"
+   ],
+   "label": "supported",
+   "why": "tax certificate proof of address"
+  },
+  {
+   "id": "sup-poa-bank-letter",
+   "predicate": "doc_is_proof_of_address",
+   "value": true,
+   "evidence": [
+    "maintains SGD account No. 118-049-2210-1"
+   ],
+   "label": "unsupported",
+   "why": "no address on bank letter"
+  },
+  {
+   "id": "sup-poa-lease-old",
+   "predicate": "doc_is_proof_of_address",
+   "value": true,
+   "evidence": [
+    "Premises: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315"
+   ],
+   "label": "supported",
+   "why": "lease shows operating address"
+  },
+  {
+   "id": "sup-amend-pending-true",
+   "predicate": "amendment_effective",
+   "value": true,
+   "evidence": [
+    "Lucas Navarro recibe 12% extra de Altiplano el 3/8 — pendiente de asentar."
+   ],
+   "label": "unsupported",
+   "why": "pending transfer"
+  },
+  {
+   "id": "sup-amend-pending-false",
+   "predicate": "amendment_effective",
+   "value": false,
+   "evidence": [
+    "Lucas Navarro recibe 12% extra de Altiplano el 3/8 — pendiente de asentar."
+   ],
+   "label": "supported",
+   "why": "pending transfer not in effect"
+  },
+  {
+   "id": "sup-amend-struck",
+   "predicate": "amendment_effective",
+   "value": true,
+   "evidence": [
+    "Lucas Navarro Solís 46% (struck through) · handwritten: Página 24 - ver nota *"
+   ],
+   "label": "unsupported",
+   "why": "handwritten correction"
+  },
+  {
+   "id": "sup-sp-ortega-true",
+   "predicate": "same_party",
+   "value": true,
+   "evidence": [
+    "Lucas Navarro Solís · ES · 1981-06-19",
+    "PEP-0103 Lucas Navarro · MX · 1978-02-12"
+   ],
+   "label": "unsupported",
+   "why": "conflicting identifiers"
+  },
+  {
+   "id": "sup-sp-ortega-false",
+   "predicate": "same_party",
+   "value": false,
+   "evidence": [
+    "Lucas Navarro Solís · ES · 1981-06-19",
+    "PEP-0103 Lucas Navarro · MX · 1978-02-12"
+   ],
+   "label": "supported",
+   "why": "identifiers conflict"
+  },
+  {
+   "id": "sup-sp-paredes-true",
+   "predicate": "same_party",
+   "value": true,
+   "evidence": [
+    "Li Wei · Singaporean · 1978-05-20 · Passport: E4419082",
+    "PEP-0101 Li Wei · SG · 1978-05-20"
+   ],
+   "label": "supported",
+   "why": "exact match"
+  },
+  {
+   "id": "sup-sp-paredes-false",
+   "predicate": "same_party",
+   "value": false,
+   "evidence": [
+    "Li Wei · Singaporean · 1978-05-20 · Passport: E4419082",
+    "PEP-0101 Li Wei · SG · 1978-05-20"
+   ],
+   "label": "unsupported",
+   "why": "exact match"
+  },
+  {
+   "id": "sup-sp-nbtf-true",
+   "predicate": "same_party",
+   "value": true,
+   "evidence": [
+    "Unique Entity Number (UEN): 202419082K",
+    "SAN-0001 Strait Capital FZE · AE · DMCC-417733"
+   ],
+   "label": "unsupported",
+   "why": "different registry"
+  }
+ ]
+}

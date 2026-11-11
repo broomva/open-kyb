@@ -1,0 +1,1236 @@
+{
+  "contracts_version": "b4-v1",
+  "case": "sg-strait-capital",
+  "run": "r1",
+  "as_of": "2026-10-25",
+  "fact_set_hash": "sha256:2bb5241ed4e2b5f8936d4f61e5e82edf096d50b1d7b9732fe4357db986e47a69",
+  "applicant": "e-strait-capital",
+  "entities": [
+    {
+      "entity_id": "e-strait-capital",
+      "kind": "company",
+      "names": [
+        "Strait Capital Pte. Ltd."
+      ],
+      "identifiers": {
+        "reg_no": [
+          "202419082K"
+        ]
+      },
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [
+        "SG"
+      ],
+      "incorporated": [
+        "2024-04-12"
+      ],
+      "regions": [],
+      "addresses": [
+        {
+          "kind": "registered",
+          "text": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+          "mass_registration": {
+            "state": "unknown",
+            "evidence": [
+              {
+                "claim_id": "c-C01-05",
+                "doc": "01",
+                "page": 1,
+                "verified": true
+              }
+            ],
+            "note": "an agent is named, but the address is not shown to be the agent's"
+          },
+          "evidence": [
+            {
+              "claim_id": "c-C01-05",
+              "doc": "01",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "kind": "operating",
+          "text": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+          "mass_registration": {
+            "state": "unknown",
+            "evidence": [
+              {
+                "claim_id": "c-C05-03",
+                "doc": "05",
+                "page": 1,
+                "verified": true
+              }
+            ],
+            "note": "an agent is named, but the address is not shown to be the agent's"
+          },
+          "evidence": [
+            {
+              "claim_id": "c-C05-03",
+              "doc": "05",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "claim_id": "c-C01-01",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-02",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-02_name",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-03",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-03_reg",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-04",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-12",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-06",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-01",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-emp",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-web",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C05-01",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C05-02",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C05-03",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C06-01",
+          "doc": "06",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C06-02",
+          "doc": "06",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e-sovereign-trust",
+      "kind": "trust",
+      "names": [
+        "Sovereign Trust"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [
+        "WS"
+      ],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [
+        {
+          "kind": "unknown",
+          "text": "Beach Road, Lot 18, Apia, Samoa",
+          "mass_registration": {
+            "state": "absent",
+            "evidence": [
+              {
+                "claim_id": "c-C02-05",
+                "doc": "01",
+                "page": 1,
+                "verified": true
+              }
+            ],
+            "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+          },
+          "evidence": [
+            {
+              "claim_id": "c-C02-05",
+              "doc": "01",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "claim_id": "c-C01-06_trust",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-07_presence",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C02-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-03_pres",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-03",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C04-01",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C04-01_jur",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C04-03",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e-li-wei",
+      "kind": "person",
+      "names": [
+        "Li Wei"
+      ],
+      "identifiers": {
+        "passport": [
+          "E4419082"
+        ]
+      },
+      "nationality": [
+        "SG"
+      ],
+      "dob": [
+        "1978-05-20"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+        {
+          "claim_id": "c-C01-08",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-05_owns",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-05",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-07",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-08",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-pep",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C04-05",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C05-02",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e-tan-boon-hean",
+      "kind": "person",
+      "names": [
+        "Tan Boon Hean"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+        {
+          "claim_id": "c-C01-09",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e-pacific-trustees",
+      "kind": "company",
+      "names": [
+        "Pacific Trustees Ltd"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+        {
+          "claim_id": "c-C04-07",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "holdings": [
+    {
+      "holding_id": "h-1",
+      "owner": "e-sovereign-trust",
+      "owned": "e-strait-capital",
+      "pct": "100",
+      "shares": 100000,
+      "as_of": "2026-10-15",
+      "status": "current",
+      "evidence": [
+        {
+          "claim_id": "c-C01-06_trust",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "holding_id": "h-2",
+      "owner": "e-li-wei",
+      "owned": "e-strait-capital",
+      "pct": "100",
+      "shares": null,
+      "as_of": "2026-10-15",
+      "status": "current",
+      "evidence": [
+        {
+          "claim_id": "c-C03-05_owns",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role_id": "r-1",
+      "holder": "e-li-wei",
+      "of": "e-strait-capital",
+      "role": "director",
+      "evidence": [
+        {
+          "claim_id": "c-C01-08",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "role_id": "r-2",
+      "holder": "e-tan-boon-hean",
+      "of": "e-strait-capital",
+      "role": "director",
+      "evidence": [
+        {
+          "claim_id": "c-C01-09",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "role_id": "r-3",
+      "holder": "e-pacific-trustees",
+      "of": "e-strait-capital",
+      "role": "registered_agent",
+      "evidence": [
+        {
+          "claim_id": "c-C04-07",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "role_id": "r-4",
+      "holder": "e-li-wei",
+      "of": "e-strait-capital",
+      "role": "legal_rep",
+      "evidence": [
+        {
+          "claim_id": "c-C05-02",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "doc_type": "incorporation",
+      "issued": "2026-10-15",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+        {
+          "claim_id": "c-C01-01",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C01-12",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "doc_type": "ubo_declaration",
+      "issued": "2026-10-15",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+        {
+          "claim_id": "c-C03-01",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "doc_type": "other",
+      "issued": "2024-03-20",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+        {
+          "claim_id": "c-C04-01",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+        }
+      ]
+    },
+    {
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "doc_type": "lease",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+    },
+    {
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "doc_type": "bank_reference",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+    }
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "x-1",
+      "subject": "e-sovereign-trust",
+      "attribute": "owner_presence",
+      "values": [
+        {
+          "value": "100",
+          "evidence": [
+            {
+              "claim_id": "c-C01-06_trust",
+              "doc": "01",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "value": "absent",
+          "evidence": [
+            {
+              "claim_id": "c-C03-05_owns",
+              "doc": "03",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "context": []
+    },
+    {
+      "conflict_id": "x-2",
+      "subject": "e-li-wei",
+      "attribute": "owner_presence",
+      "values": [
+        {
+          "value": "absent",
+          "evidence": [
+            {
+              "claim_id": "c-C01-06_trust",
+              "doc": "01",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "value": "100",
+          "evidence": [
+            {
+              "claim_id": "c-C03-05_owns",
+              "doc": "03",
+              "page": 1,
+              "verified": true
+            }
+          ]
+        }
+      ],
+      "context": []
+    }
+  ],
+  "operations": {
+    "distinct_operating_address": {
+      "state": "absent",
+      "evidence": [
+        {
+          "claim_id": "c-C01-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C05-03",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+        }
+      ],
+      "note": "no separate operating address beyond the registered one: the packet gives only operating, registered address(es)"
+    },
+    "bank_reference_or_financials": {
+      "state": "present",
+      "evidence": [
+        {
+          "claim_id": "c-C06-01",
+          "doc": "06",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C06-02",
+          "doc": "06",
+          "page": 1,
+          "verified": true
+        }
+      ],
+      "note": "a bank reference or financial statement about the applicant is in the packet"
+    },
+    "employees_or_website": {
+      "state": "present",
+      "evidence": [
+        {
+          "claim_id": "c-C03-emp",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        },
+        {
+          "claim_id": "c-C03-web",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+        }
+      ],
+      "note": "employees or a website are stated for the applicant"
+    }
+  },
+  "corporate_object": [
+    "Maritime vessel chartering and logistics investment (CIIU 50111)"
+  ],
+  "evidence": [
+    {
+      "evidence_id": "c-C01-01",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Date of Report: 2026-10-15",
+      "verified": true,
+      "field": "document[01].issued"
+    },
+    {
+      "evidence_id": "c-C01-02",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "SINGAPORE BUSINESS PROFILE - Strait Capital Pte. Ltd.",
+      "verified": true,
+      "field": "entity[e-strait-capital].jurisdiction"
+    },
+    {
+      "evidence_id": "c-C01-02_name",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Company Name: Strait Capital Pte. Ltd.",
+      "verified": true,
+      "field": "entity[e-strait-capital].names"
+    },
+    {
+      "evidence_id": "c-C01-03",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Unique Entity Number (UEN): 202419082K",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C01-03_reg",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Unique Entity Number (UEN): 202419082K",
+      "verified": true,
+      "field": "entity[e-strait-capital].identifiers.reg_no"
+    },
+    {
+      "evidence_id": "c-C01-04",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Incorporation Date: 2024-04-12",
+      "verified": true,
+      "field": "entity[e-strait-capital].incorporated"
+    },
+    {
+      "evidence_id": "c-C01-12",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Status: Live Company",
+      "verified": true,
+      "field": "document[01].stated_validity_days"
+    },
+    {
+      "evidence_id": "c-C01-05",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Registered Address: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+      "verified": true,
+      "field": "entity[e-strait-capital].addresses.registered"
+    },
+    {
+      "evidence_id": "c-C01-06",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Principal Activity: Maritime vessel chartering and logistics investment (CIIU 50111).",
+      "verified": true,
+      "field": "corporate_object"
+    },
+    {
+      "evidence_id": "c-C01-06_trust",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS) | 100.000 | 100%",
+      "verified": true,
+      "field": "holding[h-1].pct"
+    },
+    {
+      "evidence_id": "c-C01-07_presence",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C01-08",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Li Wei | Passport E4419082 | Singaporean",
+      "verified": true,
+      "field": "role[r-1]"
+    },
+    {
+      "evidence_id": "c-C01-09",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Tan Boon Hean | Passport E3190445 | Singaporean",
+      "verified": true,
+      "field": "role[r-2]"
+    },
+    {
+      "evidence_id": "c-C02-05",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].addresses.unknown"
+    },
+    {
+      "evidence_id": "c-C03-01",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Declaration Date: 2026-10-15",
+      "verified": true,
+      "field": "document[03].issued"
+    },
+    {
+      "evidence_id": "c-C03-03_pres",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C03-03",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust (Samoa, WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].jurisdiction"
+    },
+    {
+      "evidence_id": "c-C03-05_owns",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082 | 100% control",
+      "verified": true,
+      "field": "holding[h-2].pct"
+    },
+    {
+      "evidence_id": "c-C03-05",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Li Wei | Singaporean",
+      "verified": true,
+      "field": "entity[e-li-wei].nationality"
+    },
+    {
+      "evidence_id": "c-C03-07",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20",
+      "verified": true,
+      "field": "entity[e-li-wei].dob"
+    },
+    {
+      "evidence_id": "c-C03-08",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082",
+      "verified": true,
+      "field": "entity[e-li-wei].identifiers.passport"
+    },
+    {
+      "evidence_id": "c-C03-pep",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Mr. Li Wei was a Member of Parliament in Singapore until he stepped down on November 15, 2023",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C03-emp",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Staffing & Web Presence: 12 marine consultants",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C03-web",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "portal https://straitcapital.sg",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C04-01",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Date of Trust Deed: 2024-03-20",
+      "verified": true,
+      "field": "document[04].issued"
+    },
+    {
+      "evidence_id": "c-C04-01_jur",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Jurisdiction: Samoa (WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].jurisdiction"
+    },
+    {
+      "evidence_id": "c-C04-03",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C04-05",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Settlor: Li Wei",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C04-07",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Trustee: Pacific Trustees Ltd (WS)",
+      "verified": true,
+      "field": "role[r-3]"
+    },
+    {
+      "evidence_id": "c-C05-01",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Signed: Strait Capital Pte. Ltd. - 2024-04-20",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C05-02",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Represented by its authorized signatory: Li Wei.",
+      "verified": true,
+      "field": "role[r-4]"
+    },
+    {
+      "evidence_id": "c-C05-03",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Premises: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315.",
+      "verified": true,
+      "field": "entity[e-strait-capital].addresses.operating"
+    },
+    {
+      "evidence_id": "c-C06-01",
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "Date: 2026-10-10",
+      "verified": true,
+      "field": null
+    },
+    {
+      "evidence_id": "c-C06-02",
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "excerpt": "maintains SGD account No. 118-049-2210-1",
+      "verified": true,
+      "field": null
+    }
+  ],
+  "unverified": [],
+  "verification": [
+    {
+      "doc": "01",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+    },
+    {
+      "doc": "03",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+    },
+    {
+      "doc": "04",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+    },
+    {
+      "doc": "05",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+    },
+    {
+      "doc": "06",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+    }
+  ]
+}

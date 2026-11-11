@@ -1,0 +1,8 @@
+{
+  "name": "open-kyb",
+  "version": "0.3.0",
+  "description": "open-kyb reviewer: install, then ask the agent to review a packet. Reader subagents read one document each, a blind cross-family witness verifies every quote, and deterministic code decides.",
+  "author": {
+    "name": "Carlos D. Escobar-Valbuena"
+  }
+}

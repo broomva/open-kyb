@@ -1,0 +1,1533 @@
+{
+  "source": "generated from truth.json for case es-iberia-software",
+  "case": "es-iberia-software",
+  "run": "r1",
+  "as_of": "2026-10-25",
+  "documents": [
+    {
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "claims": [
+        {
+          "claim_id": "c-B01-01",
+          "type": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "fecha_de_expedicion",
+          "value": "2026-10-15",
+          "excerpt": "Fecha de emisión: 2026-10-15",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-02",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "legal_name",
+          "value": "IBERIA SOFTWARE S.L.",
+          "excerpt": "Denominación social: IBERIA SOFTWARE S.L.",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-03",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "reg_no",
+          "value": "B-88412091",
+          "excerpt": "NIF: B-88412091",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-03_nif",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "nif",
+          "value": "B-88412091",
+          "excerpt": "NIF: B-88412091",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-04",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "jurisdiction",
+          "value": "ES",
+          "excerpt": "REGISTRO DE SOCIEDADES DE MADRID",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-05",
+          "type": "address",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "domicilio_social",
+          "value": "Paseo de la Castellana 95, Madrid",
+          "excerpt": "Domicilio social: Paseo de la Castellana 95, Madrid",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-07",
+          "type": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "fecha_de_constitucion",
+          "value": "2020-04-12",
+          "excerpt": "Constitución: Escritura pública autorizada el 2020-04-12",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-12",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "stated_validity",
+          "value": "ACTIVA",
+          "excerpt": "Estado de la matrícula: ACTIVA",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-06",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "actividad_principal",
+          "value": "Desarrollo de aplicaciones y consultoría tecnológica",
+          "excerpt": "Objeto social: Desarrollo de aplicaciones y consultoría tecnológica.",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-08",
+          "type": "identifier",
+          "subject": "HUGO MARTÍNEZ SANZ",
+          "attribute": "role",
+          "value": "Administrador único",
+          "excerpt": "Administrador único: HUGO MARTÍNEZ SANZ - NIF 44.190.822-D",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B01-10",
+          "type": "owns",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 100,
+            "shares": 50000
+          },
+          "excerpt": "Hugo Martínez Sanz (100%)",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        }
+      ],
+      "assurance": "W2",
+      "isolated": true,
+      "verdicts": {
+        "c-B01-01": false,
+        "c-B01-02": true,
+        "c-B01-03": false,
+        "c-B01-04": true,
+        "c-B01-05": true,
+        "c-B01-06": true,
+        "c-B01-07": true,
+        "c-B01-08": true,
+        "c-B01-09": true,
+        "c-B01-10": true,
+        "c-B01-11": true,
+        "c-B01-12": true,
+        "c-B01-13": false,
+        "c-B01-14": true,
+        "c-B01-15": true,
+        "c-B01-16": true,
+        "c-B01-17": true,
+        "c-B01-18": false,
+        "c-B01-19": true,
+        "c-B01-20": true,
+        "c-B01-21": false,
+        "c-B01-22": false,
+        "c-B01-23": true,
+        "c-B01-24": true
+      },
+      "findings": [
+        "coverage_incomplete"
+      ],
+      "coverage": [
+        {
+          "block_id": "01-p1-b5",
+          "kind": "date",
+          "subject": "ESCRITURA PÚBLICA No. 48.223",
+          "attribute": "issue date",
+          "value": "2020-04-12",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "identifier",
+          "subject": "LUCAS NAVARRO SOLÍS",
+          "attribute": "date of birth",
+          "value": "1981-06-19",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "identifier",
+          "subject": "LUCAS NAVARRO SOLÍS",
+          "attribute": "RFC",
+          "value": "B-88412091",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "address",
+          "subject": "LUCAS NAVARRO SOLÍS",
+          "attribute": "domicilio",
+          "value": "Av. Av. Insurgentes Sur 1602, Piso 22, Col. Nápoles, CDMX",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "identifier",
+          "subject": "LUCAS NAVARRO MÉNDEZ",
+          "attribute": "date of birth",
+          "value": "1981-06-19",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "identifier",
+          "subject": "LUCAS NAVARRO MÉNDEZ",
+          "attribute": "RFC",
+          "value": "B-88412091",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b6",
+          "kind": "address",
+          "subject": "LUCAS NAVARRO MÉNDEZ",
+          "attribute": "domicilio",
+          "value": "mismo domicilio",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b7",
+          "kind": "corporate_activity",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Objeto social",
+          "value": "la tenencia y gestión de participaciones en otras sociedades",
+          "status": "conflict"
+        },
+        {
+          "block_id": "01-p1-b7",
+          "kind": "corporate_activity",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Objeto social",
+          "value": "la prestación de servicios de asesoría y gestión a sociedades vinculadas",
+          "status": "conflict"
+        },
+        {
+          "block_id": "01-p1-b7",
+          "kind": "corporate_activity",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Objeto social",
+          "value": "la inversión en bienes inmuebles",
+          "status": "conflict"
+        },
+        {
+          "block_id": "01-p1-b8",
+          "kind": "address",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Domicilio social",
+          "value": "Ciudad de México",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b8",
+          "kind": "stated_validity",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Duración",
+          "value": "99 años",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b11",
+          "kind": "ownership",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Accionista",
+          "value": "Lucas Navarro Solís",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b11",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Acciones",
+          "value": "3.400",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b11",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "%",
+          "value": "68%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b12",
+          "kind": "ownership",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Accionista",
+          "value": "Lucas Navarro Méndez",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b12",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Acciones",
+          "value": "1.600",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b12",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "%",
+          "value": "32%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b13",
+          "kind": "role",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Presidente",
+          "value": "Lucas Navarro Solís",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b13",
+          "kind": "role",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Secretario",
+          "value": "Lucas Navarro Méndez",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "01-p1-b14",
+          "kind": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "Folio Mercantil Digital",
+          "value": "N-2017101543",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b14",
+          "kind": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "inscrito el",
+          "value": "2020-04-12",
+          "status": "matched"
+        },
+        {
+          "block_id": "01-p1-b7",
+          "kind": "claim",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "activity",
+          "value": "la tenencia y gestión de participaciones en otras sociedades; la prestación de servicios de asesoría y gestión a sociedades vinculadas; y la inversión en bienes inmuebles.",
+          "status": "conflict"
+        }
+      ]
+    },
+    {
+      "doc": "02",
+      "document_name": "02_certificado_nif.pdf",
+      "claims": [
+        {
+          "claim_id": "c-B02-01",
+          "type": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "document_date",
+          "value": "2026-05-10",
+          "excerpt": "Fecha de emisión: 2026-05-10",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B02-05",
+          "type": "address",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "domicilio_fiscal",
+          "value": "Calle de Alcalá 140, Madrid",
+          "excerpt": "Domicilio fiscal: Calle de Alcalá 140, Madrid",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        }
+      ],
+      "assurance": "W2",
+      "isolated": true,
+      "verdicts": {
+        "c-B02-01": false,
+        "c-B02-02": true,
+        "c-B02-03": true,
+        "c-B02-04": true,
+        "c-B02-05": true,
+        "c-B02-06": true,
+        "c-B02-07": true,
+        "c-B02-08": true
+      },
+      "findings": [
+        "coverage_incomplete"
+      ],
+      "coverage": [
+        {
+          "block_id": "02-p1-b5",
+          "kind": "date",
+          "subject": "CONSTANCIA DE SITUACIÓN FISCAL",
+          "attribute": "Fecha",
+          "value": "2026-10-25",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "02-p1-b6",
+          "kind": "identifier",
+          "subject": "IBERIA SOFTWARE SL",
+          "attribute": "RFC",
+          "value": "MCH180416AB1",
+          "status": "matched"
+        },
+        {
+          "block_id": "02-p1-b7",
+          "kind": "date",
+          "subject": "IBERIA SOFTWARE SL",
+          "attribute": "Fecha de inicio de operaciones",
+          "value": "2020-04-12",
+          "status": "matched"
+        },
+        {
+          "block_id": "02-p1-b8",
+          "kind": "address",
+          "subject": "IBERIA SOFTWARE SL",
+          "attribute": "Domicilio fiscal",
+          "value": "Av. Av. Insurgentes Sur 1602, Piso 14, Col. Del Valle, C.P. 03100, Ciudad de México",
+          "status": "matched"
+        },
+        {
+          "block_id": "02-p1-b9",
+          "kind": "corporate_activity",
+          "subject": "IBERIA SOFTWARE SL",
+          "attribute": "Actividad económica",
+          "value": "Servicios de gestión empresarial (tenedora de acciones).",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "claims": [
+        {
+          "claim_id": "c-B03-01",
+          "type": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "document_date",
+          "value": "2026-10-10",
+          "excerpt": "Fecha de declaración: 2026-10-10",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-03",
+          "type": "owns",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 100
+          },
+          "excerpt": "1. Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D · 100%",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-04",
+          "type": "identifier",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "nationality",
+          "value": "Español",
+          "excerpt": "Hugo Martínez Sanz · Español",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-05",
+          "type": "date",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "date_of_birth",
+          "value": "1981-06-19",
+          "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-06",
+          "type": "identifier",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "nif",
+          "value": "44.190.822-D",
+          "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-07",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "employees",
+          "value": 15,
+          "excerpt": "Operaciones: 15 empleados",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B03-08",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "website",
+          "value": "https://iberiasoftware.es",
+          "excerpt": "sitio web corporativo https://iberiasoftware.es",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        }
+      ],
+      "assurance": "W2",
+      "isolated": true,
+      "verdicts": {
+        "c-B03-01": true,
+        "c-B03-02": true,
+        "c-B03-03": false,
+        "c-B03-04": true,
+        "c-B03-05": true,
+        "c-B03-06": true,
+        "c-B03-07": true,
+        "c-B03-08": true,
+        "c-B03-09": true,
+        "c-B03-10": true,
+        "c-B03-11": true,
+        "c-B03-12": false,
+        "c-B03-13": false,
+        "c-B03-14": false,
+        "c-B03-15": false,
+        "c-B03-16": true,
+        "c-B03-17": true
+      },
+      "findings": [
+        "coverage_incomplete"
+      ],
+      "coverage": [
+        {
+          "block_id": "03-p1-b2",
+          "kind": "identifier",
+          "subject": "Iberia Software, S.L.",
+          "attribute": "RFC",
+          "value": "MCH180416AB1",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b2",
+          "kind": "date",
+          "subject": "Iberia Software, S.L.",
+          "attribute": "Fecha",
+          "value": "2026-10-25",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "03-p1-b3",
+          "kind": "role",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "carácter",
+          "value": "Presidente del Consejo",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b5",
+          "kind": "jurisdiction",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Nacionalidad",
+          "value": "Mexicana",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b5",
+          "kind": "identifier",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Fecha de nacimiento",
+          "value": "1981-06-19",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b5",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Participación",
+          "value": "46%",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b6",
+          "kind": "jurisdiction",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Nacionalidad",
+          "value": "Mexicana",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b6",
+          "kind": "identifier",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Fecha de nacimiento",
+          "value": "1981-06-19",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b6",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Participación",
+          "value": "26%",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b7",
+          "kind": "jurisdiction",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "Nacionalidad",
+          "value": "Belice",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "03-p1-b7",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "Participación",
+          "value": "28%",
+          "status": "matched"
+        },
+        {
+          "block_id": "03-p1-b8",
+          "kind": "jurisdiction",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "constituida en",
+          "value": "Belice",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "03-p1-b12",
+          "kind": "role",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "cargo",
+          "value": "Presidente del Consejo de Administración",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "claims": [
+        {
+          "claim_id": "c-B04-01",
+          "type": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "document_date",
+          "value": "2026-06-10",
+          "excerpt": "Fecha actualización: 2026-06-10",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B04-02",
+          "type": "owns",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 46,
+            "shares": 2300
+          },
+          "excerpt": "Lucas Navarro Solís 2.300 46%",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B04-03",
+          "type": "identifier",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "nationality",
+          "value": "ES",
+          "excerpt": "Lucas Navarro Solís",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B04-04",
+          "type": "date",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "date_of_birth",
+          "value": "1981-06-19",
+          "excerpt": "Lucas Navarro Solís",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B04-05",
+          "type": "owns",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 54,
+            "shares": 2700
+          },
+          "excerpt": "Hugo Martínez Sanz 2.700 54%",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "b1",
+          "linked_blocks": [],
+          "source": "text_layer",
+          "confidence": 0.9
+        }
+      ],
+      "assurance": "W2",
+      "isolated": true,
+      "verdicts": {
+        "c-B04-01": false,
+        "c-B04-02": false,
+        "c-B04-03": false,
+        "c-B04-04": true,
+        "c-B04-05": false,
+        "c-B04-06": true,
+        "c-B04-07": false,
+        "c-B04-08": false,
+        "c-B04-09": false
+      },
+      "findings": [
+        "layer_vs_pixel",
+        "layer_vs_pixel",
+        "layer_vs_pixel",
+        "coverage_incomplete"
+      ],
+      "coverage": [
+        {
+          "block_id": "04-p1-b1",
+          "kind": "ownership",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "company_name",
+          "value": "IBERIA SOFTWARE S.L.",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b2",
+          "kind": "ownership",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "company_name",
+          "value": "IBERIA SOFTWARE S.L.",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b3",
+          "kind": "date",
+          "subject": "Asiento 8",
+          "attribute": "Fecha del asiento",
+          "value": "2026-10-25",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b5",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Acciones Serie A",
+          "value": "2.300",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b5",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "%",
+          "value": "46%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b5",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "Observaciones",
+          "value": "Transmisión de 1.100 acciones a Inversiones Altiplano, S.A. (asiento 4)",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b6",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Acciones Serie A",
+          "value": "1.300",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b6",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "%",
+          "value": "26%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b6",
+          "kind": "ownership",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "Observaciones",
+          "value": "Transmisión de 300 acciones a Inversiones Altiplano, S.A. (asiento 4)",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b7",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "Acciones Serie A",
+          "value": "1.400",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b7",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "%",
+          "value": "28%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b7",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "Observaciones",
+          "value": "Adquisición por compraventa, 2026-10-25",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b8",
+          "kind": "ownership",
+          "subject": "Total",
+          "attribute": "Acciones Serie A",
+          "value": "5.000",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "04-p1-b8",
+          "kind": "ownership",
+          "subject": "Total",
+          "attribute": "%",
+          "value": "100%",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "claims": [
+        {
+          "claim_id": "c-B05-01",
+          "type": "identifier",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "legal_name",
+          "value": "IBERIA SOFTWARE S.L.",
+          "excerpt": "ACTA DE LA JUNTA GENERAL EXTRAORDINARIA DE SOCIOS",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b1",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-02",
+          "type": "date",
+          "subject": "Acta de Junta",
+          "attribute": "meeting_date",
+          "value": "2026-10-10",
+          "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b2",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-03",
+          "type": "address",
+          "subject": "Acta de Junta",
+          "attribute": "place_of_meeting",
+          "value": "Madrid",
+          "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b2",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-04",
+          "type": "role",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "board_role",
+          "value": "Presidente",
+          "excerpt": "Presidente de la Junta: Hugo Martínez Sanz",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b3",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-05",
+          "type": "role",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "board_role",
+          "value": "Administrador Único",
+          "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b3",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-06",
+          "type": "transfer",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "share_transfer_ratified",
+          "value": "Lucas Navarro Solís 46%",
+          "excerpt": "Lucas Navarro Solís 46%",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b5",
+          "linked_blocks": [
+            "05-p1-b9"
+          ],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-07",
+          "type": "owns",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 46
+          },
+          "excerpt": "Lucas Navarro Solís 46%",
+          "flags": [
+            "struck-through"
+          ],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b5",
+          "linked_blocks": [
+            "05-p1-b9"
+          ],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-08",
+          "type": "owns",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 68
+          },
+          "excerpt": "Lucas Navarro Solís",
+          "flags": [
+            "handwriting"
+          ],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b5",
+          "linked_blocks": [
+            "05-p1-b9"
+          ],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-09",
+          "type": "owns",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 54
+          },
+          "excerpt": "Hugo Martínez Sanz (100%)",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b5",
+          "linked_blocks": [
+            "05-p1-b9"
+          ],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-10",
+          "type": "owns",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "shareholding",
+          "value": {
+            "pct": 100
+          },
+          "excerpt": "Hugo Martínez Sanz (100%)",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b5",
+          "linked_blocks": [
+            "05-p1-b9"
+          ],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-11",
+          "type": "corporate_activity",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "authorization",
+          "value": "Se ratifica la vigencia del cargo de Administrador Único.",
+          "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b6",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-12",
+          "type": "transfer",
+          "subject": "L. Navarro",
+          "attribute": "pending_share_acquisition",
+          "value": "L. Navarro recibe 12% extra de Altiplano el 3/8 — pendiente de asentar.",
+          "excerpt": "Página 24 - ver nota *",
+          "flags": [
+            "handwriting"
+          ],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b9",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-13",
+          "type": "role",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "signatory",
+          "value": "Presidente",
+          "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b10",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        },
+        {
+          "claim_id": "c-B05-14",
+          "type": "role",
+          "subject": "Hugo Martínez Sanz",
+          "attribute": "signatory",
+          "value": "Socio Único",
+          "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+          "flags": [],
+          "page": 1,
+          "bbox": [
+            100,
+            100,
+            1600,
+            200
+          ],
+          "block_id": "05-p1-b11",
+          "linked_blocks": [],
+          "source": "pixels",
+          "confidence": 0.9
+        }
+      ],
+      "assurance": "W2",
+      "isolated": true,
+      "verdicts": {
+        "c-B05-01": false,
+        "c-B05-02": false,
+        "c-B05-03": false,
+        "c-B05-04": true,
+        "c-B05-05": true,
+        "c-B05-06": false,
+        "c-B05-07": true,
+        "c-B05-08": false,
+        "c-B05-09": true,
+        "c-B05-10": true,
+        "c-B05-11": false,
+        "c-B05-12": true,
+        "c-B05-13": true,
+        "c-B05-14": true
+      },
+      "findings": [
+        "coverage_incomplete"
+      ],
+      "coverage": [
+        {
+          "block_id": "05-p1-b1",
+          "kind": "role",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "board_of_directors",
+          "value": "CONSEJO DE ADMINISTRACIÓN",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b2",
+          "kind": "address",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "meeting_location",
+          "value": "Ciudad de México",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b2",
+          "kind": "date",
+          "subject": "IBERIA SOFTWARE S.L.",
+          "attribute": "meeting_date",
+          "value": "2026-08-19",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b3",
+          "kind": "role",
+          "subject": "Lucas Navarro Solís",
+          "attribute": "title",
+          "value": "Presidente",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b3",
+          "kind": "role",
+          "subject": "Lucas Navarro Méndez",
+          "attribute": "title",
+          "value": "Secretaria",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "shares",
+          "value": "1.400 acciones",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "ownership",
+          "subject": "L. Navarro Solís",
+          "attribute": "percentage",
+          "value": "46%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "amendment",
+          "subject": "L. Navarro Solís",
+          "attribute": "percentage",
+          "value": "46%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "amendment",
+          "subject": "L. Navarro Solís",
+          "attribute": "percentage",
+          "value": "68%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "ownership",
+          "subject": "V. Ortega Méndez",
+          "attribute": "percentage",
+          "value": "26%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "ownership",
+          "subject": "Inversiones Altiplano, S.A.",
+          "attribute": "percentage",
+          "value": "28%",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b6",
+          "kind": "role",
+          "subject": "Presidente",
+          "attribute": "authority",
+          "value": "operar cuentas bancarias de la sociedad en Estados Unidos",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b9",
+          "kind": "amendment",
+          "subject": "L. Navarro",
+          "attribute": "ownership_change",
+          "value": "recibe 12% extra de Altiplano el 3/8 - pendiente de asentar",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b10",
+          "kind": "role",
+          "subject": "L. Navarro V.",
+          "attribute": "title",
+          "value": "Presidente",
+          "status": "uncovered"
+        },
+        {
+          "block_id": "05-p1-b11",
+          "kind": "role",
+          "subject": "E. Ortega D.",
+          "attribute": "title",
+          "value": "Secretaria",
+          "status": "uncovered"
+        }
+      ]
+    }
+  ]
+}

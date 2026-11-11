@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PreToolUse": [{"matcher": "*", "hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" pre --source plugin", "onFailure": "block"}]}],
+    "SessionStart": [{"hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" session-start --source plugin", "onFailure": "block"}]}],
+    "SubagentStart": [{"hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" subagent-start --source plugin", "onFailure": "block"}]}],
+    "SubagentStop": [{"hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" subagent-stop --source plugin"}]}],
+    "PostToolUse": [{"matcher": "*", "hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" post --source plugin", "onFailure": "block"}]}],
+    "Stop": [{"hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" stop --source plugin"}]}],
+    "SessionEnd": [{"hooks": [
+      {"type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/kyb-hook\" ingest-session --source plugin"}]}]
+  }
+}

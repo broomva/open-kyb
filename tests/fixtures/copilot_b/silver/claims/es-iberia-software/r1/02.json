@@ -1,0 +1,43 @@
+{
+  "produced_by": "system-test-copilot_b",
+  "claims": [
+    {
+      "claim_id": "c-B02-01",
+      "type": "date",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "document_date",
+      "value": "2026-05-10",
+      "excerpt": "Fecha de emisión: 2026-05-10",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B02-05",
+      "type": "address",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "domicilio_fiscal",
+      "value": "Calle de Alcalá 140, Madrid",
+      "excerpt": "Domicilio fiscal: Calle de Alcalá 140, Madrid",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

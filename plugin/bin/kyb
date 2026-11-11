@@ -1,0 +1,9 @@
+#!/bin/sh
+# Run the kyb CLI: a local checkout when KYB_DEV_REPO is set, otherwise the published repo via uvx.
+# Hooks and the MCP server never depend on `kyb` already being on PATH.
+# kyb needs Python 3.15 (spec). uv (>= 0.13) fetches it when the machine has none; `--python` is
+# explicit because a uvx tool environment ignores a checkout's .python-version.
+if [ -n "$KYB_DEV_REPO" ]; then
+  exec uv run --quiet --python 3.15 --project "$KYB_DEV_REPO" kyb "$@"
+fi
+exec uvx --quiet --python 3.15 --from "${KYB_SOURCE:-git+https://github.com/broomva/open-kyb@main}" kyb "$@"

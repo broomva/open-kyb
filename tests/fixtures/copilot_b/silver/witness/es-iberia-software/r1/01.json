@@ -1,0 +1,195 @@
+{
+  "document_id": "es-iberia-software/01",
+  "model": "gemini-3.8-flash",
+  "request": "sha256:dummy",
+  "comparator": "norm-v1",
+  "binding": "bind-v5",
+  "saw_claim": false,
+  "saw_text_layer": false,
+  "crop_ids": "opaque positional",
+  "assurance": "W2",
+  "assurance_reason": "",
+  "reader_model": "claude-opus-5-5",
+  "reader_family": "anthropic",
+  "witness_family": "google",
+  "results": [
+    {
+      "claim_id": "c-B01-01",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-02",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-03",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-03_nif",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-04",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-05",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-07",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-12",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-06",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-08",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B01-10",
+      "verified": true
+    }
+  ],
+  "crops": [
+    {
+      "crop_id": "k1",
+      "for": "c-B01-01",
+      "transcription": "Fecha de emisión: 2026-10-15",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "2026-10-15",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k2",
+      "for": "c-B01-02",
+      "transcription": "Denominación social: IBERIA SOFTWARE S.L.",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "IBERIA SOFTWARE S.L.",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k3",
+      "for": "c-B01-03",
+      "transcription": "NIF: B-88412091",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "B-88412091",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k4",
+      "for": "c-B01-03_nif",
+      "transcription": "NIF: B-88412091",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "B-88412091",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k5",
+      "for": "c-B01-04",
+      "transcription": "REGISTRO DE SOCIEDADES DE MADRID",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "ES",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k6",
+      "for": "c-B01-05",
+      "transcription": "Domicilio social: Paseo de la Castellana 95, Madrid",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "Paseo de la Castellana 95, Madrid",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k7",
+      "for": "c-B01-07",
+      "transcription": "Constitución: Escritura pública autorizada el 2020-04-12",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "2020-04-12",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k8",
+      "for": "c-B01-12",
+      "transcription": "Estado de la matrícula: ACTIVA",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "ACTIVA",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k9",
+      "for": "c-B01-06",
+      "transcription": "Objeto social: Desarrollo de aplicaciones y consultoría tecnológica.",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "Desarrollo de aplicaciones y consultoría tecnológica",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k10",
+      "for": "c-B01-08",
+      "transcription": "Administrador único: HUGO MARTÍNEZ SANZ - NIF 44.190.822-D",
+      "readable": true,
+      "reread": {
+        "subject": "HUGO MARTÍNEZ SANZ",
+        "value": "Administrador único",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k11",
+      "for": "c-B01-10",
+      "transcription": "Hugo Martínez Sanz (100%)",
+      "readable": true,
+      "reread": {
+        "subject": "Hugo Martínez Sanz",
+        "value": "{'pct': 100, 'shares': 50000}",
+        "annotations": [],
+        "struck": []
+      }
+    }
+  ]
+}

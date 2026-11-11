@@ -1,0 +1,140 @@
+{
+  "produced_by": "system-test-copilot_b",
+  "claims": [
+    {
+      "claim_id": "c-B03-01",
+      "type": "date",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "document_date",
+      "value": "2026-10-10",
+      "excerpt": "Fecha de declaración: 2026-10-10",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-03",
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 100
+      },
+      "excerpt": "1. Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D · 100%",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-04",
+      "type": "identifier",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "nationality",
+      "value": "Español",
+      "excerpt": "Hugo Martínez Sanz · Español",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-05",
+      "type": "date",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "date_of_birth",
+      "value": "1981-06-19",
+      "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-06",
+      "type": "identifier",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "nif",
+      "value": "44.190.822-D",
+      "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-07",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "employees",
+      "value": 15,
+      "excerpt": "Operaciones: 15 empleados",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B03-08",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "website",
+      "value": "https://iberiasoftware.es",
+      "excerpt": "sitio web corporativo https://iberiasoftware.es",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

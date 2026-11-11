@@ -1,0 +1,407 @@
+{
+  "source": "generated from truth.json for case cl-andes-agro",
+  "case": "cl-andes-agro",
+  "run": "r1",
+  "as_of": "2026-10-25",
+  "documents": [
+    {
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "claims": [
+        [
+          "c-A01-01",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "fecha_de_expedicion",
+          "2026-09-07",
+          "Fecha de expedición: 2026-09-07",
+          [],
+          ""
+        ],
+        [
+          "c-A01-02",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "legal_name",
+          "ANDES AGROPECUARIA SpA",
+          "Razón social: ANDES AGROPECUARIA SpA",
+          [],
+          ""
+        ],
+        [
+          "c-A01-03",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "rut",
+          "76.419.082-1",
+          "RUT: 76.419.082-1",
+          [],
+          ""
+        ],
+        [
+          "c-A01-05",
+          "address",
+          "ANDES AGROPECUARIA SpA",
+          "domicilio_principal",
+          "Santiago, Chile",
+          "Domicilio principal: Santiago, Chile",
+          [],
+          ""
+        ],
+        [
+          "c-A01-05_comercial",
+          "address",
+          "ANDES AGROPECUARIA SpA",
+          "direccion_comercial",
+          "Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+          "Dirección comercial: Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+          [],
+          ""
+        ],
+        [
+          "c-A01-07",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "fecha_de_constitucion",
+          "2021-03-14",
+          "Constitución: Por escritura pública del 2021-03-14",
+          [],
+          ""
+        ],
+        [
+          "c-A01-12",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "stated_validity",
+          "VIGENTE",
+          "Estado de la sociedad: VIGENTE",
+          [],
+          ""
+        ],
+        [
+          "c-A01-06",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "actividad_principal",
+          "Cultivo de hortalizas, legumbres y tubérculos (CIIU 011300)",
+          "Objeto social: Cultivo de hortalizas, legumbres y tubérculos (CIIU 011300).",
+          [],
+          ""
+        ],
+        [
+          "c-A01-08",
+          "identifier",
+          "ANDRES DELGADO VEGA",
+          "role",
+          "Representante Autorizado Principal",
+          "Representante Autorizado principal: ANDRES DELGADO VEGA - RUT 15.841.903-k",
+          [],
+          ""
+        ],
+        [
+          "c-A01-09",
+          "identifier",
+          "EDUARDO CIFUENTES",
+          "role",
+          "Director Suplente",
+          "Director suplente: EDUARDO CIFUENTES - RUT 14.194.332-9",
+          [],
+          ""
+        ],
+        [
+          "c-A01-10",
+          "owns",
+          "Andrés Delgado Vega",
+          "shareholding",
+          {
+            "pct": 60,
+            "shares": 60000
+          },
+          "Andrés Delgado Vega (60%)",
+          [],
+          ""
+        ],
+        [
+          "c-A01-11",
+          "owns",
+          "Eduardo Cifuentes",
+          "shareholding",
+          {
+            "pct": 40,
+            "shares": 40000
+          },
+          "Eduardo Cifuentes (40%)",
+          [],
+          ""
+        ]
+      ],
+      "issued": "2026-10-05"
+    },
+    {
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "claims": [
+        [
+          "c-A02-01",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "document_date",
+          "2026-10-12",
+          "Fecha de declaración: 2026-10-12",
+          [],
+          ""
+        ],
+        [
+          "c-A02-03",
+          "owns",
+          "Andrés Delgado Vega",
+          "shareholding",
+          {
+            "pct": 60
+          },
+          "1. Andrés Delgado Vega · Chileno · DOB 1982-11-03 · RUT 15.841.903-k · 60%",
+          [],
+          ""
+        ],
+        [
+          "c-A02-04",
+          "identifier",
+          "Andrés Delgado Vega",
+          "nationality",
+          "Chileno",
+          "Andrés Delgado Vega · Chileno",
+          [],
+          ""
+        ],
+        [
+          "c-A02-05",
+          "date",
+          "Andrés Delgado Vega",
+          "date_of_birth",
+          "1982-11-03",
+          "Andrés Delgado Vega · Chileno · DOB 1982-11-03",
+          [],
+          ""
+        ],
+        [
+          "c-A02-06",
+          "identifier",
+          "Andrés Delgado Vega",
+          "rut",
+          "15.841.903-k",
+          "Andrés Delgado Vega · Chileno · DOB 1982-11-03 · RUT 15.841.903-k",
+          [],
+          ""
+        ],
+        [
+          "c-A02-07",
+          "owns",
+          "Eduardo Cifuentes",
+          "shareholding",
+          {
+            "pct": 40
+          },
+          "2. Eduardo Cifuentes · Chileno · DOB 1980-02-19 · RUT 14.194.332-9 · 40%",
+          [],
+          ""
+        ],
+        [
+          "c-A02-08",
+          "identifier",
+          "Eduardo Cifuentes",
+          "nationality",
+          "Chileno",
+          "Eduardo Cifuentes · Chileno",
+          [],
+          ""
+        ],
+        [
+          "c-A02-09",
+          "date",
+          "Eduardo Cifuentes",
+          "date_of_birth",
+          "1980-02-19",
+          "Eduardo Cifuentes · Chileno · DOB 1980-02-19",
+          [],
+          ""
+        ],
+        [
+          "c-A02-10",
+          "identifier",
+          "Eduardo Cifuentes",
+          "rut",
+          "14.194.332-9",
+          "Eduardo Cifuentes · Chileno · DOB 1980-02-19 · RUT 14.194.332-9",
+          [],
+          ""
+        ],
+        [
+          "c-A02-12",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "signed_on",
+          "2026-08-25",
+          "Firmado: Andrés Delgado Vega - Representante Autorizado - Fecha: 2026-10-12",
+          [],
+          ""
+        ],
+        [
+          "c-A02-13",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "signed",
+          true,
+          "Firmado: Andrés Delgado Vega",
+          [],
+          "Andrés Delgado Vega"
+        ]
+      ],
+      "signed_on": "2026-08-25",
+      "signed": true,
+      "verdicts": {
+        "c-A02-01": true,
+        "c-A02-03": true,
+        "c-A02-04": true,
+        "c-A02-05": true,
+        "c-A02-06": true,
+        "c-A02-07": true,
+        "c-A02-08": true,
+        "c-A02-09": true,
+        "c-A02-10": true,
+        "c-A02-12": true,
+        "c-A02-13": true
+      }
+    },
+    {
+      "doc": "03",
+      "document_name": "03_registro_de_accionistas.pdf",
+      "claims": [
+        [
+          "c-A03-01",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "document_date",
+          "2024-06-15",
+          "Página No. 1 · Última actualización: 2024-06-15",
+          [],
+          ""
+        ],
+        [
+          "c-A03-02",
+          "owns",
+          "Andrés Delgado Vega",
+          "shareholding",
+          {
+            "pct": 60,
+            "shares": 60000
+          },
+          "Andrés Delgado Vega RUT 15.841.903-k 60.000 60,00%",
+          [],
+          ""
+        ],
+        [
+          "c-A03-03",
+          "owns",
+          "Eduardo Cifuentes",
+          "shareholding",
+          {
+            "pct": 40,
+            "shares": 40000
+          },
+          "Eduardo Cifuentes RUT 14.194.332-9 40.000 40,00%",
+          [],
+          ""
+        ]
+      ],
+      "issued": "2024-06-15",
+      "verdicts": {
+        "c-A03-01": true,
+        "c-A03-02": true,
+        "c-A03-03": true
+      }
+    },
+    {
+      "doc": "04",
+      "document_name": "04_boleta_de_suministro_SCAN.pdf",
+      "claims": [
+        [
+          "c-A04-03",
+          "address",
+          "ANDES AGROPECUARIA SpA",
+          "utility_address",
+          "Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+          "Dirección de suministro: Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+          [],
+          ""
+        ],
+        [
+          "c-A04-04",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "document_date",
+          "2026-08-11",
+          "Fecha de emisión: 2026-08-11",
+          [],
+          ""
+        ]
+      ],
+      "issued": "2026-08-11"
+    },
+    {
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "claims": [
+        [
+          "c-A05-01",
+          "date",
+          "ANDES AGROPECUARIA SpA",
+          "bank_reference_date",
+          "2026-10-05",
+          "Santiago, 2026-10-05",
+          [],
+          ""
+        ],
+        [
+          "c-A05-02",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "bank_reference",
+          "Banco de Chile No. 00-482-9104",
+          "mantiene la cuenta corriente No. 00-482-9104 activa desde abril de 2021",
+          [],
+          ""
+        ],
+        [
+          "c-A05-03",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "employees",
+          45,
+          "Operaciones y Web: 45 empleados",
+          [],
+          ""
+        ],
+        [
+          "c-A05-04",
+          "identifier",
+          "ANDES AGROPECUARIA SpA",
+          "website",
+          "https://andesindustrial.cl",
+          "sitio web corporativo https://andesindustrial.cl",
+          [],
+          ""
+        ]
+      ]
+    }
+  ],
+  "claim_fields": [
+    "claim_id",
+    "type",
+    "subject",
+    "attribute",
+    "value",
+    "excerpt",
+    "flags",
+    "object"
+  ]
+}

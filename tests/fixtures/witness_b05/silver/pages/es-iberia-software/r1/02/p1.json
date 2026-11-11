@@ -1,0 +1,13 @@
+{
+  "document_id": "es-iberia-software/02_certificado_nif.pdf",
+  "page": 1,
+  "text_layer": "MINISTERIO DE HACIENDA Y FUNCIÓN PÚBLICA\nAGENCIA ESTATAL DE ADMINISTRACIÓN TRIBUTARIA\nFecha de emisión: 2026-05-10\nDenominación: IBERIA SOFTWARE S.L.\nNIF: B-88412091\nDomicilio fiscal: Calle de Alcalá 140, Madrid\nEstado tributario: ACTIVO\n\n\f",
+  "words": 31,
+  "render": {
+    "png": "p1.png",
+    "dpi": 300,
+    "sha256": "sha256:886859f99f53175610698703e0e0166b97dbaa3f46252128fcf8ff7dae1fcd91"
+  },
+  "source_sha256": "sha256:886859f99f53175610698703e0e0166b97dbaa3f46252128fcf8ff7dae1fcd91",
+  "reader": "text layer present: the model reads it and the pixels"
+}

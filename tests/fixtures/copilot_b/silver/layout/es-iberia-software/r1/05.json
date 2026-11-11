@@ -1,0 +1,129 @@
+{
+  "document_id": "es-iberia-software/05",
+  "doc_sha256": "sha256:262e6dafd08467cbde206e324617494fc8021d887674eaf5a7efe7bd04cb58fb",
+  "model": "gemini-3.1-pro-preview",
+  "pages": [
+    {
+      "page": 1,
+      "page_hash": "sha256:262e6dafd08467cbde206e324617494fc8021d887674eaf5a7efe7bd04cb58fb",
+      "size_px": [
+        2550,
+        3300
+      ],
+      "blocks": [
+        {
+          "block_id": "05-p1-b1",
+          "kind": "title",
+          "bbox": [
+            263,
+            238,
+            2282,
+            370
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b2",
+          "kind": "text",
+          "bbox": [
+            263,
+            389,
+            938,
+            439
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b3",
+          "kind": "text",
+          "bbox": [
+            260,
+            485,
+            2009,
+            551
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b5",
+          "kind": "ownership",
+          "bbox": [
+            252,
+            693,
+            2305,
+            855
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b6",
+          "kind": "text",
+          "bbox": [
+            250,
+            904,
+            2292,
+            1000
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b9",
+          "kind": "text",
+          "bbox": [
+            275,
+            1195,
+            2226,
+            1280
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b10",
+          "kind": "text",
+          "bbox": [
+            237,
+            1320,
+            908,
+            1495
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        },
+        {
+          "block_id": "05-p1-b11",
+          "kind": "text",
+          "bbox": [
+            1242,
+            1340,
+            1912,
+            1521
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[project]
+name = "open-kyb-infra"
+version = "0.1.0"
+description = "AWS CDK app for the open-kyb KYB service (ARCHITECTURE §4.6). Synth and assertions only; nothing is deployed."
+requires-python = ">=3.15"
+dependencies = [
+  "aws-cdk-lib>=2.170",
+  "constructs>=10",
+  "cdk-nag>=2.30",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

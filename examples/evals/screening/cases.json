@@ -1,0 +1,263 @@
+{
+ "version": "screening-v1",
+ "watchlist": "examples/policy/watchlists.json (2026-11-01)",
+ "note": "spec: compare fuzzy (L2), the agent's same_party, and Jev on recall, precision and false clears (a 'same' pair not raised). 'different' pairs may still raise SCR-02 review; what they must not do is corroborate (SCR-01).",
+ "pairs": [
+  {
+   "id": "scr-c-near-miss",
+   "category": "near_miss",
+   "party": {
+    "name": "Strait Capital Pte. Ltd.",
+    "kind": "company",
+    "jurisdiction": "VG",
+    "reg_no": "202419082K"
+   },
+   "entry": "SAN-0001",
+   "label": "different",
+   "why": "C's own near miss: JW 0.86–0.93 with conflicting reg_no and jurisdiction (spec); SCR-02 review, not a hit"
+  },
+  {
+   "id": "scr-alias-exact",
+   "category": "alias",
+   "party": {
+    "name": "Strait Maritime",
+    "kind": "company",
+    "jurisdiction": "AE",
+    "reg_no": "DMCC-417733"
+   },
+   "entry": "SAN-0001",
+   "label": "same",
+   "why": "an exact alias with the same registration number"
+  },
+  {
+   "id": "scr-alias-long",
+   "category": "alias",
+   "party": {
+    "name": "Strait Trading Free Zone Establishment",
+    "kind": "company",
+    "jurisdiction": "AE"
+   },
+   "entry": "SAN-0001",
+   "label": "same",
+   "why": "an expanded alias ('Est.' → 'Establishment')"
+  },
+  {
+   "id": "scr-translit-ar",
+   "category": "transliteration",
+   "party": {
+    "name": "Tarek Al Mansour",
+    "kind": "person",
+    "nationality": "SY",
+    "dob": "1975-04-17"
+   },
+   "entry": "SAN-0004",
+   "label": "same",
+   "why": "a transliteration of Tariq Al-Mansoor with matching nationality and DOB"
+  },
+  {
+   "id": "scr-translit-ru",
+   "category": "transliteration",
+   "party": {
+    "name": "Dimitri Volkoff",
+    "kind": "person",
+    "nationality": "RU",
+    "dob": "1968-07-21"
+   },
+   "entry": "SAN-0002",
+   "label": "same",
+   "why": "the listed alias spelling"
+  },
+  {
+   "id": "scr-translit-ru2",
+   "category": "transliteration",
+   "party": {
+    "name": "Dmitri Volkov",
+    "kind": "person",
+    "nationality": "RU",
+    "dob": "1968-07-21"
+   },
+   "entry": "SAN-0002",
+   "label": "same",
+   "why": "k → c transliteration"
+  },
+  {
+   "id": "scr-reorder-ru",
+   "category": "reorder",
+   "party": {
+    "name": "Volkov, Dimitri",
+    "kind": "person",
+    "nationality": "RU",
+    "dob": "1968-07-21"
+   },
+   "entry": "SAN-0002",
+   "label": "same",
+   "why": "surname-first order"
+  },
+  {
+   "id": "scr-reorder-pep",
+   "category": "reorder",
+   "party": {
+    "name": "Wei, Li",
+    "kind": "person",
+    "nationality": "SG",
+    "dob": "1978-05-20"
+   },
+   "entry": "PEP-0101",
+   "label": "same",
+   "why": "surname-first, accents kept"
+  },
+  {
+   "id": "scr-accents-pep",
+   "category": "transliteration",
+   "party": {
+    "name": "Li Wei",
+    "kind": "person",
+    "nationality": "SG",
+    "dob": "1978-05-20"
+   },
+   "entry": "PEP-0101",
+   "label": "same",
+   "why": "accents dropped (a listed alias)"
+  },
+  {
+   "id": "scr-initial-pep",
+   "category": "alias",
+   "party": {
+    "name": "L. Wei",
+    "kind": "person",
+    "nationality": "SG"
+   },
+   "entry": "PEP-0101",
+   "label": "same",
+   "why": "an initial plus surname (a listed alias)"
+  },
+  {
+   "id": "scr-format-reg",
+   "category": "format_shifted_identifier",
+   "party": {
+    "name": "Grupo Fluvial Austral, S.A.",
+    "kind": "company",
+    "jurisdiction": "PA",
+    "reg_no": "155-704-112"
+   },
+   "entry": "SAN-0003",
+   "label": "same",
+   "why": "a true hit whose registration number is formatted with dashes"
+  },
+  {
+   "id": "scr-format-reg2",
+   "category": "format_shifted_identifier",
+   "party": {
+    "name": "Fluvial Austral S.A.",
+    "kind": "company",
+    "jurisdiction": "PA",
+    "reg_no": "RUC 172260845"
+   },
+   "entry": "SAN-0003",
+   "label": "same",
+   "why": "the alias with a prefixed identifier"
+  },
+  {
+   "id": "scr-format-dob",
+   "category": "format_shifted_identifier",
+   "party": {
+    "name": "Tariq Almansoor",
+    "kind": "person",
+    "nationality": "SY",
+    "dob": "02/11/1975"
+   },
+   "entry": "SAN-0004",
+   "label": "same",
+   "why": "DOB in day-first format"
+  },
+  {
+   "id": "scr-b-ortega",
+   "category": "near_miss",
+   "party": {
+    "name": "Lucas Navarro Solís",
+    "kind": "person",
+    "nationality": "MX",
+    "dob": "1981-06-19"
+   },
+   "entry": "PEP-0103",
+   "label": "different",
+   "why": "B's screening note: name-only similarity with conflicting nationality and DOB (spec)"
+  },
+  {
+   "id": "scr-volkovic",
+   "category": "near_miss",
+   "party": {
+    "name": "Dimitri Volković",
+    "kind": "person",
+    "nationality": "RS",
+    "dob": "1990-07-01"
+   },
+   "entry": "SAN-0002",
+   "label": "different",
+   "why": "a different person with a similar name, conflicting nationality and DOB"
+  },
+  {
+   "id": "scr-delta-other",
+   "category": "near_miss",
+   "party": {
+    "name": "Delta Navegación Andes S.A.S.",
+    "kind": "company",
+    "jurisdiction": "CO",
+    "reg_no": "900111222"
+   },
+   "entry": "SAN-0003",
+   "label": "different",
+   "why": "a shared word only, different registry"
+  },
+  {
+   "id": "scr-morales-alias",
+   "category": "alias",
+   "party": {
+    "name": "Héctor M. Ibarra",
+    "kind": "person",
+    "nationality": "MX",
+    "dob": "1962-06-09"
+   },
+   "entry": "PEP-0102",
+   "label": "same",
+   "why": "the listed alias of a serving PEP"
+  },
+  {
+   "id": "scr-morales-other",
+   "category": "near_miss",
+   "party": {
+    "name": "Héctor Morales Ríos",
+    "kind": "person",
+    "nationality": "MX",
+    "dob": "1985-05-05"
+   },
+   "entry": "PEP-0102",
+   "label": "different",
+   "why": "one surname differs, different DOB"
+  },
+  {
+   "id": "scr-homoglyph",
+   "category": "transliteration",
+   "party": {
+    "name": "Mеrlion Mаritime FZE",
+    "kind": "company",
+    "jurisdiction": "AE"
+   },
+   "entry": "SAN-0001",
+   "label": "same",
+   "why": "Cyrillic homoglyphs in the listed name"
+  },
+  {
+   "id": "scr-spacing",
+   "category": "transliteration",
+   "party": {
+    "name": "STRAIT  TRADING  F.Z.E.",
+    "kind": "company",
+    "jurisdiction": "AE"
+   },
+   "entry": "SAN-0001",
+   "label": "same",
+   "why": "case, spacing and punctuation variants"
+  }
+ ]
+}

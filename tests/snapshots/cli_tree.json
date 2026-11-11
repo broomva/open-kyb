@@ -1,0 +1,394 @@
+{
+  "kyb": {
+    "help": "open-kyb KYB reviewer",
+    "args": [
+      "--workspace/-w VALUE default=."
+    ],
+    "group": true
+  },
+  "kyb init": {
+    "help": "materialise a tenant workspace from the template",
+    "args": [
+      "<path>",
+      "--tenant VALUE required",
+      "--policy VALUE required",
+      "--force FLAG",
+      "--officer VALUE"
+    ],
+    "group": false
+  },
+  "kyb ingest": {
+    "help": "copy a packet into bronze and freeze as_of",
+    "args": [
+      "<packet>",
+      "--as-of VALUE required",
+      "--case VALUE"
+    ],
+    "group": false
+  },
+  "kyb pages": {
+    "help": "step 2: render pages and capture text layers for a run",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--new-run FLAG"
+    ],
+    "group": false
+  },
+  "kyb layout": {
+    "help": "layout_pages: the claim-blind layout pass (the witness)",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--witness VALUE choices=auto|live|replay default=auto"
+    ],
+    "group": false
+  },
+  "kyb review": {
+    "help": "kyb-review workflow state",
+    "args": [
+      "<case>",
+      "--status FLAG required"
+    ],
+    "group": false
+  },
+  "kyb read": {
+    "help": "reading (spec)",
+    "args": [],
+    "group": true
+  },
+  "kyb read plan": {
+    "help": "the reader work order (needs pages and layout)",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--doc VALUE"
+    ],
+    "group": false
+  },
+  "kyb claims": {
+    "help": "claims (spec)",
+    "args": [],
+    "group": true
+  },
+  "kyb claims submit": {
+    "help": "read_document: submit one document's claims (JSON file)",
+    "args": [
+      "<case>",
+      "--doc VALUE required",
+      "--file VALUE required",
+      "--run VALUE"
+    ],
+    "group": false
+  },
+  "kyb claims verify": {
+    "help": "verify_quotes: witness every claim from pixels (blind)",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--witness VALUE choices=auto|live|replay default=auto"
+    ],
+    "group": false
+  },
+  "kyb audit": {
+    "help": "audit chain",
+    "args": [],
+    "group": true
+  },
+  "kyb audit verify": {
+    "help": "",
+    "args": [],
+    "group": false
+  },
+  "kyb audit append-hook": {
+    "help": "PostToolUse hook: append the tool call to the chain",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb guard": {
+    "help": "harness hooks",
+    "args": [],
+    "group": true
+  },
+  "kyb guard pre": {
+    "help": "",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb guard stop": {
+    "help": "",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb guard session-start": {
+    "help": "",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb guard subagent-start": {
+    "help": "",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb guard subagent-stop": {
+    "help": "",
+    "args": [
+      "--source VALUE choices=|plugin|workspace default="
+    ],
+    "group": false
+  },
+  "kyb facts": {
+    "help": "derive_facts: verified claims → FactSet (gold/facts/<case>/<run>.json)",
+    "args": [
+      "<case>",
+      "--run VALUE"
+    ],
+    "group": false
+  },
+  "kyb screen": {
+    "help": "screen: FactSet + watchlist → ScreeningResult (gold/screening/<case>/<run>.json)",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--watchlist VALUE"
+    ],
+    "group": false
+  },
+  "kyb verify": {
+    "help": "run the eval suites, write the scorecard; non-zero on a blocking failure",
+    "args": [
+      "--live FLAG",
+      "--strict FLAG",
+      "--suite VALUE",
+      "--out VALUE",
+      "--rebuild-crops FLAG"
+    ],
+    "group": false
+  },
+  "kyb queue": {
+    "help": "review_queue: unsigned recommendations, MANUAL_REVIEW first, oldest first",
+    "args": [
+      "--case VALUE",
+      "--include-archived FLAG"
+    ],
+    "group": false
+  },
+  "kyb sign": {
+    "help": "sign_decision: assent to a recommendation, or override it (officer only)",
+    "args": [
+      "<decision_id>",
+      "<verdict>",
+      "--officer VALUE required",
+      "--status VALUE",
+      "--rationale VALUE default="
+    ],
+    "group": false
+  },
+  "kyb override": {
+    "help": "override: sign a different status than the recommendation, with a rationale",
+    "args": [
+      "<decision_id>",
+      "--officer VALUE required",
+      "--status VALUE required",
+      "--rationale VALUE required"
+    ],
+    "group": false
+  },
+  "kyb officer": {
+    "help": "officers who may sign (spec)",
+    "args": [],
+    "group": true
+  },
+  "kyb officer enroll": {
+    "help": "enrol an officer; the token is shown once",
+    "args": [
+      "<officer>",
+      "--by VALUE"
+    ],
+    "group": false
+  },
+  "kyb ask": {
+    "help": "ask: the verified evidence bundle for a question (facts, then snippets)",
+    "args": [
+      "<case>",
+      "<question>",
+      "--run VALUE",
+      "--witness VALUE choices=auto|live|replay default=auto"
+    ],
+    "group": false
+  },
+  "kyb answer": {
+    "help": "record_answer: check structured statements (JSON file), render the answer",
+    "args": [
+      "<case>",
+      "<question>",
+      "--file VALUE required",
+      "--run VALUE"
+    ],
+    "group": false
+  },
+  "kyb harness": {
+    "help": "harness session capture (agent-driven-review §5)",
+    "args": [],
+    "group": true
+  },
+  "kyb harness ingest-session": {
+    "help": "display check: flag what a session showed beyond rendered answers",
+    "args": [
+      "--transcript VALUE",
+      "--session VALUE"
+    ],
+    "group": false
+  },
+  "kyb decide": {
+    "help": "Compose the recorded predicates and emit a pending-signature KYBDecision.",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--profile VALUE"
+    ],
+    "group": false
+  },
+  "kyb run": {
+    "help": "Build code predicates and the isolated model-predicate work order.",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--facts-fixture VALUE",
+      "--screening-fixture VALUE"
+    ],
+    "group": false
+  },
+  "kyb loop": {
+    "help": "evidence loop (issue)",
+    "args": [],
+    "group": true
+  },
+  "kyb loop inspect": {
+    "help": "inspect_loop: read-only evidence loop inspection",
+    "args": [
+      "<case>",
+      "--run VALUE"
+    ],
+    "group": false
+  },
+  "kyb loop plan": {
+    "help": "plan_loop: run the planner and record an immutable plan",
+    "args": [
+      "<case>",
+      "--run VALUE",
+      "--previous-plan VALUE",
+      "--max-attempts VALUE",
+      "--max-elapsed-seconds VALUE"
+    ],
+    "group": false
+  },
+  "kyb loop repair": {
+    "help": "start_loop_repair: idempotently allocate or start a repair run",
+    "args": [
+      "<case>",
+      "--plan VALUE required"
+    ],
+    "group": false
+  },
+  "kyb dashboard": {
+    "help": "Open the case dashboard or inspect/prepare a case-bound chat request.",
+    "args": [
+      "--case VALUE",
+      "--run VALUE",
+      "--open-browser FLAG"
+    ],
+    "group": true
+  },
+  "kyb dashboard snapshot": {
+    "help": "Read the dashboard's typed case/context/activity snapshot.",
+    "args": [
+      "--case VALUE",
+      "--run VALUE"
+    ],
+    "group": false
+  },
+  "kyb dashboard request-retry": {
+    "help": "Save a retry request only; never start a run or sign.",
+    "args": [
+      "<case>",
+      "--run VALUE required",
+      "--snapshot VALUE required",
+      "--max-attempts VALUE default=2",
+      "--max-elapsed-seconds VALUE default=900",
+      "--workspace-id VALUE"
+    ],
+    "group": false
+  },
+  "kyb dashboard handoff": {
+    "help": "Revalidate a recorded retry and read its allocation receipt.",
+    "args": [
+      "<case>",
+      "<plan_id>",
+      "--workspace-id VALUE"
+    ],
+    "group": false
+  },
+  "kyb dashboard intent": {
+    "help": "Compose a case-bound question/work request for the officer's chat.",
+    "args": [
+      "<case>",
+      "--workspace-id VALUE required",
+      "--kind VALUE required choices=archive_case|continue_review|question|restore_case|review_recommendation",
+      "--run VALUE",
+      "--question VALUE default=",
+      "--snapshot-id VALUE",
+      "--case-state-hash VALUE"
+    ],
+    "group": false
+  },
+  "kyb dashboard archive": {
+    "help": "After chat confirmation, archive from active queues; keep all history.",
+    "args": [
+      "<case>",
+      "--workspace-id VALUE required",
+      "--expected-event-hash VALUE"
+    ],
+    "group": false
+  },
+  "kyb dashboard restore": {
+    "help": "After chat confirmation, restore to active queues; starts no work.",
+    "args": [
+      "<case>",
+      "--workspace-id VALUE required",
+      "--expected-event-hash VALUE required"
+    ],
+    "group": false
+  },
+  "kyb policy": {
+    "help": "propose and apply policy changes",
+    "args": [],
+    "group": true
+  },
+  "kyb policy propose": {
+    "help": "propose_policy: validate a complete new policy text and record it",
+    "args": [
+      "--file VALUE required"
+    ],
+    "group": false
+  },
+  "kyb policy apply": {
+    "help": "apply_policy as an officer, in their own terminal (an agent uses MCP apply_policy)",
+    "args": [
+      "<proposal_id>",
+      "--expected-current-hash VALUE required",
+      "--officer VALUE required"
+    ],
+    "group": false
+  }
+}

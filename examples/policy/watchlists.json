@@ -1,0 +1,102 @@
+{
+  "version": "2026-11-01",
+  "sanctions": [
+    {
+      "id": "SAN-0001",
+      "name": "Strait Capital FZE",
+      "aliases": [
+        "Strait Maritime",
+        "Strait Maritime Free Zone Est."
+      ],
+      "type": "entity",
+      "jurisdiction": "AE",
+      "registration_number": "DMCC-417733",
+      "program": "OFAC SDN"
+    },
+    {
+      "id": "SAN-0002",
+      "name": "Dimitri Volkov",
+      "aliases": [
+        "Dimitri Volkoff"
+      ],
+      "type": "individual",
+      "nationality": "RU",
+      "dob": "1968-07-21",
+      "program": "EU Consolidated"
+    },
+    {
+      "id": "SAN-0003",
+      "name": "Iberia Fluvial Austral S.A.",
+      "aliases": [
+        "Fluvial Austral",
+        "Fluvial Austral S.A."
+      ],
+      "type": "entity",
+      "jurisdiction": "PA",
+      "registration_number": "172260845",
+      "program": "OFAC SDN"
+    },
+    {
+      "id": "SAN-0004",
+      "name": "Tariq Al-Mansoor",
+      "aliases": [
+        "Tareq Al Mansoor",
+        "T. Al-Mansoor"
+      ],
+      "type": "individual",
+      "nationality": "SY",
+      "dob": "1975-04-17",
+      "program": "UN Consolidated"
+    }
+  ],
+  "pep": [
+    {
+      "id": "PEP-0101",
+      "name": "Li Wei",
+      "aliases": [
+        "Li Wei",
+        "L. Wei"
+      ],
+      "nationality": "SG",
+      "dob": "1978-05-20",
+      "position": "Member of Parliament, Republic of Singapore",
+      "in_office": false,
+      "left_office": "2024-08-14"
+    },
+    {
+      "id": "PEP-0102",
+      "name": "Héctor Morales Ibarra",
+      "aliases": [
+        "Héctor M. Ibarra"
+      ],
+      "nationality": "MX",
+      "dob": "1962-06-09",
+      "position": "Federal Deputy, Chamber of Deputies",
+      "in_office": true,
+      "left_office": null
+    },
+    {
+      "id": "PEP-0103",
+      "name": "Lucas Navarro",
+      "aliases": [
+        "Lucas Navarro",
+        "L. Navarro"
+      ],
+      "nationality": "MX",
+      "dob": "1978-02-12",
+      "position": "Municipal Councillor, Monterrey",
+      "in_office": false,
+      "left_office": "2015-09-13"
+    }
+  ],
+  "adverse_media": [
+    {
+      "id": "AM-0201",
+      "name": "Apex Corporate Services Ltd",
+      "type": "entity",
+      "jurisdiction": "VG",
+      "summary": "Cited in 2024 registry review as a high-volume formation agent for offshore companies; no enforcement order.",
+      "severity": "low"
+    }
+  ]
+}

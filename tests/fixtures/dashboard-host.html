@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>open-kyb protocol probe</title>
+<style>body{margin:0;
+font:12px system-ui;
+background:#eee}header{padding:10px}iframe{width:100%;
+height:900px;
+border:0}pre{white-space:pre-wrap;
+overflow-wrap:anywhere;
+padding:12px}</style>
+</head>
+<body>
+<header>Protocol test host · synthetic workspace · messages are captured;
+ no agent execution</header>
+<iframe id="app" title="open-kyb MCP App" sandbox="allow-scripts">
+</iframe>
+<pre id="received">
+</pre>
+<script>
+const frame=document.getElementById('app');
+window.receivedRequests=[];
+
+const initial=INITIAL_RESULT;
+
+fetch('resource').then(r=>r.text()).then(html=>frame.srcdoc=html);
+
+const reply=(id,result)=>frame.contentWindow.postMessage({jsonrpc:'2.0',id,result},'*');
+
+addEventListener('message',async event=>{
+ if(event.source!==frame.contentWindow||event.data?.jsonrpc!=='2.0')return;
+
+ const m=event.data;
+
+ try{
+  if(m.method==='ui/initialize')reply(m.id,{protocolVersion:'2025-06-18',hostInfo:{name:'Offline protocol probe',version:'1'},hostCapabilities:{serverTools:{},message:{text:{}}},hostContext:{theme:'light'}});
+
+  else if(m.method==='ui/notifications/initialized'){
+   frame.contentWindow.postMessage({jsonrpc:'2.0',method:'ui/notifications/tool-input',params:{arguments:{}}},'*');
+
+   frame.contentWindow.postMessage({jsonrpc:'2.0',method:'ui/notifications/tool-result',params:initial},'*');
+
+  }
+  else if(m.method==='tools/call'){
+   const r=await fetch('rpc',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(m.params)});
+const result=await r.json();
+
+   if(!r.ok)throw new Error(result.error);
+reply(m.id,result);
+
+  }
+  else if(m.method==='ui/message'){window.receivedRequests.push(m.params);
+document.getElementById('received').textContent='Captured intent only; no native confirmation or work started.\n'+m.params.content.text;
+reply(m.id,{});
+}
+  else if(m.id!==undefined)reply(m.id,{});
+
+ }catch(error){frame.contentWindow.postMessage({jsonrpc:'2.0',id:m.id,error:{code:-32000,message:error.message}},'*');
+}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "document_id": "es-iberia-software/01",
+  "doc_sha256": "sha256:54c2ae5cf0a60a42b44c6d5ca693c1039649f1e24871641611023e3b0dd2d99a",
+  "model": "gemini-3.1-pro-preview",
+  "pages": [
+    {
+      "page": 1,
+      "page_hash": "sha256:54c2ae5cf0a60a42b44c6d5ca693c1039649f1e24871641611023e3b0dd2d99a",
+      "size_px": [
+        2550,
+        3300
+      ],
+      "blocks": [
+        {
+          "block_id": "01-p1-b1",
+          "kind": "text",
+          "bbox": [
+            100,
+            100,
+            2400,
+            3200
+          ],
+          "heading": null,
+          "qualifiers": [],
+          "markers": [],
+          "refers_to": []
+        }
+      ]
+    }
+  ]
+}

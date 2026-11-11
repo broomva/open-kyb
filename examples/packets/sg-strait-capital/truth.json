@@ -1,0 +1,365 @@
+{
+  "packet_id": "sg-strait-capital",
+  "facts": [
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-01",
+      "type": "date",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "fecha_de_expedicion",
+      "value": "2026-10-15",
+      "excerpt": "Date of Report: 2026-10-15"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-02",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "jurisdiction",
+      "value": "SG",
+      "excerpt": "SINGAPORE BUSINESS PROFILE - Strait Capital Pte. Ltd."
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-02_name",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "legal_name",
+      "value": "Strait Capital Pte. Ltd.",
+      "excerpt": "Company Name: Strait Capital Pte. Ltd."
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-03",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "uen",
+      "value": "202419082K",
+      "excerpt": "Unique Entity Number (UEN): 202419082K"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-03_reg",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "reg_no",
+      "value": "202419082K",
+      "excerpt": "Unique Entity Number (UEN): 202419082K"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-04",
+      "type": "date",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "fecha_de_constitucion",
+      "value": "2024-04-12",
+      "excerpt": "Incorporation Date: 2024-04-12"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-12",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "stated_validity",
+      "value": "Live Company",
+      "excerpt": "Status: Live Company"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-05",
+      "type": "address",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "registered_address",
+      "value": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+      "excerpt": "Registered Address: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-06",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "actividad_principal",
+      "value": "Maritime vessel chartering and logistics investment (CIIU 50111)",
+      "excerpt": "Principal Activity: Maritime vessel chartering and logistics investment (CIIU 50111)."
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-06_trust",
+      "type": "owns",
+      "party": "Sovereign Trust",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 100,
+        "shares": 100000
+      },
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS) | 100.000 | 100%"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-07_presence",
+      "party": "Sovereign Trust",
+      "attribute": "owner_presence",
+      "value": "present",
+      "excerpt": "Sovereign Trust"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-08",
+      "type": "role",
+      "party": "Li Wei",
+      "attribute": "role",
+      "value": "Director",
+      "excerpt": "Li Wei | Passport E4419082 | Singaporean"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C01-09",
+      "party": "Tan Boon Hean",
+      "attribute": "role",
+      "value": "Director",
+      "excerpt": "Tan Boon Hean | Passport E3190445 | Singaporean"
+    },
+    {
+      "document": "01_acra_bizfile_extract.pdf",
+      "doc_id": "01",
+      "page": 1,
+      "claim_id": "c-C02-05",
+      "type": "address",
+      "party": "Sovereign Trust",
+      "attribute": "address",
+      "value": "Beach Road, Lot 18, Apia, Samoa",
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS)"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-01",
+      "type": "date",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "document_date",
+      "value": "2026-10-15",
+      "excerpt": "Declaration Date: 2026-10-15"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-03_pres",
+      "party": "Sovereign Trust",
+      "attribute": "owner_presence",
+      "value": "present",
+      "excerpt": "Sovereign Trust"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-03",
+      "party": "Sovereign Trust",
+      "attribute": "jurisdiction",
+      "value": "WS",
+      "excerpt": "Sovereign Trust (Samoa, WS)"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-05_owns",
+      "type": "owns",
+      "party": "Li Wei",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 100
+      },
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082 | 100% control"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-05",
+      "party": "Li Wei",
+      "attribute": "nationality",
+      "value": "Singaporean",
+      "excerpt": "Li Wei | Singaporean"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-07",
+      "type": "date",
+      "party": "Li Wei",
+      "attribute": "date_of_birth",
+      "value": "1978-05-20",
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-08",
+      "party": "Li Wei",
+      "attribute": "passport",
+      "value": "E4419082",
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-pep",
+      "party": "Li Wei",
+      "attribute": "pep_status",
+      "value": "Active PEP (resigned 2023-11-15)",
+      "excerpt": "Mr. Li Wei was a Member of Parliament in Singapore until he stepped down on November 15, 2023"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-emp",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "employees",
+      "value": 12,
+      "excerpt": "Staffing & Web Presence: 12 marine consultants"
+    },
+    {
+      "document": "03_declaration_of_ubo.pdf",
+      "doc_id": "03",
+      "page": 1,
+      "claim_id": "c-C03-web",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "website",
+      "value": "https://straitcapital.sg",
+      "excerpt": "portal https://straitcapital.sg"
+    },
+    {
+      "document": "04_trust_deed_extract.pdf",
+      "doc_id": "04",
+      "page": 1,
+      "claim_id": "c-C04-01",
+      "type": "date",
+      "party": "Sovereign Trust",
+      "attribute": "document_date",
+      "value": "2024-03-20",
+      "excerpt": "Date of Trust Deed: 2024-03-20"
+    },
+    {
+      "document": "04_trust_deed_extract.pdf",
+      "doc_id": "04",
+      "page": 1,
+      "claim_id": "c-C04-01_jur",
+      "party": "Sovereign Trust",
+      "attribute": "jurisdiction",
+      "value": "WS",
+      "excerpt": "Jurisdiction: Samoa (WS)"
+    },
+    {
+      "document": "04_trust_deed_extract.pdf",
+      "doc_id": "04",
+      "page": 1,
+      "claim_id": "c-C04-03",
+      "party": "Sovereign Trust",
+      "attribute": "owner_presence",
+      "value": "present",
+      "excerpt": "Sovereign Trust"
+    },
+    {
+      "document": "04_trust_deed_extract.pdf",
+      "doc_id": "04",
+      "page": 1,
+      "claim_id": "c-C04-05",
+      "party": "Li Wei",
+      "attribute": "settlor",
+      "value": "Li Wei",
+      "excerpt": "Settlor: Li Wei"
+    },
+    {
+      "document": "04_trust_deed_extract.pdf",
+      "doc_id": "04",
+      "page": 1,
+      "claim_id": "c-C04-07",
+      "type": "role",
+      "party": "Pacific Trustees Ltd",
+      "attribute": "agente_residente",
+      "value": "Agente residente",
+      "excerpt": "Trustee: Pacific Trustees Ltd (WS)"
+    },
+    {
+      "document": "05_commercial_lease_agreement.pdf",
+      "doc_id": "05",
+      "page": 1,
+      "claim_id": "c-C05-01",
+      "type": "date",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "lease_date",
+      "value": "2024-04-20",
+      "excerpt": "Signed: Strait Capital Pte. Ltd. - 2024-04-20"
+    },
+    {
+      "document": "05_commercial_lease_agreement.pdf",
+      "doc_id": "05",
+      "page": 1,
+      "claim_id": "c-C05-02",
+      "type": "role",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "legal_rep",
+      "value": "Li Wei",
+      "excerpt": "Represented by its authorized signatory: Li Wei."
+    },
+    {
+      "document": "05_commercial_lease_agreement.pdf",
+      "doc_id": "05",
+      "page": 1,
+      "claim_id": "c-C05-03",
+      "type": "address",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "operating_address",
+      "value": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+      "excerpt": "Premises: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315."
+    },
+    {
+      "document": "06_letter_of_bank_reference_SCAN.pdf",
+      "doc_id": "06",
+      "page": 1,
+      "claim_id": "c-C06-01",
+      "type": "date",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "bank_reference_date",
+      "value": "2026-10-10",
+      "excerpt": "Date: 2026-10-10"
+    },
+    {
+      "document": "06_letter_of_bank_reference_SCAN.pdf",
+      "doc_id": "06",
+      "page": 1,
+      "claim_id": "c-C06-02",
+      "party": "Strait Capital Pte. Ltd.",
+      "attribute": "bank_reference",
+      "value": "DBS Bank No. 118-049-2210-1",
+      "excerpt": "maintains SGD account No. 118-049-2210-1"
+    }
+  ]
+}

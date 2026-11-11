@@ -1,0 +1,1160 @@
+{
+ "version": "synthetic-v1",
+ "as_of": "2026-10-25",
+ "rules_version": "2026.11-r1",
+ "note": "Each variant is its base plus the ops that define the expected delta. Expected values are read from compliance_rules.md 2026.11-r1 by hand, not from the engine's output.",
+ "cases": [
+  {
+   "id": "syn-a-clean",
+   "base": "A",
+   "ops": [
+    {
+     "op": "doc",
+     "doc": "01",
+     "set": {
+      "stated_validity_days": null
+     }
+    },
+    {
+     "op": "doc",
+     "doc": "03",
+     "set": {
+      "issued": "2026-06-10"
+     }
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 0,
+    "fired": []
+   },
+   "why": "A without the expired 30-day certificate and the 2024 register: no trigger, score 0 (MOD-01)"
+  },
+  {
+   "id": "syn-a-high-risk-25",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-andes-agropecuaria",
+     "set": {
+      "jurisdiction": [
+       "VG"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 20,
+    "fired": [
+     "JUR-02"
+    ]
+   },
+   "why": "incorporated in VG: JUR-02 +25, fully resolved UBOs, one shell indicator; 25 ≤ 30"
+  },
+  {
+   "id": "syn-a-former-pep",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "p-1",
+      "entity_id": "e-andres-delgado-vega",
+      "entry": {
+       "entry_id": "PEP-9002",
+       "list_kind": "pep",
+       "name": "Andrés Delgado Vega Soto",
+       "nationality": "CO",
+       "dob": "1982-11-03",
+       "position": "Senator",
+       "in_office": false,
+       "left_office": "2020-03-01"
+      },
+      "jw_score": 1.0,
+      "identifiers": {
+       "corroborating": [
+        "nationality+dob"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 15,
+    "fired": [
+     "PEP-02"
+    ],
+    "not_fired": [
+     "PEP-01"
+    ]
+   },
+   "why": "a UBO left office 2020-03-01, more than 5 years before as_of: PEP-02 +5, not PEP-01"
+  },
+  {
+   "id": "syn-a-real-estate",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "corporate_object",
+     "set": [
+      "fletamento marítimo de buques de carga (maritime vessel chartering)"
+     ]
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 10,
+    "fired": [
+     "ACT-02"
+    ]
+   },
+   "why": "a declared real-estate object (spec): ACT-02 +15"
+  },
+  {
+   "id": "syn-a-nominee-with-director",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-agent",
+      "kind": "agent",
+      "names": [
+       "Andes Nominees S.A.S."
+      ],
+      "jurisdiction": [
+       "CO"
+      ],
+      "evidence": [
+       "A01-09"
+      ]
+     }
+    },
+    {
+     "op": "add_role",
+     "role": {
+      "role_id": "r-9",
+      "holder": "e-agent",
+      "of": "e-andes-agropecuaria",
+      "role": "nominee_director",
+      "evidence": [
+       "A01-09"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 15,
+    "fired": [
+     "GOV-01"
+    ],
+    "not_fired": [
+     "GOV-02"
+    ]
+   },
+   "why": "a nominee director beside a natural legal representative: GOV-01 +15, not GOV-02"
+  },
+  {
+   "id": "syn-a-foundation-resolved",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "drop_holding",
+     "id": "h-1"
+    },
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-fund",
+      "kind": "foundation",
+      "names": [
+       "Fundación Cordillera"
+      ],
+      "jurisdiction": [
+       "BZ"
+      ],
+      "evidence": [
+       "A02-10"
+      ]
+     }
+    },
+    {
+     "op": "add_holding",
+     "holding": {
+      "holding_id": "h-9",
+      "owner": "e-fund",
+      "owned": "e-andes-agropecuaria",
+      "pct": 64,
+      "status": "current",
+      "evidence": [
+       "A02-10"
+      ]
+     }
+    },
+    {
+     "op": "add_role",
+     "role": {
+      "role_id": "r-8",
+      "holder": "e-andres-delgado-vega",
+      "of": "e-fund",
+      "role": "beneficiary",
+      "evidence": [
+       "A02-11"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 20,
+    "fired": [
+     "JUR-02"
+    ],
+    "not_fired": [
+     "OWN-01",
+     "OWN-02"
+    ]
+   },
+   "why": "a 64% PA foundation whose beneficiary is a named natural person: resolved (OWN-01); JUR-02 +25 for a ≥25% owner in PA"
+  },
+  {
+   "id": "syn-a-score-threshold",
+   "base": "syn-a-high-risk-25",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "p-1",
+      "entity_id": "e-andres-delgado-vega",
+      "entry": {
+       "entry_id": "PEP-9002",
+       "list_kind": "pep",
+       "name": "Andrés Delgado Vega Soto",
+       "nationality": "CO",
+       "dob": "1982-11-03",
+       "position": "Senator",
+       "in_office": false,
+       "left_office": "2020-03-01"
+      },
+      "jw_score": 1.0,
+      "identifiers": {
+       "corroborating": [
+        "nationality+dob"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 35,
+    "fired": [
+     "JUR-02",
+     "PEP-02"
+    ]
+   },
+   "why": "JUR-02 +25 and a document older than 24 months +10 = 35 > 30: score above the auto-approval band"
+  },
+  {
+   "id": "syn-a-expired-ubo",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "doc",
+     "doc": "02",
+     "set": {
+      "issued": "2025-09-01"
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "DOC-02"
+    ],
+    "risk_score": 15,
+    "fired": [
+     "DOC-02"
+    ]
+   },
+   "why": "a UBO declaration dated more than 12 months before as_of: DOC-02"
+  },
+  {
+   "id": "syn-a-unsigned-ubo",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "doc",
+     "doc": "02",
+     "set": {
+      "signed": false
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "DOC-02"
+    ],
+    "risk_score": 15,
+    "fired": [
+     "DOC-02"
+    ]
+   },
+   "why": "an unsigned UBO declaration: DOC-02"
+  },
+  {
+   "id": "syn-a-missing-poa",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "drop_doc",
+     "doc": "04"
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "unknown": [
+     "DOC-02"
+    ],
+    "risk_score": 0,
+    "fired": []
+   },
+   "why": "no proof of address: the bank reference might be one, so DOC-02 is unknown until doc_is_proof_of_address answers (E-p: unknown → MANUAL_REVIEW)"
+  },
+  {
+   "id": "syn-a-missing-poa-answered",
+   "base": "syn-a-missing-poa",
+   "ops": [
+    {
+     "op": "answer",
+     "id": "poa-05",
+     "value": false
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "DOC-02"
+    ],
+    "risk_score": 15,
+    "fired": [
+     "DOC-02"
+    ]
+   },
+   "why": "no proof of address, and the bank reference is not one: DOC-02 fires"
+  },
+  {
+   "id": "syn-a-pep-in-office",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "p-1",
+      "entity_id": "e-andres-delgado-vega",
+      "entry": {
+       "entry_id": "PEP-9001",
+       "list_kind": "pep",
+       "name": "Andrés Delgado Vega Soto",
+       "nationality": "CO",
+       "dob": "1982-11-03",
+       "position": "Senator",
+       "in_office": true,
+       "left_office": null
+      },
+      "jw_score": 1.0,
+      "identifiers": {
+       "corroborating": [
+        "nationality+dob"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 30,
+    "includes": [
+     "PEP-01"
+    ],
+    "fired": [
+     "PEP-01"
+    ]
+   },
+   "why": "a UBO is a serving PEP: PEP-01 REVIEW +15"
+  },
+  {
+   "id": "syn-a-pep-recent",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "p-1",
+      "entity_id": "e-andres-delgado-vega",
+      "entry": {
+       "entry_id": "PEP-9003",
+       "list_kind": "pep",
+       "name": "Andrés Delgado Vega Soto",
+       "nationality": "CO",
+       "dob": "1982-11-03",
+       "position": "Senator",
+       "in_office": false,
+       "left_office": "2024-03-01"
+      },
+      "jw_score": 1.0,
+      "identifiers": {
+       "corroborating": [
+        "nationality+dob"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 30,
+    "not_fired": [
+     "PEP-02"
+    ],
+    "includes": [
+     "PEP-01"
+    ],
+    "fired": [
+     "PEP-01"
+    ]
+   },
+   "why": "a UBO left office 2023-03-01, within 5 years: PEP-01"
+  },
+  {
+   "id": "syn-a-unresolved-corporate",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "drop_holding",
+     "id": "h-2"
+    },
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-holdco",
+      "kind": "company",
+      "names": [
+       "Inversiones Tequendama S.A.S."
+      ],
+      "jurisdiction": [
+       "CO"
+      ],
+      "evidence": [
+       "A02-12"
+      ]
+     }
+    },
+    {
+     "op": "add_holding",
+     "holding": {
+      "holding_id": "h-9",
+      "owner": "e-holdco",
+      "owned": "e-andes-agropecuaria",
+      "pct": 36,
+      "status": "current",
+      "evidence": [
+       "A02-12"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "not_fired": [
+     "OWN-02"
+    ],
+    "includes": [
+     "OWN-01"
+    ],
+    "risk_score": 25,
+    "fired": [
+     "OWN-01"
+    ]
+   },
+   "why": "a 36% corporate shareholder with no owners named: OWN-01"
+  },
+  {
+   "id": "syn-a-unresolved-foundation-pa",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "drop_holding",
+     "id": "h-2"
+    },
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-fund",
+      "kind": "foundation",
+      "names": [
+       "Fundación Páramo"
+      ],
+      "jurisdiction": [
+       "BZ"
+      ],
+      "evidence": [
+       "A02-10"
+      ]
+     }
+    },
+    {
+     "op": "add_holding",
+     "holding": {
+      "holding_id": "h-9",
+      "owner": "e-fund",
+      "owned": "e-andes-agropecuaria",
+      "pct": 36,
+      "status": "current",
+      "evidence": [
+       "A02-10"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 45,
+    "fired": [
+     "JUR-02",
+     "OWN-01"
+    ],
+    "not_fired": [
+     "OWN-02"
+    ]
+   },
+   "why": "a 36% PA foundation naming neither a beneficiary nor a council member: OWN-01; JUR-02 +25 (below the 46% of OWN-02)"
+  },
+  {
+   "id": "syn-a-nominee-sole",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "drop_role",
+     "id": "r-1"
+    },
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-agent",
+      "kind": "agent",
+      "names": [
+       "Andes Nominees S.A.S."
+      ],
+      "jurisdiction": [
+       "CO"
+      ],
+      "evidence": [
+       "A01-09"
+      ]
+     }
+    },
+    {
+     "op": "add_role",
+     "role": {
+      "role_id": "r-9",
+      "holder": "e-agent",
+      "of": "e-andes-agropecuaria",
+      "role": "nominee_director",
+      "evidence": [
+       "A01-09"
+      ]
+     }
+    },
+    {
+     "op": "answer",
+     "id": "npd-e-andes-agropecuaria",
+     "value": false
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 15,
+    "includes": [
+     "GOV-01"
+    ],
+    "fired": [
+     "GOV-01"
+    ]
+   },
+   "why": "a nominee is the sole controller on record and no individual runs the company: GOV-02"
+  },
+  {
+   "id": "syn-a-nominee-unanswered",
+   "base": "syn-a-nominee-sole",
+   "ops": [
+    {
+     "op": "drop_answer",
+     "id": "npd-e-andes-agropecuaria"
+    }
+   ],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 15,
+    "includes": [
+     "GOV-01"
+    ],
+    "unknown": [],
+    "fired": [
+     "GOV-01"
+    ]
+   },
+   "why": "the directs-business predicate is unanswered: GOV-02 is unknown, never absent (E-p)"
+  },
+  {
+   "id": "syn-a-shell-2",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-andes-agropecuaria",
+     "set": {
+      "incorporated": [
+       "2026-07-06"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "not_fired": [
+     "OPS-02"
+    ],
+    "includes": [],
+    "risk_score": 0,
+    "fired": []
+   },
+   "why": "two shell indicators, (ii) and (iii), in CO: OPS-01 REVIEW, not REJECT"
+  },
+  {
+   "id": "syn-a-conflicts-3",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_conflict",
+     "conflict": {
+      "conflict_id": "x-1",
+      "subject": "e-andres-delgado-vega",
+      "attribute": "ownership_pct",
+      "values": [
+       {
+        "value": "64",
+        "evidence": [
+         "A02-03"
+        ]
+       },
+       {
+        "value": "74",
+        "evidence": [
+         "A03-01"
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "op": "add_conflict",
+     "conflict": {
+      "conflict_id": "x-2",
+      "subject": "e-eduardo-cifuentes",
+      "attribute": "ownership_pct",
+      "values": [
+       {
+        "value": "36",
+        "evidence": [
+         "A02-04"
+        ]
+       },
+       {
+        "value": "26",
+        "evidence": [
+         "A03-02"
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "op": "add_conflict",
+     "conflict": {
+      "conflict_id": "x-3",
+      "subject": "e-andes-agropecuaria",
+      "attribute": "address",
+      "values": [
+       {
+        "value": "Carrera 68",
+        "evidence": [
+         "A01-02"
+        ]
+       },
+       {
+        "value": "Calle 100",
+        "evidence": [
+         "A04-01"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 40,
+    "fired": [
+     "DOC-01",
+     "MOD-01"
+    ]
+   },
+   "why": "three conflicts (spec): DOC-01 REVIEW, MOD-01 +10 for each beyond the first"
+  },
+  {
+   "id": "syn-a-unverified-ubo",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "unverified",
+     "ref": "A02-03"
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 0,
+    "fired": []
+   },
+   "why": "a UBO holding claim failed verification: the rules that read it are unknown, never absent"
+  },
+  {
+   "id": "syn-a-sanctions-name-only",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "s-1",
+      "entity_id": "e-andes-agropecuaria",
+      "entry": {
+       "entry_id": "SAN-0003",
+       "list_kind": "sanctions",
+       "name": "Andes Agropecuaria SAS",
+       "aliases": [],
+       "jurisdiction": "CO",
+       "registration_number": "76.419.082-1",
+       "program": "OFAC SDN"
+      },
+      "jw_score": 0.93,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "not_fired": [
+     "SCR-01"
+    ],
+    "includes": [
+     "SCR-02"
+    ],
+    "risk_score": 0,
+    "fired": [
+     "SCR-02"
+    ]
+   },
+   "why": "a name-only sanctions similarity with no identifier: SCR-02, never auto-reject"
+  },
+  {
+   "id": "syn-b-altiplano-resolved",
+   "base": "B",
+   "ops": [
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-ochoa",
+      "kind": "person",
+      "names": [
+       "Andrés Ochoa Ruiz"
+      ],
+      "nationality": [
+       "MX"
+      ],
+      "dob": [
+       "1970-01-02"
+      ],
+      "jurisdiction": [
+       "MX"
+      ],
+      "evidence": [
+       "B03-09"
+      ]
+     }
+    },
+    {
+     "op": "add_holding",
+     "holding": {
+      "holding_id": "h-9",
+      "owner": "e-ochoa",
+      "owned": "e-altiplano",
+      "pct": 100,
+      "status": "current",
+      "evidence": [
+       "B03-09"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "not_fired": [
+     "OWN-01"
+    ],
+    "includes": [
+     "DOC-01",
+     "DOC-02"
+    ],
+    "risk_score": 35,
+    "fired": [
+     "DOC-01",
+     "DOC-02"
+    ]
+   },
+   "why": "Altiplano unwrapped to a natural person: OWN-01 clears, DOC-01 and the conflicts stay"
+  },
+  {
+   "id": "syn-c-pep-old",
+   "base": "C",
+   "ops": [
+    {
+     "op": "candidate",
+     "id": "PEP-0101-li-wei",
+     "set": {
+      "entry": {
+       "entry_id": "PEP-0101",
+       "list_kind": "pep",
+       "name": "Li Wei Vega",
+       "nationality": "PY",
+       "dob": "1971-10-15",
+       "in_office": false,
+       "left_office": "2020-08-14"
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 90,
+    "fired": [
+     "ACT-02",
+     "DOC-01",
+     "JUR-02",
+     "MOD-01",
+     "OWN-01",
+     "PEP-02",
+     "SCR-02"
+    ],
+    "not_fired": [
+     "PEP-01"
+    ]
+   },
+   "why": "the PEP's term ended over 5 years back: PEP-02 +5 replaces PEP-01 +15; SCR-02 and DOC-02 still REVIEW"
+  },
+  {
+   "id": "syn-a-sanctions-corroborated",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "add_candidate",
+     "candidate": {
+      "candidate_id": "s-1",
+      "entity_id": "e-andes-agropecuaria",
+      "entry": {
+       "entry_id": "SAN-0003",
+       "list_kind": "sanctions",
+       "name": "Andes Agropecuaria SAS",
+       "aliases": [],
+       "jurisdiction": "CO",
+       "registration_number": "76.419.082-1",
+       "program": "OFAC SDN"
+      },
+      "jw_score": 0.97,
+      "identifiers": {
+       "corroborating": [
+        "reg_no"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "REJECTED",
+    "includes": [
+     "SCR-01"
+    ],
+    "risk_score": 0,
+    "fired": [
+     "SCR-01"
+    ]
+   },
+   "why": "a sanctions name match corroborated by the registration number: SCR-01"
+  },
+  {
+   "id": "syn-a-prohibited-jurisdiction",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-andes-agropecuaria",
+     "set": {
+      "jurisdiction": [
+       "IR"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "REJECTED",
+    "includes": [
+     "JUR-01"
+    ],
+    "risk_score": 0,
+    "fired": [
+     "JUR-01"
+    ]
+   },
+   "why": "incorporated in IR: JUR-01"
+  },
+  {
+   "id": "syn-a-ubo-in-cuba",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-eduardo-cifuentes",
+     "set": {
+      "jurisdiction": [
+       "BY"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "REJECTED",
+    "includes": [
+     "JUR-01"
+    ],
+    "risk_score": 0,
+    "fired": [
+     "JUR-01"
+    ]
+   },
+   "why": "a UBO resident in CU: JUR-01"
+  },
+  {
+   "id": "syn-a-own02",
+   "base": "syn-a-high-risk-25",
+   "ops": [
+    {
+     "op": "drop_holding",
+     "id": "h-1"
+    },
+    {
+     "op": "add_entity",
+     "entity": {
+      "entity_id": "e-holdco",
+      "kind": "company",
+      "names": [
+       "Holdco Seychelles Ltd"
+      ],
+      "jurisdiction": [
+       "SC"
+      ],
+      "evidence": [
+       "A02-12"
+      ]
+     }
+    },
+    {
+     "op": "add_holding",
+     "holding": {
+      "holding_id": "h-9",
+      "owner": "e-holdco",
+      "owned": "e-andes-agropecuaria",
+      "pct": 64,
+      "status": "current",
+      "evidence": [
+       "A02-12"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "JUR-02",
+     "OWN-01"
+    ],
+    "risk_score": 45,
+    "fired": [
+     "JUR-02",
+     "OWN-01"
+    ]
+   },
+   "why": "64% unresolved and the entity in a high-risk jurisdiction: OWN-02"
+  },
+  {
+   "id": "syn-a-shell-3-high-risk",
+   "base": "syn-a-high-risk-25",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-andes-agropecuaria",
+     "set": {
+      "incorporated": [
+       "2026-07-06"
+      ]
+     }
+    },
+    {
+     "op": "operations",
+     "set": {
+      "bank_reference_or_financials": {
+       "state": "absent",
+       "evidence": [
+        "A05-09"
+       ]
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "JUR-02",
+     "OPS-01"
+    ],
+    "risk_score": 40,
+    "fired": [
+     "JUR-02",
+     "OPS-01"
+    ]
+   },
+   "why": "three shell indicators (ii, iii, iv) with the applicant in VG: OPS-02 REJECT"
+  },
+  {
+   "id": "syn-a-prohibited-industry",
+   "base": "syn-a-clean",
+   "ops": [
+    {
+     "op": "corporate_object",
+     "set": [
+      "operation of a shell bank"
+     ]
+    }
+   ],
+   "expected": {
+    "status": "REJECTED",
+    "includes": [
+     "ACT-01"
+    ],
+    "risk_score": 0,
+    "fired": [
+     "ACT-01"
+    ]
+   },
+   "why": "a prohibited industry in the declared object: ACT-01 REJECT"
+  },
+  {
+   "id": "syn-b-applicant-in-pa",
+   "base": "B",
+   "ops": [
+    {
+     "op": "entity",
+     "id": "e-iberia-software-sl",
+     "set": {
+      "jurisdiction": [
+       "BZ"
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "includes": [
+     "DOC-01",
+     "DOC-02",
+     "JUR-02"
+    ],
+    "risk_score": 55,
+    "fired": [
+     "DOC-01",
+     "DOC-02",
+     "JUR-02"
+    ]
+   },
+   "why": "B's three shell indicators with the applicant itself in PA (the spec positive case): OPS-02 REJECT"
+  },
+  {
+   "id": "syn-c-sanctions-corroborated",
+   "base": "C",
+   "ops": [
+    {
+     "op": "candidate",
+     "id": "SAN-0001-strait-capital",
+     "set": {
+      "identifiers": {
+       "corroborating": [
+        "reg_no"
+       ],
+       "conflicting": []
+      }
+     }
+    }
+   ],
+   "expected": {
+    "status": "REJECTED",
+    "includes": [
+     "ACT-02",
+     "DOC-01",
+     "JUR-02",
+     "MOD-01",
+     "OWN-01",
+     "PEP-01",
+     "SCR-01"
+    ],
+    "risk_score": 90,
+    "fired": [
+     "ACT-02",
+     "DOC-01",
+     "JUR-02",
+     "MOD-01",
+     "OWN-01",
+     "PEP-01",
+     "SCR-01"
+    ]
+   },
+   "why": "C's sanctions candidate corroborated by registration number: SCR-01"
+  }
+ ],
+ "semantics": {
+  "fired": "exactly these rules fire",
+  "includes": "at least these fire",
+  "not_fired": "none of these fire",
+  "unknown": "these read unknown"
+ }
+}

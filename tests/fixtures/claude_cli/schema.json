@@ -1,0 +1,1 @@
+{"type":"object","properties":{"left_color":{"type":"string"},"right_color":{"type":"string"},"canary_contents":{"type":"string"},"tools_used":{"type":"boolean"}},"required":["left_color","right_color","canary_contents","tools_used"],"additionalProperties":false}

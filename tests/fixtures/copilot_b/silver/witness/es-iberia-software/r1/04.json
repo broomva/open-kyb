@@ -1,0 +1,99 @@
+{
+  "document_id": "es-iberia-software/04",
+  "model": "gemini-3.8-flash",
+  "request": "sha256:dummy",
+  "comparator": "norm-v1",
+  "binding": "bind-v5",
+  "saw_claim": false,
+  "saw_text_layer": false,
+  "crop_ids": "opaque positional",
+  "assurance": "W2",
+  "assurance_reason": "",
+  "reader_model": "claude-opus-5-5",
+  "reader_family": "anthropic",
+  "witness_family": "google",
+  "results": [
+    {
+      "claim_id": "c-B04-01",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B04-02",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B04-03",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B04-04",
+      "verified": true
+    },
+    {
+      "claim_id": "c-B04-05",
+      "verified": true
+    }
+  ],
+  "crops": [
+    {
+      "crop_id": "k1",
+      "for": "c-B04-01",
+      "transcription": "Fecha actualización: 2026-06-10",
+      "readable": true,
+      "reread": {
+        "subject": "IBERIA SOFTWARE S.L.",
+        "value": "2026-06-10",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k2",
+      "for": "c-B04-02",
+      "transcription": "Lucas Navarro Solís 2.300 46%",
+      "readable": true,
+      "reread": {
+        "subject": "Lucas Navarro Solís",
+        "value": "{'pct': 46, 'shares': 2300}",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k3",
+      "for": "c-B04-03",
+      "transcription": "Lucas Navarro Solís",
+      "readable": true,
+      "reread": {
+        "subject": "Lucas Navarro Solís",
+        "value": "ES",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k4",
+      "for": "c-B04-04",
+      "transcription": "Lucas Navarro Solís",
+      "readable": true,
+      "reread": {
+        "subject": "Lucas Navarro Solís",
+        "value": "1981-06-19",
+        "annotations": [],
+        "struck": []
+      }
+    },
+    {
+      "crop_id": "k5",
+      "for": "c-B04-05",
+      "transcription": "Hugo Martínez Sanz 2.700 54%",
+      "readable": true,
+      "reread": {
+        "subject": "Hugo Martínez Sanz",
+        "value": "{'pct': 54, 'shares': 2700}",
+        "annotations": [],
+        "struck": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kyb": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/kyb-mcp",
+      "args": []
+    }
+  }
+}

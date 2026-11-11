@@ -1,0 +1,309 @@
+{
+  "produced_by": "system-test-copilot_b",
+  "claims": [
+    {
+      "claim_id": "c-B05-01",
+      "type": "identifier",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "legal_name",
+      "value": "IBERIA SOFTWARE S.L.",
+      "excerpt": "ACTA DE LA JUNTA GENERAL EXTRAORDINARIA DE SOCIOS",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b1",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-02",
+      "type": "date",
+      "subject": "Acta de Junta",
+      "attribute": "meeting_date",
+      "value": "2026-10-10",
+      "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b2",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-03",
+      "type": "address",
+      "subject": "Acta de Junta",
+      "attribute": "place_of_meeting",
+      "value": "Madrid",
+      "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b2",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-04",
+      "type": "role",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "board_role",
+      "value": "Presidente",
+      "excerpt": "Presidente de la Junta: Hugo Martínez Sanz",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b3",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-05",
+      "type": "role",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "board_role",
+      "value": "Administrador Único",
+      "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b3",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-06",
+      "type": "transfer",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "share_transfer_ratified",
+      "value": "Lucas Navarro Solís 46%",
+      "excerpt": "Lucas Navarro Solís 46%",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b5",
+      "linked_blocks": [
+        "05-p1-b9"
+      ],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-07",
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 46
+      },
+      "excerpt": "Lucas Navarro Solís 46%",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b5",
+      "linked_blocks": [
+        "05-p1-b9"
+      ],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": [
+        "struck-through"
+      ]
+    },
+    {
+      "claim_id": "c-B05-08",
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 68
+      },
+      "excerpt": "Lucas Navarro Solís",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b5",
+      "linked_blocks": [
+        "05-p1-b9"
+      ],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": [
+        "handwriting"
+      ]
+    },
+    {
+      "claim_id": "c-B05-09",
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 54
+      },
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b5",
+      "linked_blocks": [
+        "05-p1-b9"
+      ],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-10",
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 100
+      },
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b5",
+      "linked_blocks": [
+        "05-p1-b9"
+      ],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-11",
+      "type": "corporate_activity",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "authorization",
+      "value": "Se ratifica la vigencia del cargo de Administrador Único.",
+      "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b6",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-12",
+      "type": "transfer",
+      "subject": "L. Navarro",
+      "attribute": "pending_share_acquisition",
+      "value": "L. Navarro recibe 12% extra de Altiplano el 3/8 — pendiente de asentar.",
+      "excerpt": "Página 24 - ver nota *",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b9",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": [
+        "handwriting"
+      ]
+    },
+    {
+      "claim_id": "c-B05-13",
+      "type": "role",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "signatory",
+      "value": "Presidente",
+      "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b10",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B05-14",
+      "type": "role",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "signatory",
+      "value": "Socio Único",
+      "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "05-p1-b11",
+      "linked_blocks": [],
+      "source": "pixels",
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

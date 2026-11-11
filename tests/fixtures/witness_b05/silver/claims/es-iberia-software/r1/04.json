@@ -1,0 +1,106 @@
+{
+  "produced_by": "system-test-witness_b05",
+  "claims": [
+    {
+      "claim_id": "c-B04-01",
+      "type": "date",
+      "subject": "IBERIA SOFTWARE S.L.",
+      "attribute": "document_date",
+      "value": "2026-06-10",
+      "excerpt": "Fecha actualización: 2026-06-10",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B04-02",
+      "type": "owns",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 46,
+        "shares": 2300
+      },
+      "excerpt": "Lucas Navarro Solís 2.300 46%",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B04-03",
+      "type": "identifier",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "nationality",
+      "value": "ES",
+      "excerpt": "Lucas Navarro Solís",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B04-04",
+      "type": "date",
+      "subject": "Lucas Navarro Solís",
+      "attribute": "date_of_birth",
+      "value": "1981-06-19",
+      "excerpt": "Lucas Navarro Solís",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    },
+    {
+      "claim_id": "c-B04-05",
+      "type": "owns",
+      "subject": "Hugo Martínez Sanz",
+      "attribute": "shareholding",
+      "value": {
+        "pct": 54,
+        "shares": 2700
+      },
+      "excerpt": "Hugo Martínez Sanz 2.700 54%",
+      "page": 1,
+      "bbox": [
+        100,
+        100,
+        1600,
+        200
+      ],
+      "block_id": "b1",
+      "source": "text_layer",
+      "confidence": 0.9,
+      "flags": []
+    }
+  ]
+}

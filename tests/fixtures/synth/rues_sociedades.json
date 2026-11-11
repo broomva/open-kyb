@@ -1,0 +1,108 @@
+[
+ {
+  "razon_social": "ALPHA CONSULTORES LTDA",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000000",
+  "fecha_matricula": "20010110",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "BOGOTA",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "4923"
+ },
+ {
+  "razon_social": "BETA TRANSPORTES S.A.S.",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000001",
+  "fecha_matricula": "20020211",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "MEDELLIN",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "6810"
+ },
+ {
+  "razon_social": "GAMMA INGENIERIA S.A.",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000002",
+  "fecha_matricula": "20030312",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "CALI",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "7020"
+ },
+ {
+  "razon_social": "DELTA COMERCIAL LIMITADA",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000003",
+  "fecha_matricula": "20040413",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "BOGOTA",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "4631"
+ },
+ {
+  "razon_social": "EPSILON SERVICIOS S.A.S.",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000004",
+  "fecha_matricula": "20050514",
+  "estado_matricula": "CANCELADA",
+  "camara_comercio": "MEDELLIN",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "9999"
+ },
+ {
+  "razon_social": "ZETA CONSTRUCCIONES LTDA",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000005",
+  "fecha_matricula": "20060615",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "CALI",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "4290"
+ },
+ {
+  "razon_social": "ETA ALIMENTOS S.A.",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000006",
+  "fecha_matricula": "20070716",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "BOGOTA",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "1410"
+ },
+ {
+  "razon_social": "THETA INMOBILIARIA LTDA EN LIQUIDACION",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000007",
+  "fecha_matricula": "20080817",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "MEDELLIN",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "6820"
+ },
+ {
+  "razon_social": "IOTA TEXTILES S.A.S.",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000008",
+  "fecha_matricula": "20090918",
+  "estado_matricula": "ACTIVA",
+  "camara_comercio": "CALI",
+  "organizacion_juridica": "SOCIEDAD LIMITADA",
+  "cod_ciiu_act_econ_pri": "6202"
+ },
+ {
+  "razon_social": "KAPPA LOGISTICA LIMITADA",
+  "clase_identificacion": "NIT",
+  "numero_identificacion": "800000009",
+  "fecha_matricula": "20100110",
+  "estado_matricula": "CANCELADA",
+  "camara_comercio": "BOGOTA",
+  "organizacion_juridica": "SOCIEDAD LIMITADA"
+ },
+ {
+  "razon_social": "RAMIREZ DE OSPINA MARIA",
+  "clase_identificacion": "CEDULA DE CIUDADANIA",
+  "numero_identificacion": "24560913",
+  "fecha_matricula": "19740819",
+  "estado_matricula": "CANCELADA"
+ }
+]

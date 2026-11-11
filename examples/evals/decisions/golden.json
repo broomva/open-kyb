@@ -1,0 +1,4352 @@
+{
+ "version": "golden-factsets-v1",
+ "source": "synthetic reference FactSets for cl-andes-agro, es-iberia-software, sg-strait-capital",
+ "as_of": "2026-10-25",
+ "rules_version": "2026.11-r1",
+ "cases": [
+  {
+   "id": "golden-A",
+   "packet": "A",
+   "facts": {
+    "contracts_version": "b4-v1",
+    "case": "A",
+    "run": "r1",
+    "as_of": "2026-10-25",
+    "fact_set_hash": "sha256:b38e9f5d272c7ebc2a2c14ed87a1dc24e7fdef96ff19b4c7e54d29166e3c107d",
+    "applicant": "e-andes-agropecuaria",
+    "entities": [
+     {
+      "entity_id": "e-andes-agropecuaria",
+      "kind": "company",
+      "names": [
+       "ANDES AGROPECUARIA SpA"
+      ],
+      "identifiers": {
+       "tax_id": [
+        "76.419.082-1"
+       ]
+      },
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [
+       "CL"
+      ],
+      "incorporated": [
+       "2021-03-14"
+      ],
+      "regions": [],
+      "addresses": [
+       {
+        "kind": "registered",
+        "text": "Santiago, Chile",
+        "mass_registration": {
+         "state": "absent",
+         "evidence": [
+          {
+           "claim_id": "c-A01-05",
+           "doc": "01",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-A01-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "kind": "unknown",
+        "text": "Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+        "mass_registration": {
+         "state": "absent",
+         "evidence": [
+          {
+           "claim_id": "c-A01-05_comercial",
+           "doc": "01",
+           "page": 1,
+           "verified": true
+          },
+          {
+           "claim_id": "c-A04-03",
+           "doc": "04",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-A01-05_comercial",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         },
+         {
+          "claim_id": "c-A04-03",
+          "doc": "04",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "evidence": [
+       {
+        "claim_id": "c-A01-01",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-02",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-03",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-05_comercial",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-07",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-06",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-01",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-12",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-13",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A04-03",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A04-04",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-01",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-02",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-03",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-04",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-andres-delgado-vega",
+      "kind": "person",
+      "names": [
+       "ANDRES DELGADO VEGA",
+       "Andrés Delgado Vega"
+      ],
+      "identifiers": {
+       "tax_id": [
+        "15.841.903-k"
+       ]
+      },
+      "nationality": [
+       "CL"
+      ],
+      "dob": [
+       "1982-11-03"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-A01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-10",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-03",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-04",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-05",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-06",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-13",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A03-02",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-eduardo-cifuentes",
+      "kind": "person",
+      "names": [
+       "EDUARDO CIFUENTES",
+       "Eduardo Cifuentes"
+      ],
+      "identifiers": {
+       "tax_id": [
+        "14.194.332-9"
+       ]
+      },
+      "nationality": [
+       "CL"
+      ],
+      "dob": [
+       "1980-02-19"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-A01-09",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-11",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-07",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-08",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-09",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-10",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A03-03",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "holdings": [
+     {
+      "holding_id": "h-1",
+      "owner": "e-andres-delgado-vega",
+      "owned": "e-andes-agropecuaria",
+      "pct": "60",
+      "shares": 60000,
+      "as_of": "2026-09-07",
+      "status": "historical",
+      "evidence": [
+       {
+        "claim_id": "c-A01-10",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-2",
+      "owner": "e-eduardo-cifuentes",
+      "owned": "e-andes-agropecuaria",
+      "pct": "40",
+      "shares": 40000,
+      "as_of": "2026-09-07",
+      "status": "historical",
+      "evidence": [
+       {
+        "claim_id": "c-A01-11",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-3",
+      "owner": "e-andres-delgado-vega",
+      "owned": "e-andes-agropecuaria",
+      "pct": "60",
+      "shares": null,
+      "as_of": "2026-10-12",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-A02-03",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-4",
+      "owner": "e-eduardo-cifuentes",
+      "owned": "e-andes-agropecuaria",
+      "pct": "40",
+      "shares": null,
+      "as_of": "2026-10-12",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-A02-07",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-5",
+      "owner": "e-andres-delgado-vega",
+      "owned": "e-andes-agropecuaria",
+      "pct": "60",
+      "shares": 60000,
+      "as_of": "2024-06-15",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-A03-02",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-6",
+      "owner": "e-eduardo-cifuentes",
+      "owned": "e-andes-agropecuaria",
+      "pct": "40",
+      "shares": 40000,
+      "as_of": "2024-06-15",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-A03-03",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "roles": [
+     {
+      "role_id": "r-1",
+      "holder": "e-andres-delgado-vega",
+      "of": "e-andes-agropecuaria",
+      "role": "other",
+      "evidence": [
+       {
+        "claim_id": "c-A01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-2",
+      "holder": "e-eduardo-cifuentes",
+      "of": "e-andes-agropecuaria",
+      "role": "director",
+      "evidence": [
+       {
+        "claim_id": "c-A01-09",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-3",
+      "holder": "e-andes-agropecuaria",
+      "of": "e-andres-delgado-vega",
+      "role": "signatory",
+      "evidence": [
+       {
+        "claim_id": "c-A02-13",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "documents": [
+     {
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "doc_type": "incorporation",
+      "issued": "2026-09-07",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-A01-01",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "doc_type": "ubo_declaration",
+      "issued": "2026-10-12",
+      "signed": true,
+      "signed_on": "2026-08-25",
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-A02-01",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-12",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A02-13",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "03",
+      "document_name": "03_registro_de_accionistas.pdf",
+      "doc_type": "share_register",
+      "issued": "2024-06-15",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-A03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "04",
+      "document_name": "04_boleta_de_suministro_SCAN.pdf",
+      "doc_type": "proof_of_address",
+      "issued": "2026-08-11",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-A04-04",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "doc_type": "bank_reference",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     }
+    ],
+    "conflicts": [],
+    "operations": {
+     "distinct_operating_address": {
+      "state": "unknown",
+      "evidence": [
+       {
+        "claim_id": "c-A01-05_comercial",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A04-03",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "an address of unstated purpose differs from the registered one"
+     },
+     "bank_reference_or_financials": {
+      "state": "present",
+      "evidence": [
+       {
+        "claim_id": "c-A05-01",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-02",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-03",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-04",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "a bank reference or financial statement about the applicant is in the packet"
+     },
+     "employees_or_website": {
+      "state": "present",
+      "evidence": [
+       {
+        "claim_id": "c-A05-03",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-A05-04",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "employees or a website are stated for the applicant"
+     }
+    },
+    "corporate_object": [
+     "Cultivo de hortalizas, legumbres y tubérculos (CIIU 011300)"
+    ],
+    "evidence": [
+     {
+      "evidence_id": "c-A01-01",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de expedición: 2026-09-07",
+      "verified": true,
+      "field": "document[01].issued"
+     },
+     {
+      "evidence_id": "c-A01-02",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Razón social: ANDES AGROPECUARIA SpA",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].names"
+     },
+     {
+      "evidence_id": "c-A01-03",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "RUT: 76.419.082-1",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].identifiers.tax_id"
+     },
+     {
+      "evidence_id": "c-A01-05",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Domicilio principal: Santiago, Chile",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].addresses.registered"
+     },
+     {
+      "evidence_id": "c-A01-05_comercial",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Dirección comercial: Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].addresses.unknown"
+     },
+     {
+      "evidence_id": "c-A01-07",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Constitución: Por escritura pública del 2021-03-14",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].incorporated"
+     },
+     {
+      "evidence_id": "c-A01-12",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Estado de la sociedad: VIGENTE",
+      "verified": true,
+      "field": "document[01].stated_validity_days"
+     },
+     {
+      "evidence_id": "c-A01-06",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Objeto social: Cultivo de hortalizas, legumbres y tubérculos (CIIU 011300).",
+      "verified": true,
+      "field": "corporate_object"
+     },
+     {
+      "evidence_id": "c-A01-08",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Representante Autorizado principal: ANDRES DELGADO VEGA - RUT 15.841.903-k",
+      "verified": true,
+      "field": "role[r-1]"
+     },
+     {
+      "evidence_id": "c-A01-09",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Director suplente: EDUARDO CIFUENTES - RUT 14.194.332-9",
+      "verified": true,
+      "field": "role[r-2]"
+     },
+     {
+      "evidence_id": "c-A01-10",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Andrés Delgado Vega (60%)",
+      "verified": true,
+      "field": "holding[h-1].pct"
+     },
+     {
+      "evidence_id": "c-A01-11",
+      "doc": "01",
+      "document_name": "01_estatutos_actualizados.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Eduardo Cifuentes (40%)",
+      "verified": true,
+      "field": "holding[h-2].pct"
+     },
+     {
+      "evidence_id": "c-A02-01",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de declaración: 2026-10-12",
+      "verified": true,
+      "field": "document[02].issued"
+     },
+     {
+      "evidence_id": "c-A02-03",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "1. Andrés Delgado Vega · Chileno · DOB 1982-11-03 · RUT 15.841.903-k · 60%",
+      "verified": true,
+      "field": "holding[h-3].pct"
+     },
+     {
+      "evidence_id": "c-A02-04",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Andrés Delgado Vega · Chileno",
+      "verified": true,
+      "field": "entity[e-andres-delgado-vega].nationality"
+     },
+     {
+      "evidence_id": "c-A02-05",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Andrés Delgado Vega · Chileno · DOB 1982-11-03",
+      "verified": true,
+      "field": "entity[e-andres-delgado-vega].dob"
+     },
+     {
+      "evidence_id": "c-A02-06",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Andrés Delgado Vega · Chileno · DOB 1982-11-03 · RUT 15.841.903-k",
+      "verified": true,
+      "field": "entity[e-andres-delgado-vega].identifiers.tax_id"
+     },
+     {
+      "evidence_id": "c-A02-07",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "2. Eduardo Cifuentes · Chileno · DOB 1980-02-19 · RUT 14.194.332-9 · 40%",
+      "verified": true,
+      "field": "holding[h-4].pct"
+     },
+     {
+      "evidence_id": "c-A02-08",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Eduardo Cifuentes · Chileno",
+      "verified": true,
+      "field": "entity[e-eduardo-cifuentes].nationality"
+     },
+     {
+      "evidence_id": "c-A02-09",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Eduardo Cifuentes · Chileno · DOB 1980-02-19",
+      "verified": true,
+      "field": "entity[e-eduardo-cifuentes].dob"
+     },
+     {
+      "evidence_id": "c-A02-10",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Eduardo Cifuentes · Chileno · DOB 1980-02-19 · RUT 14.194.332-9",
+      "verified": true,
+      "field": "entity[e-eduardo-cifuentes].identifiers.tax_id"
+     },
+     {
+      "evidence_id": "c-A02-12",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Firmado: Andrés Delgado Vega - Representante Autorizado - Fecha: 2026-10-12",
+      "verified": true,
+      "field": "document[02].signed_on"
+     },
+     {
+      "evidence_id": "c-A02-13",
+      "doc": "02",
+      "document_name": "02_declaracion_jurada_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Firmado: Andrés Delgado Vega",
+      "verified": true,
+      "field": "role[r-3]"
+     },
+     {
+      "evidence_id": "c-A03-01",
+      "doc": "03",
+      "document_name": "03_registro_de_accionistas.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Página No. 1 · Última actualización: 2024-06-15",
+      "verified": true,
+      "field": "document[03].issued"
+     },
+     {
+      "evidence_id": "c-A03-02",
+      "doc": "03",
+      "document_name": "03_registro_de_accionistas.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Andrés Delgado Vega RUT 15.841.903-k 60.000 60,00%",
+      "verified": true,
+      "field": "holding[h-5].pct"
+     },
+     {
+      "evidence_id": "c-A03-03",
+      "doc": "03",
+      "document_name": "03_registro_de_accionistas.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Eduardo Cifuentes RUT 14.194.332-9 40.000 40,00%",
+      "verified": true,
+      "field": "holding[h-6].pct"
+     },
+     {
+      "evidence_id": "c-A04-03",
+      "doc": "04",
+      "document_name": "04_boleta_de_suministro_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Dirección de suministro: Avenida Vitacura 5250, Of. 802, Vitacura, Santiago",
+      "verified": true,
+      "field": "entity[e-andes-agropecuaria].addresses.unknown"
+     },
+     {
+      "evidence_id": "c-A04-04",
+      "doc": "04",
+      "document_name": "04_boleta_de_suministro_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de emisión: 2026-08-11",
+      "verified": true,
+      "field": "document[04].issued"
+     },
+     {
+      "evidence_id": "c-A05-01",
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Santiago, 2026-10-05",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-A05-02",
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "mantiene la cuenta corriente No. 00-482-9104 activa desde abril de 2021",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-A05-03",
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Operaciones y Web: 45 empleados",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-A05-04",
+      "doc": "05",
+      "document_name": "05_carta_referencia_bancaria.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "sitio web corporativo https://andesindustrial.cl",
+      "verified": true,
+      "field": null
+     }
+    ],
+    "unverified": [],
+    "verification": [
+     {
+      "doc": "01",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "02",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "03",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "04",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "05",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     }
+    ]
+   },
+   "screening": {
+    "contracts_version": "b4-v1",
+    "case": "A",
+    "run": "r1",
+    "fact_set_hash": "sha256:b38e9f5d272c7ebc2a2c14ed87a1dc24e7fdef96ff19b4c7e54d29166e3c107d",
+    "watchlist_version": "wl-test",
+    "method": "candidates-v1+jw-0.85+d054",
+    "candidates": []
+   },
+   "answers": [],
+   "expected": {
+    "status": "APPROVED",
+    "risk_score": 0,
+    "fired": []
+   }
+  },
+  {
+   "id": "golden-B",
+   "packet": "B",
+   "facts": {
+    "contracts_version": "b4-v1",
+    "case": "B",
+    "run": "r1",
+    "as_of": "2026-10-25",
+    "fact_set_hash": "sha256:7c47630d6d27b4e4c27d02edb4314bdc4a673df5dd14fefa9747d19f64c0b6b5",
+    "applicant": "e-iberia-software-sl",
+    "entities": [
+     {
+      "entity_id": "e-iberia-software-sl",
+      "kind": "company",
+      "names": [
+       "IBERIA SOFTWARE S.L."
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [
+       "2020-04-12"
+      ],
+      "regions": [],
+      "addresses": [
+       {
+        "kind": "registered",
+        "text": "Paseo de la Castellana 95, Madrid",
+        "mass_registration": {
+         "state": "absent",
+         "evidence": [
+          {
+           "claim_id": "c-B01-05",
+           "doc": "01",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-B01-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "kind": "fiscal",
+        "text": "Calle de Alcalá 140, Madrid",
+        "mass_registration": {
+         "state": "absent",
+         "evidence": [
+          {
+           "claim_id": "c-B02-05",
+           "doc": "02",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-B02-05",
+          "doc": "02",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "evidence": [
+       {
+        "claim_id": "c-B01-02",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-03_nif",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-07",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-06",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B02-05",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-07",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-08",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-hugo-martinez-sanz",
+      "kind": "person",
+      "names": [
+       "HUGO MARTÍNEZ SANZ",
+       "Hugo Martínez Sanz"
+      ],
+      "identifiers": {},
+      "nationality": [
+       "ES"
+      ],
+      "dob": [
+       "1981-06-19"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-B01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B01-10",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-04",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-05",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-06",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-04",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-05",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-09",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-10",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-14",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-lucas-navarro-solis",
+      "kind": "person",
+      "names": [
+       "Lucas Navarro Solís",
+       "L. Navarro"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [
+       "1981-06-19"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-B04-04",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-07",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-12",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-socio-unico",
+      "kind": "person",
+      "names": [
+       "Socio Único"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-B05-14",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "holdings": [
+     {
+      "holding_id": "h-1",
+      "owner": "e-hugo-martinez-sanz",
+      "owned": "e-iberia-software-sl",
+      "pct": "100",
+      "shares": 50000,
+      "as_of": null,
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-B01-10",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-2",
+      "owner": "e-lucas-navarro-solis",
+      "owned": "e-iberia-software-sl",
+      "pct": "46",
+      "shares": null,
+      "as_of": null,
+      "status": "struck",
+      "evidence": [
+       {
+        "claim_id": "c-B05-07",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-3",
+      "owner": "e-hugo-martinez-sanz",
+      "owned": "e-iberia-software-sl",
+      "pct": "54",
+      "shares": null,
+      "as_of": null,
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-B05-09",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-4",
+      "owner": "e-hugo-martinez-sanz",
+      "owned": "e-iberia-software-sl",
+      "pct": "100",
+      "shares": null,
+      "as_of": null,
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-B05-10",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-5",
+      "owner": "e-lucas-navarro-solis",
+      "owned": "e-iberia-software-sl",
+      "pct": "12",
+      "shares": null,
+      "as_of": null,
+      "status": "pending",
+      "evidence": [
+       {
+        "claim_id": "c-B05-12",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "roles": [
+     {
+      "role_id": "r-1",
+      "holder": "e-hugo-martinez-sanz",
+      "of": "e-iberia-software-sl",
+      "role": "director",
+      "evidence": [
+       {
+        "claim_id": "c-B01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B05-05",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-2",
+      "holder": "e-hugo-martinez-sanz",
+      "of": "e-iberia-software-sl",
+      "role": "president",
+      "evidence": [
+       {
+        "claim_id": "c-B05-04",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-3",
+      "holder": "e-socio-unico",
+      "of": "e-hugo-martinez-sanz",
+      "role": "signatory",
+      "evidence": [
+       {
+        "claim_id": "c-B05-14",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "documents": [
+     {
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "doc_type": "other",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-B01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "02",
+      "document_name": "02_certificado_nif.pdf",
+      "doc_type": "other",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     },
+     {
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "doc_type": "ubo_declaration",
+      "issued": "2026-10-10",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-B03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "doc_type": "other",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     },
+     {
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "doc_type": "board_minutes",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     }
+    ],
+    "conflicts": [
+     {
+      "conflict_id": "x-1",
+      "subject": "e-hugo-martinez-sanz",
+      "attribute": "ownership_pct",
+      "values": [
+       {
+        "value": "100",
+        "evidence": [
+         {
+          "claim_id": "c-B01-10",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         },
+         {
+          "claim_id": "c-B05-10",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "value": "54",
+        "evidence": [
+         {
+          "claim_id": "c-B05-09",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "context": []
+     }
+    ],
+    "operations": {
+     "distinct_operating_address": {
+      "state": "absent",
+      "evidence": [
+       {
+        "claim_id": "c-B01-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B02-05",
+        "doc": "02",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "no separate operating address beyond the registered one: the packet gives only fiscal, registered address(es)"
+     },
+     "bank_reference_or_financials": {
+      "state": "unknown",
+      "evidence": [],
+      "note": "a document of unrecognised type could be a bank reference"
+     },
+     "employees_or_website": {
+      "state": "present",
+      "evidence": [
+       {
+        "claim_id": "c-B03-07",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-B03-08",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "employees or a website are stated for the applicant"
+     }
+    },
+    "corporate_object": [
+     "Desarrollo de aplicaciones y consultoría tecnológica"
+    ],
+    "evidence": [
+     {
+      "evidence_id": "c-B01-01",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de emisión: 2026-10-15",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B01-02",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Denominación social: IBERIA SOFTWARE S.L.",
+      "verified": true,
+      "field": "entity[e-iberia-software-sl].names"
+     },
+     {
+      "evidence_id": "c-B01-03",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "NIF: B-88412091",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B01-03_nif",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "NIF: B-88412091",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B01-04",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "REGISTRO DE SOCIEDADES DE MADRID",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B01-05",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Domicilio social: Paseo de la Castellana 95, Madrid",
+      "verified": true,
+      "field": "entity[e-iberia-software-sl].addresses.registered"
+     },
+     {
+      "evidence_id": "c-B01-07",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Constitución: Escritura pública autorizada el 2020-04-12",
+      "verified": true,
+      "field": "entity[e-iberia-software-sl].incorporated"
+     },
+     {
+      "evidence_id": "c-B01-12",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Estado de la matrícula: ACTIVA",
+      "verified": true,
+      "field": "document[01].stated_validity_days"
+     },
+     {
+      "evidence_id": "c-B01-06",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Objeto social: Desarrollo de aplicaciones y consultoría tecnológica.",
+      "verified": true,
+      "field": "corporate_object"
+     },
+     {
+      "evidence_id": "c-B01-08",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Administrador único: HUGO MARTÍNEZ SANZ - NIF 44.190.822-D",
+      "verified": true,
+      "field": "role[r-1]"
+     },
+     {
+      "evidence_id": "c-B01-10",
+      "doc": "01",
+      "document_name": "01_extracto_registro.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "verified": true,
+      "field": "holding[h-1].pct"
+     },
+     {
+      "evidence_id": "c-B02-01",
+      "doc": "02",
+      "document_name": "02_certificado_nif.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de emisión: 2026-05-10",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B02-05",
+      "doc": "02",
+      "document_name": "02_certificado_nif.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Domicilio fiscal: Calle de Alcalá 140, Madrid",
+      "verified": true,
+      "field": "entity[e-iberia-software-sl].addresses.fiscal"
+     },
+     {
+      "evidence_id": "c-B03-01",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de declaración: 2026-10-10",
+      "verified": true,
+      "field": "document[03].issued"
+     },
+     {
+      "evidence_id": "c-B03-03",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "1. Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D · 100%",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B03-04",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz · Español",
+      "verified": true,
+      "field": "entity[e-hugo-martinez-sanz].nationality"
+     },
+     {
+      "evidence_id": "c-B03-05",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19",
+      "verified": true,
+      "field": "entity[e-hugo-martinez-sanz].dob"
+     },
+     {
+      "evidence_id": "c-B03-06",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz · Español · DOB 1981-06-19 · NIF 44.190.822-D",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B03-07",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Operaciones: 15 empleados",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B03-08",
+      "doc": "03",
+      "document_name": "03_declaracion_titularidad_real.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "sitio web corporativo https://iberiasoftware.es",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B04-01",
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha actualización: 2026-06-10",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B04-02",
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís 2.300 46%",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B04-03",
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B04-04",
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís",
+      "verified": true,
+      "field": "entity[e-lucas-navarro-solis].dob"
+     },
+     {
+      "evidence_id": "c-B04-05",
+      "doc": "04",
+      "document_name": "04_libro_registro_socios.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz 2.700 54%",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-01",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "ACTA DE LA JUNTA GENERAL EXTRAORDINARIA DE SOCIOS",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-02",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-03",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Fecha de sesión: 2026-10-10 · Madrid",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-04",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Presidente de la Junta: Hugo Martínez Sanz",
+      "verified": true,
+      "field": "role[r-2]"
+     },
+     {
+      "evidence_id": "c-B05-05",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+      "verified": true,
+      "field": "role[r-1]"
+     },
+     {
+      "evidence_id": "c-B05-06",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís 46%",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-07",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís 46%",
+      "verified": true,
+      "field": "holding[h-2].pct"
+     },
+     {
+      "evidence_id": "c-B05-08",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Lucas Navarro Solís",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-09",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "verified": true,
+      "field": "holding[h-3].pct"
+     },
+     {
+      "evidence_id": "c-B05-10",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Hugo Martínez Sanz (100%)",
+      "verified": true,
+      "field": "holding[h-4].pct"
+     },
+     {
+      "evidence_id": "c-B05-11",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Se ratifica la vigencia del cargo de Administrador Único.",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-12",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Página 24 - ver nota *",
+      "verified": true,
+      "field": "holding[h-5].pct"
+     },
+     {
+      "evidence_id": "c-B05-13",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+      "verified": false,
+      "field": null
+     },
+     {
+      "evidence_id": "c-B05-14",
+      "doc": "05",
+      "document_name": "05_acta_junta_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Firmado: Hugo Martínez Sanz - Socio Único",
+      "verified": true,
+      "field": "role[r-3]"
+     }
+    ],
+    "unverified": [
+     {
+      "claim_id": "c-B01-01",
+      "doc": "01",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B01-03",
+      "doc": "01",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B01-04",
+      "doc": "01",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B02-01",
+      "doc": "02",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B03-03",
+      "doc": "03",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B04-01",
+      "doc": "04",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B04-02",
+      "doc": "04",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B04-03",
+      "doc": "04",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B04-05",
+      "doc": "04",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-01",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-02",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-03",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-06",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-08",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-11",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     },
+     {
+      "claim_id": "c-B05-13",
+      "doc": "05",
+      "page": 1,
+      "verified": false
+     }
+    ],
+    "verification": [
+     {
+      "doc": "01",
+      "assurance": "W2",
+      "isolated": true,
+      "uncovered": [
+       {
+        "block_id": "01-p1-b5",
+        "kind": "date",
+        "subject": "ESCRITURA PÚBLICA No. 48.223",
+        "attribute": "issue date",
+        "value": "2020-04-12"
+       },
+       {
+        "block_id": "01-p1-b6",
+        "kind": "address",
+        "subject": "LUCAS NAVARRO SOLÍS",
+        "attribute": "domicilio",
+        "value": "Av. Av. Insurgentes Sur 1602, Piso 22, Col. Nápoles, CDMX"
+       },
+       {
+        "block_id": "01-p1-b6",
+        "kind": "address",
+        "subject": "LUCAS NAVARRO MÉNDEZ",
+        "attribute": "domicilio",
+        "value": "mismo domicilio"
+       },
+       {
+        "block_id": "01-p1-b11",
+        "kind": "ownership",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "Accionista",
+        "value": "Lucas Navarro Solís"
+       },
+       {
+        "block_id": "01-p1-b11",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "Acciones",
+        "value": "3.400"
+       },
+       {
+        "block_id": "01-p1-b11",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "%",
+        "value": "68%"
+       },
+       {
+        "block_id": "01-p1-b12",
+        "kind": "ownership",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "Accionista",
+        "value": "Lucas Navarro Méndez"
+       },
+       {
+        "block_id": "01-p1-b12",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "Acciones",
+        "value": "1.600"
+       },
+       {
+        "block_id": "01-p1-b12",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "%",
+        "value": "32%"
+       },
+       {
+        "block_id": "01-p1-b13",
+        "kind": "role",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "Presidente",
+        "value": "Lucas Navarro Solís"
+       },
+       {
+        "block_id": "01-p1-b13",
+        "kind": "role",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "Secretario",
+        "value": "Lucas Navarro Méndez"
+       }
+      ],
+      "findings": [
+       "coverage_incomplete",
+       "coverage_conflict"
+      ]
+     },
+     {
+      "doc": "02",
+      "assurance": "W2",
+      "isolated": true,
+      "uncovered": [
+       {
+        "block_id": "02-p1-b5",
+        "kind": "date",
+        "subject": "CONSTANCIA DE SITUACIÓN FISCAL",
+        "attribute": "Fecha",
+        "value": "2026-10-25"
+       }
+      ],
+      "findings": [
+       "coverage_incomplete"
+      ]
+     },
+     {
+      "doc": "03",
+      "assurance": "W2",
+      "isolated": true,
+      "uncovered": [
+       {
+        "block_id": "03-p1-b2",
+        "kind": "date",
+        "subject": "Iberia Software, S.L.",
+        "attribute": "Fecha",
+        "value": "2026-10-25"
+       },
+       {
+        "block_id": "03-p1-b7",
+        "kind": "jurisdiction",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "Nacionalidad",
+        "value": "Belice"
+       },
+       {
+        "block_id": "03-p1-b8",
+        "kind": "jurisdiction",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "constituida en",
+        "value": "Belice"
+       },
+       {
+        "block_id": "03-p1-b12",
+        "kind": "role",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "cargo",
+        "value": "Presidente del Consejo de Administración"
+       }
+      ],
+      "findings": [
+       "coverage_incomplete"
+      ]
+     },
+     {
+      "doc": "04",
+      "assurance": "W2",
+      "isolated": true,
+      "uncovered": [
+       {
+        "block_id": "04-p1-b1",
+        "kind": "ownership",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "company_name",
+        "value": "IBERIA SOFTWARE S.L."
+       },
+       {
+        "block_id": "04-p1-b2",
+        "kind": "ownership",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "company_name",
+        "value": "IBERIA SOFTWARE S.L."
+       },
+       {
+        "block_id": "04-p1-b3",
+        "kind": "date",
+        "subject": "Asiento 8",
+        "attribute": "Fecha del asiento",
+        "value": "2026-10-25"
+       },
+       {
+        "block_id": "04-p1-b5",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "Acciones Serie A",
+        "value": "2.300"
+       },
+       {
+        "block_id": "04-p1-b5",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "%",
+        "value": "46%"
+       },
+       {
+        "block_id": "04-p1-b5",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "Observaciones",
+        "value": "Transmisión de 1.100 acciones a Inversiones Altiplano, S.A. (asiento 4)"
+       },
+       {
+        "block_id": "04-p1-b6",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "Acciones Serie A",
+        "value": "1.300"
+       },
+       {
+        "block_id": "04-p1-b6",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "%",
+        "value": "26%"
+       },
+       {
+        "block_id": "04-p1-b6",
+        "kind": "ownership",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "Observaciones",
+        "value": "Transmisión de 300 acciones a Inversiones Altiplano, S.A. (asiento 4)"
+       },
+       {
+        "block_id": "04-p1-b7",
+        "kind": "ownership",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "Acciones Serie A",
+        "value": "1.400"
+       },
+       {
+        "block_id": "04-p1-b7",
+        "kind": "ownership",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "%",
+        "value": "28%"
+       },
+       {
+        "block_id": "04-p1-b7",
+        "kind": "ownership",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "Observaciones",
+        "value": "Adquisición por compraventa, 2026-10-25"
+       },
+       {
+        "block_id": "04-p1-b8",
+        "kind": "ownership",
+        "subject": "Total",
+        "attribute": "Acciones Serie A",
+        "value": "5.000"
+       },
+       {
+        "block_id": "04-p1-b8",
+        "kind": "ownership",
+        "subject": "Total",
+        "attribute": "%",
+        "value": "100%"
+       }
+      ],
+      "findings": [
+       "layer_vs_pixel",
+       "coverage_incomplete"
+      ]
+     },
+     {
+      "doc": "05",
+      "assurance": "W2",
+      "isolated": true,
+      "uncovered": [
+       {
+        "block_id": "05-p1-b1",
+        "kind": "role",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "board_of_directors",
+        "value": "CONSEJO DE ADMINISTRACIÓN"
+       },
+       {
+        "block_id": "05-p1-b2",
+        "kind": "address",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "meeting_location",
+        "value": "Ciudad de México"
+       },
+       {
+        "block_id": "05-p1-b2",
+        "kind": "date",
+        "subject": "IBERIA SOFTWARE S.L.",
+        "attribute": "meeting_date",
+        "value": "2026-08-19"
+       },
+       {
+        "block_id": "05-p1-b3",
+        "kind": "role",
+        "subject": "Lucas Navarro Solís",
+        "attribute": "title",
+        "value": "Presidente"
+       },
+       {
+        "block_id": "05-p1-b3",
+        "kind": "role",
+        "subject": "Lucas Navarro Méndez",
+        "attribute": "title",
+        "value": "Secretaria"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "ownership",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "shares",
+        "value": "1.400 acciones"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "ownership",
+        "subject": "L. Navarro Solís",
+        "attribute": "percentage",
+        "value": "46%"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "amendment",
+        "subject": "L. Navarro Solís",
+        "attribute": "percentage",
+        "value": "46%"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "amendment",
+        "subject": "L. Navarro Solís",
+        "attribute": "percentage",
+        "value": "68%"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "ownership",
+        "subject": "V. Ortega Méndez",
+        "attribute": "percentage",
+        "value": "26%"
+       },
+       {
+        "block_id": "05-p1-b5",
+        "kind": "ownership",
+        "subject": "Inversiones Altiplano, S.A.",
+        "attribute": "percentage",
+        "value": "28%"
+       },
+       {
+        "block_id": "05-p1-b6",
+        "kind": "role",
+        "subject": "Presidente",
+        "attribute": "authority",
+        "value": "operar cuentas bancarias de la sociedad en Estados Unidos"
+       },
+       {
+        "block_id": "05-p1-b9",
+        "kind": "amendment",
+        "subject": "L. Navarro",
+        "attribute": "ownership_change",
+        "value": "recibe 12% extra de Altiplano el 3/8 - pendiente de asentar"
+       },
+       {
+        "block_id": "05-p1-b10",
+        "kind": "role",
+        "subject": "L. Navarro V.",
+        "attribute": "title",
+        "value": "Presidente"
+       },
+       {
+        "block_id": "05-p1-b11",
+        "kind": "role",
+        "subject": "E. Ortega D.",
+        "attribute": "title",
+        "value": "Secretaria"
+       }
+      ],
+      "findings": [
+       "coverage_incomplete"
+      ]
+     }
+    ]
+   },
+   "screening": {
+    "contracts_version": "b4-v1",
+    "case": "B",
+    "run": "r1",
+    "fact_set_hash": "sha256:7c47630d6d27b4e4c27d02edb4314bdc4a673df5dd14fefa9747d19f64c0b6b5",
+    "watchlist_version": "wl-test",
+    "method": "candidates-v1+jw-0.85+d054",
+    "candidates": [
+     {
+      "candidate_id": "SAN-0003-iberia-software-sl",
+      "entity_id": "e-iberia-software-sl",
+      "entry": {
+       "entry_id": "SAN-0003",
+       "list_kind": "sanctions",
+       "name": "Iberia Fluvial Austral S.A.",
+       "aliases": [
+        "Fluvial Austral",
+        "Fluvial Austral S.A."
+       ],
+       "entity_type": "entity",
+       "nationality": null,
+       "jurisdiction": "PA",
+       "dob": null,
+       "registration_number": "172260845",
+       "program": "OFAC SDN",
+       "position": null,
+       "in_office": null,
+       "left_office": null
+      },
+      "matched_name": "Iberia Fluvial Austral S.A.",
+      "jw_score": 0.833333,
+      "alias_exact": false,
+      "triggers_fuzzy": false,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": []
+      }
+     },
+     {
+      "candidate_id": "PEP-0101-lucas-navarro-solis",
+      "entity_id": "e-lucas-navarro-solis",
+      "entry": {
+       "entry_id": "PEP-0101",
+       "list_kind": "pep",
+       "name": "Li Wei",
+       "aliases": [
+        "Li Wei",
+        "L. Wei"
+       ],
+       "entity_type": null,
+       "nationality": "SG",
+       "jurisdiction": null,
+       "dob": "1978-05-20",
+       "registration_number": null,
+       "program": null,
+       "position": "Member of Parliament, Republic of Singapore",
+       "in_office": false,
+       "left_office": "2024-08-14"
+      },
+      "matched_name": "L. Wei",
+      "jw_score": 0.632593,
+      "alias_exact": false,
+      "triggers_fuzzy": false,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": [
+        "dob"
+       ]
+      }
+     },
+     {
+      "candidate_id": "PEP-0103-lucas-navarro-solis",
+      "entity_id": "e-lucas-navarro-solis",
+      "entry": {
+       "entry_id": "PEP-0103",
+       "list_kind": "pep",
+       "name": "Lucas Navarro",
+       "aliases": [
+        "Lucas Navarro",
+        "L. Navarro"
+       ],
+       "entity_type": null,
+       "nationality": "MX",
+       "jurisdiction": null,
+       "dob": "1978-02-12",
+       "registration_number": null,
+       "program": null,
+       "position": "Municipal Councillor, Monterrey",
+       "in_office": false,
+       "left_office": "2015-09-13"
+      },
+      "matched_name": "L. Navarro",
+      "jw_score": 1.0,
+      "alias_exact": true,
+      "triggers_fuzzy": false,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": [
+        "dob"
+       ]
+      }
+     }
+    ]
+   },
+   "answers": [
+    {
+     "instance_id": "poa-02",
+     "value": false,
+     "confidence": 0.9,
+     "evidence": [],
+     "rationale": "fixture"
+    },
+    {
+     "instance_id": "sp-c-1",
+     "value": false,
+     "confidence": 0.9,
+     "evidence": [],
+     "rationale": "fixture"
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 35,
+    "fired": [
+     "DOC-01",
+     "DOC-02"
+    ]
+   }
+  },
+  {
+   "id": "golden-C",
+   "packet": "C",
+   "facts": {
+    "contracts_version": "b4-v1",
+    "case": "C",
+    "run": "r1",
+    "as_of": "2026-10-25",
+    "fact_set_hash": "sha256:ec65b0219141fa8c87889ea47df3c3bcb80f36f3c766a1a74c073e0b07a93a38",
+    "applicant": "e-strait-capital",
+    "entities": [
+     {
+      "entity_id": "e-strait-capital",
+      "kind": "company",
+      "names": [
+       "Strait Capital Pte. Ltd."
+      ],
+      "identifiers": {
+       "reg_no": [
+        "202419082K"
+       ]
+      },
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [
+       "SG"
+      ],
+      "incorporated": [
+       "2024-04-12"
+      ],
+      "regions": [],
+      "addresses": [
+       {
+        "kind": "registered",
+        "text": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+        "mass_registration": {
+         "state": "unknown",
+         "evidence": [
+          {
+           "claim_id": "c-C01-05",
+           "doc": "01",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "an agent is named, but the address is not shown to be the agent's"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-C01-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "kind": "operating",
+        "text": "10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+        "mass_registration": {
+         "state": "unknown",
+         "evidence": [
+          {
+           "claim_id": "c-C05-03",
+           "doc": "05",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "an agent is named, but the address is not shown to be the agent's"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-C05-03",
+          "doc": "05",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "evidence": [
+       {
+        "claim_id": "c-C01-01",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-02",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-02_name",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-03",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-03_reg",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-04",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-06",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-emp",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-web",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C05-01",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C05-02",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C05-03",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C06-01",
+        "doc": "06",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C06-02",
+        "doc": "06",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-sovereign-trust",
+      "kind": "trust",
+      "names": [
+       "Sovereign Trust"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [
+       "WS"
+      ],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [
+       {
+        "kind": "unknown",
+        "text": "Beach Road, Lot 18, Apia, Samoa",
+        "mass_registration": {
+         "state": "absent",
+         "evidence": [
+          {
+           "claim_id": "c-C02-05",
+           "doc": "01",
+           "page": 1,
+           "verified": true
+          }
+         ],
+         "note": "the packet names no registered or nominee agent for this party, and the address is not given in care of another"
+        },
+        "evidence": [
+         {
+          "claim_id": "c-C02-05",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "evidence": [
+       {
+        "claim_id": "c-C01-06_trust",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-07_presence",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C02-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-03_pres",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-03",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C04-01",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C04-01_jur",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C04-03",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-li-wei",
+      "kind": "person",
+      "names": [
+       "Li Wei"
+      ],
+      "identifiers": {
+       "passport": [
+        "E4419082"
+       ]
+      },
+      "nationality": [
+       "SG"
+      ],
+      "dob": [
+       "1978-05-20"
+      ],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-C01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-05_owns",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-05",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-07",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-08",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-pep",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C04-05",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C05-02",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-tan-boon-hean",
+      "kind": "person",
+      "names": [
+       "Tan Boon Hean"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-C01-09",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "entity_id": "e-pacific-trustees",
+      "kind": "company",
+      "names": [
+       "Pacific Trustees Ltd"
+      ],
+      "identifiers": {},
+      "nationality": [],
+      "dob": [],
+      "jurisdiction": [],
+      "incorporated": [],
+      "regions": [],
+      "addresses": [],
+      "evidence": [
+       {
+        "claim_id": "c-C04-07",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "holdings": [
+     {
+      "holding_id": "h-1",
+      "owner": "e-sovereign-trust",
+      "owned": "e-strait-capital",
+      "pct": "100",
+      "shares": 100000,
+      "as_of": "2026-10-15",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-C01-06_trust",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "holding_id": "h-2",
+      "owner": "e-li-wei",
+      "owned": "e-strait-capital",
+      "pct": "100",
+      "shares": null,
+      "as_of": "2026-10-15",
+      "status": "current",
+      "evidence": [
+       {
+        "claim_id": "c-C03-05_owns",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "roles": [
+     {
+      "role_id": "r-1",
+      "holder": "e-li-wei",
+      "of": "e-strait-capital",
+      "role": "director",
+      "evidence": [
+       {
+        "claim_id": "c-C01-08",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-2",
+      "holder": "e-tan-boon-hean",
+      "of": "e-strait-capital",
+      "role": "director",
+      "evidence": [
+       {
+        "claim_id": "c-C01-09",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-3",
+      "holder": "e-pacific-trustees",
+      "of": "e-strait-capital",
+      "role": "registered_agent",
+      "evidence": [
+       {
+        "claim_id": "c-C04-07",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "role_id": "r-4",
+      "holder": "e-li-wei",
+      "of": "e-strait-capital",
+      "role": "legal_rep",
+      "evidence": [
+       {
+        "claim_id": "c-C05-02",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     }
+    ],
+    "documents": [
+     {
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "doc_type": "incorporation",
+      "issued": "2026-10-15",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-C01-01",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C01-12",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "doc_type": "ubo_declaration",
+      "issued": "2026-10-15",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-C03-01",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "doc_type": "other",
+      "issued": "2024-03-20",
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": [
+       {
+        "claim_id": "c-C04-01",
+        "doc": "04",
+        "page": 1,
+        "verified": true
+       }
+      ]
+     },
+     {
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "doc_type": "lease",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     },
+     {
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "doc_type": "bank_reference",
+      "issued": null,
+      "signed": null,
+      "signed_on": null,
+      "stated_validity_days": null,
+      "evidence": []
+     }
+    ],
+    "conflicts": [
+     {
+      "conflict_id": "x-1",
+      "subject": "e-sovereign-trust",
+      "attribute": "owner_presence",
+      "values": [
+       {
+        "value": "100",
+        "evidence": [
+         {
+          "claim_id": "c-C01-06_trust",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "value": "absent",
+        "evidence": [
+         {
+          "claim_id": "c-C03-05_owns",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "context": []
+     },
+     {
+      "conflict_id": "x-2",
+      "subject": "e-li-wei",
+      "attribute": "owner_presence",
+      "values": [
+       {
+        "value": "absent",
+        "evidence": [
+         {
+          "claim_id": "c-C01-06_trust",
+          "doc": "01",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       },
+       {
+        "value": "100",
+        "evidence": [
+         {
+          "claim_id": "c-C03-05_owns",
+          "doc": "03",
+          "page": 1,
+          "verified": true
+         }
+        ]
+       }
+      ],
+      "context": []
+     }
+    ],
+    "operations": {
+     "distinct_operating_address": {
+      "state": "absent",
+      "evidence": [
+       {
+        "claim_id": "c-C01-05",
+        "doc": "01",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C05-03",
+        "doc": "05",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "no separate operating address beyond the registered one: the packet gives only operating, registered address(es)"
+     },
+     "bank_reference_or_financials": {
+      "state": "present",
+      "evidence": [
+       {
+        "claim_id": "c-C06-01",
+        "doc": "06",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C06-02",
+        "doc": "06",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "a bank reference or financial statement about the applicant is in the packet"
+     },
+     "employees_or_website": {
+      "state": "present",
+      "evidence": [
+       {
+        "claim_id": "c-C03-emp",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       },
+       {
+        "claim_id": "c-C03-web",
+        "doc": "03",
+        "page": 1,
+        "verified": true
+       }
+      ],
+      "note": "employees or a website are stated for the applicant"
+     }
+    },
+    "corporate_object": [
+     "Maritime vessel chartering and logistics investment (CIIU 50111)"
+    ],
+    "evidence": [
+     {
+      "evidence_id": "c-C01-01",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Date of Report: 2026-10-15",
+      "verified": true,
+      "field": "document[01].issued"
+     },
+     {
+      "evidence_id": "c-C01-02",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "SINGAPORE BUSINESS PROFILE - Strait Capital Pte. Ltd.",
+      "verified": true,
+      "field": "entity[e-strait-capital].jurisdiction"
+     },
+     {
+      "evidence_id": "c-C01-02_name",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Company Name: Strait Capital Pte. Ltd.",
+      "verified": true,
+      "field": "entity[e-strait-capital].names"
+     },
+     {
+      "evidence_id": "c-C01-03",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Unique Entity Number (UEN): 202419082K",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C01-03_reg",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Unique Entity Number (UEN): 202419082K",
+      "verified": true,
+      "field": "entity[e-strait-capital].identifiers.reg_no"
+     },
+     {
+      "evidence_id": "c-C01-04",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Incorporation Date: 2024-04-12",
+      "verified": true,
+      "field": "entity[e-strait-capital].incorporated"
+     },
+     {
+      "evidence_id": "c-C01-12",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Status: Live Company",
+      "verified": true,
+      "field": "document[01].stated_validity_days"
+     },
+     {
+      "evidence_id": "c-C01-05",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Registered Address: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315",
+      "verified": true,
+      "field": "entity[e-strait-capital].addresses.registered"
+     },
+     {
+      "evidence_id": "c-C01-06",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Principal Activity: Maritime vessel chartering and logistics investment (CIIU 50111).",
+      "verified": true,
+      "field": "corporate_object"
+     },
+     {
+      "evidence_id": "c-C01-06_trust",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS) | 100.000 | 100%",
+      "verified": true,
+      "field": "holding[h-1].pct"
+     },
+     {
+      "evidence_id": "c-C01-07_presence",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C01-08",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Li Wei | Passport E4419082 | Singaporean",
+      "verified": true,
+      "field": "role[r-1]"
+     },
+     {
+      "evidence_id": "c-C01-09",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Tan Boon Hean | Passport E3190445 | Singaporean",
+      "verified": true,
+      "field": "role[r-2]"
+     },
+     {
+      "evidence_id": "c-C02-05",
+      "doc": "01",
+      "document_name": "01_acra_bizfile_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust | Beach Road, Lot 18, Apia, Samoa (WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].addresses.unknown"
+     },
+     {
+      "evidence_id": "c-C03-01",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Declaration Date: 2026-10-15",
+      "verified": true,
+      "field": "document[03].issued"
+     },
+     {
+      "evidence_id": "c-C03-03_pres",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C03-03",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust (Samoa, WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].jurisdiction"
+     },
+     {
+      "evidence_id": "c-C03-05_owns",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082 | 100% control",
+      "verified": true,
+      "field": "holding[h-2].pct"
+     },
+     {
+      "evidence_id": "c-C03-05",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Li Wei | Singaporean",
+      "verified": true,
+      "field": "entity[e-li-wei].nationality"
+     },
+     {
+      "evidence_id": "c-C03-07",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20",
+      "verified": true,
+      "field": "entity[e-li-wei].dob"
+     },
+     {
+      "evidence_id": "c-C03-08",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Li Wei | Singaporean | DOB: 1978-05-20 | Passport: E4419082",
+      "verified": true,
+      "field": "entity[e-li-wei].identifiers.passport"
+     },
+     {
+      "evidence_id": "c-C03-pep",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Mr. Li Wei was a Member of Parliament in Singapore until he stepped down on November 15, 2023",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C03-emp",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Staffing & Web Presence: 12 marine consultants",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C03-web",
+      "doc": "03",
+      "document_name": "03_declaration_of_ubo.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "portal https://straitcapital.sg",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C04-01",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Date of Trust Deed: 2024-03-20",
+      "verified": true,
+      "field": "document[04].issued"
+     },
+     {
+      "evidence_id": "c-C04-01_jur",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Jurisdiction: Samoa (WS)",
+      "verified": true,
+      "field": "entity[e-sovereign-trust].jurisdiction"
+     },
+     {
+      "evidence_id": "c-C04-03",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Sovereign Trust",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C04-05",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Settlor: Li Wei",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C04-07",
+      "doc": "04",
+      "document_name": "04_trust_deed_extract.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Trustee: Pacific Trustees Ltd (WS)",
+      "verified": true,
+      "field": "role[r-3]"
+     },
+     {
+      "evidence_id": "c-C05-01",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Signed: Strait Capital Pte. Ltd. - 2024-04-20",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C05-02",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Represented by its authorized signatory: Li Wei.",
+      "verified": true,
+      "field": "role[r-4]"
+     },
+     {
+      "evidence_id": "c-C05-03",
+      "doc": "05",
+      "document_name": "05_commercial_lease_agreement.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Premises: 10 Collyer Quay, #14-01 Ocean Financial Centre, Singapore 049315.",
+      "verified": true,
+      "field": "entity[e-strait-capital].addresses.operating"
+     },
+     {
+      "evidence_id": "c-C06-01",
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "Date: 2026-10-10",
+      "verified": true,
+      "field": null
+     },
+     {
+      "evidence_id": "c-C06-02",
+      "doc": "06",
+      "document_name": "06_letter_of_bank_reference_SCAN.pdf",
+      "page": 1,
+      "bbox": [
+       100,
+       100,
+       1600,
+       200
+      ],
+      "excerpt": "maintains SGD account No. 118-049-2210-1",
+      "verified": true,
+      "field": null
+     }
+    ],
+    "unverified": [],
+    "verification": [
+     {
+      "doc": "01",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "03",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "04",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "05",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     },
+     {
+      "doc": "06",
+      "assurance": "W1",
+      "isolated": false,
+      "uncovered": [],
+      "findings": []
+     }
+    ]
+   },
+   "screening": {
+    "contracts_version": "b4-v1",
+    "case": "C",
+    "run": "r1",
+    "fact_set_hash": "sha256:ec65b0219141fa8c87889ea47df3c3bcb80f36f3c766a1a74c073e0b07a93a38",
+    "watchlist_version": "wl-test",
+    "method": "candidates-v1+jw-0.85+d054",
+    "candidates": [
+     {
+      "candidate_id": "SAN-0001-strait-capital",
+      "entity_id": "e-strait-capital",
+      "entry": {
+       "entry_id": "SAN-0001",
+       "list_kind": "sanctions",
+       "name": "Strait Capital FZE",
+       "aliases": [
+        "Strait Maritime",
+        "Strait Maritime Free Zone Est."
+       ],
+       "entity_type": "entity",
+       "nationality": null,
+       "jurisdiction": "AE",
+       "dob": null,
+       "registration_number": "DMCC-417733",
+       "program": "OFAC SDN",
+       "position": null,
+       "in_office": null,
+       "left_office": null
+      },
+      "matched_name": "Strait Capital FZE",
+      "jw_score": 0.923232,
+      "alias_exact": false,
+      "triggers_fuzzy": true,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": [
+        "reg_no",
+        "jurisdiction"
+       ]
+      }
+     },
+     {
+      "candidate_id": "PEP-0101-li-wei",
+      "entity_id": "e-li-wei",
+      "entry": {
+       "entry_id": "PEP-0101",
+       "list_kind": "pep",
+       "name": "Li Wei",
+       "aliases": [
+        "Li Wei",
+        "L. Wei"
+       ],
+       "entity_type": null,
+       "nationality": "SG",
+       "jurisdiction": null,
+       "dob": "1978-05-20",
+       "registration_number": null,
+       "program": null,
+       "position": "Member of Parliament, Republic of Singapore",
+       "in_office": false,
+       "left_office": "2024-08-14"
+      },
+      "matched_name": "Li Wei",
+      "jw_score": 1.0,
+      "alias_exact": true,
+      "triggers_fuzzy": false,
+      "identifiers": {
+       "corroborating": [
+        "dob",
+        "nationality+dob"
+       ],
+       "conflicting": []
+      }
+     },
+     {
+      "candidate_id": "PEP-0103-li-wei",
+      "entity_id": "e-li-wei",
+      "entry": {
+       "entry_id": "PEP-0103",
+       "list_kind": "pep",
+       "name": "Lucas Navarro",
+       "aliases": [
+        "Lucas Navarro",
+        "L. Navarro"
+       ],
+       "entity_type": null,
+       "nationality": "MX",
+       "jurisdiction": null,
+       "dob": "1978-02-12",
+       "registration_number": null,
+       "program": null,
+       "position": "Municipal Councillor, Monterrey",
+       "in_office": false,
+       "left_office": "2015-09-13"
+      },
+      "matched_name": "L. Navarro",
+      "jw_score": 0.566667,
+      "alias_exact": false,
+      "triggers_fuzzy": false,
+      "identifiers": {
+       "corroborating": [],
+       "conflicting": [
+        "nationality",
+        "dob"
+       ]
+      }
+     }
+    ]
+   },
+   "answers": [
+    {
+     "instance_id": "npd-e-strait-capital",
+     "value": true,
+     "confidence": 0.9,
+     "evidence": [],
+     "rationale": "fixture"
+    },
+    {
+     "instance_id": "poa-06",
+     "value": false,
+     "confidence": 0.9,
+     "evidence": [],
+     "rationale": "fixture"
+    },
+    {
+     "instance_id": "sp-c-1",
+     "value": false,
+     "confidence": 0.9,
+     "evidence": [],
+     "rationale": "fixture"
+    },
+    {
+     "instance_id": "poa-04",
+     "value": false,
+     "confidence": 1.0,
+     "evidence": [
+      "c-05-03"
+     ],
+     "rationale": "not a utility bill or bank statement showing operating address"
+    }
+   ],
+   "expected": {
+    "status": "MANUAL_REVIEW",
+    "risk_score": 90,
+    "fired": [
+     "ACT-02",
+     "DOC-01",
+     "JUR-02",
+     "MOD-01",
+     "OWN-01",
+     "PEP-01",
+     "SCR-02"
+    ]
+   }
+  }
+ ]
+}
